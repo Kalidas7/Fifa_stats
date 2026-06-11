@@ -1,0 +1,702 @@
+{
+  "fixtureId": 730061,
+  "fetchedAt": "2026-06-18T19:30:00.000Z",
+  "teams": {
+    "home": {
+      "id": 84541,
+      "name": "Uzbekistan",
+      "code": "UZB",
+      "logo": null,
+      "goals": 2
+    },
+    "away": {
+      "id": 66912,
+      "name": "Colombia",
+      "code": "COL",
+      "logo": null,
+      "goals": 1
+    }
+  },
+  "statsByTeam": [
+    {
+      "teamId": 84541,
+      "name": "Uzbekistan",
+      "stats": {
+        "shotsOnTarget": 5,
+        "totalShots": 16,
+        "possession": 46,
+        "corners": 3,
+        "fouls": 15,
+        "offsides": 1,
+        "yellow": 0,
+        "red": 0,
+        "saves": 3,
+        "passes": 672,
+        "passesAccurate": 511,
+        "passAccuracy": 76
+      }
+    },
+    {
+      "teamId": 66912,
+      "name": "Colombia",
+      "stats": {
+        "shotsOnTarget": 4,
+        "totalShots": 16,
+        "possession": 54,
+        "corners": 3,
+        "fouls": 6,
+        "offsides": 2,
+        "yellow": 1,
+        "red": 0,
+        "saves": 3,
+        "passes": 520,
+        "passesAccurate": 396,
+        "passAccuracy": 76
+      }
+    }
+  ],
+  "events": [
+    {
+      "minute": 24,
+      "extra": null,
+      "teamId": 84541,
+      "teamName": "Uzbekistan",
+      "player": "P. Greco",
+      "playerId": 97759,
+      "assist": null,
+      "assistId": null,
+      "type": "Goal",
+      "detail": "Penalty"
+    },
+    {
+      "minute": 71,
+      "extra": null,
+      "teamId": 66912,
+      "teamName": "Colombia",
+      "player": "G. García",
+      "playerId": 59320,
+      "assist": null,
+      "assistId": null,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    },
+    {
+      "minute": 85,
+      "extra": null,
+      "teamId": 84541,
+      "teamName": "Uzbekistan",
+      "player": "T. Jovanović",
+      "playerId": 49926,
+      "assist": "R. Hassan",
+      "assistId": 27629,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    }
+  ],
+  "lineups": [
+    {
+      "teamId": 84541,
+      "name": "Uzbekistan",
+      "formation": "4-3-3",
+      "coach": "UZB Manager",
+      "startXI": [
+        {
+          "id": 26834,
+          "name": "S. Hassan",
+          "number": 1,
+          "pos": "G",
+          "grid": "1:1"
+        },
+        {
+          "id": 48137,
+          "name": "N. Sørensen",
+          "number": 2,
+          "pos": "D",
+          "grid": "2:1"
+        },
+        {
+          "id": 63281,
+          "name": "J. Marković",
+          "number": 3,
+          "pos": "D",
+          "grid": "2:2"
+        },
+        {
+          "id": 79660,
+          "name": "M. Khan",
+          "number": 4,
+          "pos": "D",
+          "grid": "2:3"
+        },
+        {
+          "id": 90005,
+          "name": "F. Bianchi",
+          "number": 5,
+          "pos": "D",
+          "grid": "2:4"
+        },
+        {
+          "id": 97759,
+          "name": "P. Greco",
+          "number": 6,
+          "pos": "M",
+          "grid": "3:1"
+        },
+        {
+          "id": 58274,
+          "name": "A. Reyes",
+          "number": 7,
+          "pos": "M",
+          "grid": "3:2"
+        },
+        {
+          "id": 61431,
+          "name": "D. Wagner",
+          "number": 8,
+          "pos": "M",
+          "grid": "3:3"
+        },
+        {
+          "id": 95493,
+          "name": "L. Greco",
+          "number": 9,
+          "pos": "F",
+          "grid": "4:1"
+        },
+        {
+          "id": 49926,
+          "name": "T. Jovanović",
+          "number": 10,
+          "pos": "F",
+          "grid": "4:2"
+        },
+        {
+          "id": 27629,
+          "name": "R. Hassan",
+          "number": 11,
+          "pos": "F",
+          "grid": "4:3"
+        }
+      ],
+      "subs": [
+        {
+          "id": 83363,
+          "name": "R. Castro",
+          "number": 12,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 83559,
+          "name": "L. Sørensen",
+          "number": 13,
+          "pos": "F",
+          "grid": null
+        },
+        {
+          "id": 5467,
+          "name": "H. Horvat",
+          "number": 14,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 95204,
+          "name": "F. Schneider",
+          "number": 15,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 88631,
+          "name": "J. Park",
+          "number": 16,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 6474,
+          "name": "D. Abara",
+          "number": 17,
+          "pos": "G",
+          "grid": null
+        },
+        {
+          "id": 52854,
+          "name": "O. Romero",
+          "number": 18,
+          "pos": "F",
+          "grid": null
+        }
+      ]
+    },
+    {
+      "teamId": 66912,
+      "name": "Colombia",
+      "formation": "4-3-3",
+      "coach": "COL Manager",
+      "startXI": [
+        {
+          "id": 56349,
+          "name": "C. Dubois",
+          "number": 1,
+          "pos": "G",
+          "grid": "1:1"
+        },
+        {
+          "id": 8001,
+          "name": "A. Costa",
+          "number": 2,
+          "pos": "D",
+          "grid": "2:1"
+        },
+        {
+          "id": 68090,
+          "name": "P. Mensah",
+          "number": 3,
+          "pos": "D",
+          "grid": "2:2"
+        },
+        {
+          "id": 53870,
+          "name": "M. Kaur",
+          "number": 4,
+          "pos": "D",
+          "grid": "2:3"
+        },
+        {
+          "id": 98114,
+          "name": "D. Dubois",
+          "number": 5,
+          "pos": "D",
+          "grid": "2:4"
+        },
+        {
+          "id": 58510,
+          "name": "L. Bianchi",
+          "number": 6,
+          "pos": "M",
+          "grid": "3:1"
+        },
+        {
+          "id": 15790,
+          "name": "A. García",
+          "number": 7,
+          "pos": "M",
+          "grid": "3:2"
+        },
+        {
+          "id": 66684,
+          "name": "L. Wagner",
+          "number": 8,
+          "pos": "M",
+          "grid": "3:3"
+        },
+        {
+          "id": 58577,
+          "name": "H. Murphy",
+          "number": 9,
+          "pos": "F",
+          "grid": "4:1"
+        },
+        {
+          "id": 59320,
+          "name": "G. García",
+          "number": 10,
+          "pos": "F",
+          "grid": "4:2"
+        },
+        {
+          "id": 39836,
+          "name": "T. Horvat",
+          "number": 11,
+          "pos": "F",
+          "grid": "4:3"
+        }
+      ],
+      "subs": [
+        {
+          "id": 88945,
+          "name": "C. Müller",
+          "number": 12,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 38556,
+          "name": "P. Greco",
+          "number": 13,
+          "pos": "F",
+          "grid": null
+        },
+        {
+          "id": 56820,
+          "name": "R. Dubois",
+          "number": 14,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 43159,
+          "name": "G. Fischer",
+          "number": 15,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 25702,
+          "name": "B. Sørensen",
+          "number": 16,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 81840,
+          "name": "F. Petrović",
+          "number": 17,
+          "pos": "G",
+          "grid": null
+        },
+        {
+          "id": 12951,
+          "name": "D. Diallo",
+          "number": 18,
+          "pos": "F",
+          "grid": null
+        }
+      ]
+    }
+  ],
+  "players": [
+    {
+      "id": 26834,
+      "name": "S. Hassan",
+      "teamId": 84541,
+      "number": 1,
+      "pos": "G",
+      "minutes": 90,
+      "rating": 7.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 48137,
+      "name": "N. Sørensen",
+      "teamId": 84541,
+      "number": 2,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.2,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 63281,
+      "name": "J. Marković",
+      "teamId": 84541,
+      "number": 3,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.8,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 79660,
+      "name": "M. Khan",
+      "teamId": 84541,
+      "number": 4,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.1,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 90005,
+      "name": "F. Bianchi",
+      "teamId": 84541,
+      "number": 5,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.1,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 97759,
+      "name": "P. Greco",
+      "teamId": 84541,
+      "number": 6,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.8,
+      "goals": 1,
+      "assists": 0,
+      "shots": 3,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 58274,
+      "name": "A. Reyes",
+      "teamId": 84541,
+      "number": 7,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.6,
+      "goals": 0,
+      "assists": 0,
+      "shots": 1,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 61431,
+      "name": "D. Wagner",
+      "teamId": 84541,
+      "number": 8,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.8,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 95493,
+      "name": "L. Greco",
+      "teamId": 84541,
+      "number": 9,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.1,
+      "goals": 0,
+      "assists": 0,
+      "shots": 4,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 49926,
+      "name": "T. Jovanović",
+      "teamId": 84541,
+      "number": 10,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.6,
+      "goals": 1,
+      "assists": 0,
+      "shots": 3,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 27629,
+      "name": "R. Hassan",
+      "teamId": 84541,
+      "number": 11,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 6.7,
+      "goals": 0,
+      "assists": 1,
+      "shots": 3,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 56349,
+      "name": "C. Dubois",
+      "teamId": 66912,
+      "number": 1,
+      "pos": "G",
+      "minutes": 90,
+      "rating": 6.4,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 8001,
+      "name": "A. Costa",
+      "teamId": 66912,
+      "number": 2,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.1,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 68090,
+      "name": "P. Mensah",
+      "teamId": 66912,
+      "number": 3,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.8,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 53870,
+      "name": "M. Kaur",
+      "teamId": 66912,
+      "number": 4,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.2,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "id": 98114,
+      "name": "D. Dubois",
+      "teamId": 66912,
+      "number": 5,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.4,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 58510,
+      "name": "L. Bianchi",
+      "teamId": 66912,
+      "number": 6,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 1,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 15790,
+      "name": "A. García",
+      "teamId": 66912,
+      "number": 7,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 66684,
+      "name": "L. Wagner",
+      "teamId": 66912,
+      "number": 8,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.4,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 58577,
+      "name": "H. Murphy",
+      "teamId": 66912,
+      "number": 9,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 6.6,
+      "goals": 0,
+      "assists": 0,
+      "shots": 4,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 59320,
+      "name": "G. García",
+      "teamId": 66912,
+      "number": 10,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.6,
+      "goals": 1,
+      "assists": 0,
+      "shots": 4,
+      "shotsOnTarget": 2,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 39836,
+      "name": "T. Horvat",
+      "teamId": 66912,
+      "number": 11,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 3,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    }
+  ]
+}

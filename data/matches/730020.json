@@ -1,0 +1,704 @@
+{
+  "fixtureId": 730020,
+  "fetchedAt": "2026-06-18T19:30:00.000Z",
+  "teams": {
+    "home": {
+      "id": 84323,
+      "name": "United States",
+      "code": "USA",
+      "logo": null,
+      "goals": 2
+    },
+    "away": {
+      "id": 65183,
+      "name": "Australia",
+      "code": "AUS",
+      "logo": null,
+      "goals": 1
+    }
+  },
+  "statsByTeam": [
+    {
+      "teamId": 84323,
+      "name": "United States",
+      "stats": {
+        "shotsOnTarget": 6,
+        "totalShots": 17,
+        "possession": 45,
+        "corners": 5,
+        "fouls": 16,
+        "offsides": 2,
+        "yellow": 2,
+        "red": 0,
+        "saves": 2,
+        "passes": 468,
+        "passesAccurate": 356,
+        "passAccuracy": 76,
+        "xg": 2.8
+      }
+    },
+    {
+      "teamId": 65183,
+      "name": "Australia",
+      "stats": {
+        "shotsOnTarget": 3,
+        "totalShots": 13,
+        "possession": 55,
+        "corners": 9,
+        "fouls": 15,
+        "offsides": 2,
+        "yellow": 1,
+        "red": 0,
+        "saves": 4,
+        "passes": 389,
+        "passesAccurate": 298,
+        "passAccuracy": 77,
+        "xg": 1.4
+      }
+    }
+  ],
+  "events": [
+    {
+      "minute": 7,
+      "extra": null,
+      "teamId": 65183,
+      "teamName": "Australia",
+      "player": "O. Bauer",
+      "playerId": 15167,
+      "assist": "P. Schneider",
+      "assistId": 76180,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    },
+    {
+      "minute": 62,
+      "extra": null,
+      "teamId": 84323,
+      "teamName": "United States",
+      "player": "J. Bauer",
+      "playerId": 15210,
+      "assist": null,
+      "assistId": null,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    },
+    {
+      "minute": 65,
+      "extra": null,
+      "teamId": 84323,
+      "teamName": "United States",
+      "player": "B. Diallo",
+      "playerId": 71964,
+      "assist": "K. Bianchi",
+      "assistId": 94806,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    }
+  ],
+  "lineups": [
+    {
+      "teamId": 84323,
+      "name": "United States",
+      "formation": "4-3-3",
+      "coach": "USA Manager",
+      "startXI": [
+        {
+          "id": 47719,
+          "name": "E. Kaur",
+          "number": 1,
+          "pos": "G",
+          "grid": "1:1"
+        },
+        {
+          "id": 47750,
+          "name": "G. Mensah",
+          "number": 2,
+          "pos": "D",
+          "grid": "2:1"
+        },
+        {
+          "id": 59643,
+          "name": "C. Kaur",
+          "number": 3,
+          "pos": "D",
+          "grid": "2:2"
+        },
+        {
+          "id": 89673,
+          "name": "D. Moreno",
+          "number": 4,
+          "pos": "D",
+          "grid": "2:3"
+        },
+        {
+          "id": 45650,
+          "name": "K. Andersen",
+          "number": 5,
+          "pos": "D",
+          "grid": "2:4"
+        },
+        {
+          "id": 94806,
+          "name": "K. Bianchi",
+          "number": 6,
+          "pos": "M",
+          "grid": "3:1"
+        },
+        {
+          "id": 12856,
+          "name": "M. Müller",
+          "number": 7,
+          "pos": "M",
+          "grid": "3:2"
+        },
+        {
+          "id": 15210,
+          "name": "J. Bauer",
+          "number": 8,
+          "pos": "M",
+          "grid": "3:3"
+        },
+        {
+          "id": 37889,
+          "name": "Christian Pulisic",
+          "number": 9,
+          "pos": "F",
+          "grid": "4:1"
+        },
+        {
+          "id": 78708,
+          "name": "O. Tanaka",
+          "number": 10,
+          "pos": "F",
+          "grid": "4:2"
+        },
+        {
+          "id": 71964,
+          "name": "B. Diallo",
+          "number": 11,
+          "pos": "F",
+          "grid": "4:3"
+        }
+      ],
+      "subs": [
+        {
+          "id": 12208,
+          "name": "D. Bauer",
+          "number": 12,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 6738,
+          "name": "E. Greco",
+          "number": 13,
+          "pos": "F",
+          "grid": null
+        },
+        {
+          "id": 45256,
+          "name": "J. Silva",
+          "number": 14,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 33839,
+          "name": "D. Müller",
+          "number": 15,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 98757,
+          "name": "D. Dubois",
+          "number": 16,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 2902,
+          "name": "C. Okafor",
+          "number": 17,
+          "pos": "G",
+          "grid": null
+        },
+        {
+          "id": 2251,
+          "name": "E. Novák",
+          "number": 18,
+          "pos": "F",
+          "grid": null
+        }
+      ]
+    },
+    {
+      "teamId": 65183,
+      "name": "Australia",
+      "formation": "4-3-3",
+      "coach": "AUS Manager",
+      "startXI": [
+        {
+          "id": 44587,
+          "name": "E. Oliveira",
+          "number": 1,
+          "pos": "G",
+          "grid": "1:1"
+        },
+        {
+          "id": 8131,
+          "name": "D. Hassan",
+          "number": 2,
+          "pos": "D",
+          "grid": "2:1"
+        },
+        {
+          "id": 66608,
+          "name": "J. Eriksen",
+          "number": 3,
+          "pos": "D",
+          "grid": "2:2"
+        },
+        {
+          "id": 44831,
+          "name": "T. Petrović",
+          "number": 4,
+          "pos": "D",
+          "grid": "2:3"
+        },
+        {
+          "id": 25606,
+          "name": "B. Abara",
+          "number": 5,
+          "pos": "D",
+          "grid": "2:4"
+        },
+        {
+          "id": 18846,
+          "name": "H. Traoré",
+          "number": 6,
+          "pos": "M",
+          "grid": "3:1"
+        },
+        {
+          "id": 33632,
+          "name": "V. Murphy",
+          "number": 7,
+          "pos": "M",
+          "grid": "3:2"
+        },
+        {
+          "id": 37444,
+          "name": "S. Tanaka",
+          "number": 8,
+          "pos": "M",
+          "grid": "3:3"
+        },
+        {
+          "id": 76180,
+          "name": "P. Schneider",
+          "number": 9,
+          "pos": "F",
+          "grid": "4:1"
+        },
+        {
+          "id": 15167,
+          "name": "O. Bauer",
+          "number": 10,
+          "pos": "F",
+          "grid": "4:2"
+        },
+        {
+          "id": 6850,
+          "name": "G. Dubois",
+          "number": 11,
+          "pos": "F",
+          "grid": "4:3"
+        }
+      ],
+      "subs": [
+        {
+          "id": 82574,
+          "name": "A. Fischer",
+          "number": 12,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 56838,
+          "name": "G. Costa",
+          "number": 13,
+          "pos": "F",
+          "grid": null
+        },
+        {
+          "id": 66445,
+          "name": "T. Sørensen",
+          "number": 14,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 19327,
+          "name": "O. Jovanović",
+          "number": 15,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 31355,
+          "name": "A. Abara",
+          "number": 16,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 99721,
+          "name": "N. Tanaka",
+          "number": 17,
+          "pos": "G",
+          "grid": null
+        },
+        {
+          "id": 69025,
+          "name": "D. Park",
+          "number": 18,
+          "pos": "F",
+          "grid": null
+        }
+      ]
+    }
+  ],
+  "players": [
+    {
+      "id": 47719,
+      "name": "E. Kaur",
+      "teamId": 84323,
+      "number": 1,
+      "pos": "G",
+      "minutes": 90,
+      "rating": 7.1,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 47750,
+      "name": "G. Mensah",
+      "teamId": 84323,
+      "number": 2,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 59643,
+      "name": "C. Kaur",
+      "teamId": 84323,
+      "number": 3,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 89673,
+      "name": "D. Moreno",
+      "teamId": 84323,
+      "number": 4,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 45650,
+      "name": "K. Andersen",
+      "teamId": 84323,
+      "number": 5,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "id": 94806,
+      "name": "K. Bianchi",
+      "teamId": 84323,
+      "number": 6,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.8,
+      "goals": 0,
+      "assists": 1,
+      "shots": 1,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 12856,
+      "name": "M. Müller",
+      "teamId": 84323,
+      "number": 7,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 1,
+      "shotsOnTarget": 0,
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "id": 15210,
+      "name": "J. Bauer",
+      "teamId": 84323,
+      "number": 8,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.3,
+      "goals": 1,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 37889,
+      "name": "Christian Pulisic",
+      "teamId": 84323,
+      "number": 9,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 6.8,
+      "goals": 0,
+      "assists": 0,
+      "shots": 4,
+      "shotsOnTarget": 2,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 78708,
+      "name": "O. Tanaka",
+      "teamId": 84323,
+      "number": 10,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.1,
+      "goals": 0,
+      "assists": 0,
+      "shots": 4,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 71964,
+      "name": "B. Diallo",
+      "teamId": 84323,
+      "number": 11,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.7,
+      "goals": 1,
+      "assists": 0,
+      "shots": 5,
+      "shotsOnTarget": 2,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 44587,
+      "name": "E. Oliveira",
+      "teamId": 65183,
+      "number": 1,
+      "pos": "G",
+      "minutes": 90,
+      "rating": 6.7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 8131,
+      "name": "D. Hassan",
+      "teamId": 65183,
+      "number": 2,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.5,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 66608,
+      "name": "J. Eriksen",
+      "teamId": 65183,
+      "number": 3,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 44831,
+      "name": "T. Petrović",
+      "teamId": 65183,
+      "number": 4,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 25606,
+      "name": "B. Abara",
+      "teamId": 65183,
+      "number": 5,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 18846,
+      "name": "H. Traoré",
+      "teamId": 65183,
+      "number": 6,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.6,
+      "goals": 0,
+      "assists": 0,
+      "shots": 1,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 33632,
+      "name": "V. Murphy",
+      "teamId": 65183,
+      "number": 7,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.5,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 37444,
+      "name": "S. Tanaka",
+      "teamId": 65183,
+      "number": 8,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 76180,
+      "name": "P. Schneider",
+      "teamId": 65183,
+      "number": 9,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.2,
+      "goals": 0,
+      "assists": 1,
+      "shots": 3,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 15167,
+      "name": "O. Bauer",
+      "teamId": 65183,
+      "number": 10,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.7,
+      "goals": 1,
+      "assists": 0,
+      "shots": 3,
+      "shotsOnTarget": 2,
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "id": 6850,
+      "name": "G. Dubois",
+      "teamId": 65183,
+      "number": 11,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    }
+  ]
+}

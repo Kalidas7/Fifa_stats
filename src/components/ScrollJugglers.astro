@@ -1,0 +1,230 @@
+---
+// The signature scroll piece (§8). Two pinned footballers sit in the left/right gutters;
+// the right one juggles a ball (looping bob), and as you scroll past ~50% the ball travels
+// across the viewport — BEHIND the centre content (lower z-index) — and the left player
+// takes over. Recolour per kit via --kit.
+//
+// PLACEHOLDER ASSET: the figure is an inline SVG so the build is self-contained and free.
+// To use the intended rigged Rive/Lottie character (§8), replace the .sj-figure markup with
+// the <rive-canvas>/<lottie-player> mount and feed it the same --kit var — the GSAP
+// choreography below is asset-agnostic.
+interface Props {
+  leftKit?: string;
+  rightKit?: string;
+  leftNumber?: number | string;
+  rightNumber?: number | string;
+}
+const {
+  leftKit = '#5b8cff',
+  rightKit = '#27c267',
+  leftNumber = 7,
+  rightNumber = 10,
+} = Astro.props;
+
+const figure = (side: 'left' | 'right', num: number | string) => ({ side, num });
+const figures = [figure('left', leftNumber), figure('right', rightNumber)];
+---
+
+<div class="sj" aria-hidden="true" data-scroll-jugglers>
+  {
+    figures.map((f) => (
+      <div
+        class:list={['sj-figure', f.side, { active: f.side === 'right' }]}
+        style={`--kit:${f.side === 'left' ? leftKit : rightKit}`}
+      >
+        <svg viewBox="0 0 90 150" class="sj-svg">
+          <ellipse class="sj-shadow" cx="45" cy="143" rx="24" ry="5" />
+          <g class="sj-body">
+            <rect class="sj-leg back" x="36" y="92" width="10" height="48" rx="5" />
+            <rect class="sj-leg front" x="46" y="92" width="10" height="48" rx="5" />
+            <rect class="sj-shorts" x="31" y="82" width="28" height="22" rx="7" />
+            <rect class="sj-arm" x="22" y="48" width="9" height="34" rx="4.5" />
+            <rect class="sj-arm" x="59" y="48" width="9" height="34" rx="4.5" />
+            <rect class="sj-shirt" x="28" y="42" width="34" height="48" rx="13" />
+            <text class="sj-num" x="45" y="73">{f.num}</text>
+            <circle class="sj-head" cx="45" cy="29" r="14" />
+          </g>
+        </svg>
+      </div>
+    ))
+  }
+
+  <div class="sj-ball" data-sj-ball>
+    <div class="sj-ball-bob">
+      <svg viewBox="0 0 36 36" class="sj-ball-svg">
+        <circle cx="18" cy="18" r="17" fill="#f4f7f5" stroke="#c4d0c8" stroke-width="1" />
+        <path d="M18 6 l7 5 -2.6 8.3 H15.6 L13 11 Z" fill="#0e1713" />
+        <circle cx="18" cy="30" r="2.4" fill="#0e1713" />
+        <circle cx="7" cy="16" r="2" fill="#0e1713" />
+        <circle cx="29" cy="16" r="2" fill="#0e1713" />
+      </svg>
+    </div>
+  </div>
+</div>
+
+<style>
+  .sj {
+    position: fixed;
+    inset: 0;
+    z-index: 1; /* below .site-main (z:2) so the ball passes behind content */
+    pointer-events: none;
+    display: none;
+    overflow: hidden;
+  }
+
+  /* Only show where there's gutter room beside the 1100px content column. */
+  @media (min-width: 1180px) {
+    .sj {
+      display: block;
+    }
+  }
+
+  .sj-figure {
+    position: fixed;
+    bottom: clamp(40px, 12vh, 130px);
+    width: clamp(78px, 7vw, 104px);
+    filter: drop-shadow(0 16px 22px rgba(0, 0, 0, 0.5));
+    opacity: 0.92;
+    transition: opacity 0.4s;
+  }
+  .sj-figure.left {
+    left: clamp(8px, 3vw, 56px);
+  }
+  .sj-figure.right {
+    right: clamp(8px, 3vw, 56px);
+    transform: scaleX(-1); /* face the centre */
+  }
+
+  .sj-svg {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .sj-shadow {
+    fill: rgba(0, 0, 0, 0.5);
+  }
+  .sj-shirt {
+    fill: var(--kit);
+  }
+  .sj-shorts {
+    fill: #11201a;
+  }
+  .sj-arm {
+    fill: color-mix(in srgb, var(--kit) 78%, #0c1410);
+  }
+  .sj-leg {
+    fill: #d8c3a8;
+  }
+  .sj-head {
+    fill: #d8c3a8;
+  }
+  .sj-num {
+    fill: color-mix(in srgb, #ffffff 86%, var(--kit));
+    font-family: var(--font-display), sans-serif;
+    font-size: 16px;
+    text-anchor: middle;
+    opacity: 0.9;
+  }
+
+  /* the active (juggling) figure lifts its front leg in rhythm */
+  .sj-leg.front {
+    transform-origin: 50px 92px;
+  }
+  .sj-figure.active .sj-leg.front {
+    animation: kick 0.95s ease-in-out infinite;
+  }
+  .sj-figure.active .sj-body {
+    animation: bobbody 0.95s ease-in-out infinite;
+  }
+  @keyframes kick {
+    0%,
+    100% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(-26deg);
+    }
+  }
+  @keyframes bobbody {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-3px);
+    }
+  }
+
+  .sj-ball {
+    position: fixed;
+    bottom: clamp(120px, 24vh, 240px);
+    left: 0;
+    width: clamp(26px, 2.4vw, 36px);
+    will-change: transform;
+  }
+  .sj-ball-svg {
+    width: 100%;
+    height: auto;
+    display: block;
+    filter: drop-shadow(0 6px 8px rgba(0, 0, 0, 0.45));
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .sj-figure.active .sj-leg.front,
+    .sj-figure.active .sj-body {
+      animation: none;
+    }
+  }
+</style>
+
+<script>
+  import gsap from 'gsap';
+  import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  const root = document.querySelector<HTMLElement>('[data-scroll-jugglers]');
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const wide = window.matchMedia('(min-width: 1180px)').matches;
+
+  if (root && wide && !reduce) {
+    const ball = root.querySelector<HTMLElement>('[data-sj-ball]')!;
+    const bob = root.querySelector<HTMLElement>('.sj-ball-bob')!;
+    const left = root.querySelector<HTMLElement>('.sj-figure.left')!;
+    const right = root.querySelector<HTMLElement>('.sj-figure.right')!;
+
+    // Continuous juggle bob (independent of scroll), on the inner element.
+    gsap.to(bob, { y: -30, duration: 0.48, ease: 'sine.inOut', yoyo: true, repeat: -1 });
+
+    // Endpoints: just above each player's foot.
+    const ends = () => {
+      const lr = left.getBoundingClientRect();
+      const rr = right.getBoundingClientRect();
+      const bw = ball.offsetWidth;
+      return { leftX: lr.left + lr.width * 0.5 - bw / 2, rightX: rr.left + rr.width * 0.5 - bw / 2 };
+    };
+
+    const place = (p: number) => {
+      const { leftX, rightX } = ends();
+      // hold at right until 42%, hand off across 42–58%, hold at left after.
+      const t = gsap.utils.clamp(0, 1, (p - 0.42) / 0.16);
+      const eased = t < 0.5 ? 2 * t * t : 1 - (-2 * t + 2) ** 2 / 2; // easeInOutQuad
+      gsap.set(ball, { x: rightX + (leftX - rightX) * eased });
+      const onLeft = t >= 0.5;
+      left.classList.toggle('active', onLeft);
+      right.classList.toggle('active', !onLeft);
+    };
+
+    place(0); // initial; onRefresh below corrects for a mid-page load
+
+    ScrollTrigger.create({
+      trigger: document.body,
+      start: 'top top',
+      end: 'bottom bottom',
+      scrub: 0.6,
+      onUpdate: (self) => place(self.progress),
+      onRefresh: (self) => place(self.progress),
+    });
+  }
+</script>

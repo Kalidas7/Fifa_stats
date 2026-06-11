@@ -1,0 +1,116 @@
+---
+import Base from '../layouts/Base.astro';
+import GroupsPreview from '../components/GroupsPreview.astro';
+import GroupTables from '../components/GroupTables.astro';
+import FixturesList from '../components/FixturesList.astro';
+import GoldenBoot from '../components/GoldenBoot.astro';
+import { links } from '../lib/url';
+import { standings, topscorers, currentFixtureWindow, lastUpdated } from '../lib/data';
+
+const windowFx = currentFixtureWindow();
+const hasFixtures = windowFx.length > 0;
+const hasStandings = standings.length > 0;
+const hasScorers = topscorers.length > 0;
+const updatedAt = lastUpdated();
+---
+
+<Base current="home" updatedAt={updatedAt}>
+  <section class="hero">
+    <div class="container">
+      <p class="hero-kicker">⚽ 11 Jun – 19 Jul 2026 · USA · Canada · Mexico</p>
+      <h1 class="hero-title">World Cup <span class="accentword">2026</span><br />Stats, live-ish.</h1>
+      <p class="hero-sub">
+        Fixtures, group tables, the Golden Boot race and per-match shots-on-target — pulled once after
+        each final whistle and served static. No live polling, no backend, zero running cost.
+      </p>
+      <div class="hero-meta">
+        <span class="meta-chip"><b>48</b> Teams</span>
+        <span class="meta-chip"><b>12</b> Groups</span>
+        <span class="meta-chip"><b>104</b> Matches</span>
+        <span class="meta-chip"><b>16</b> Host Cities</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <!-- FIXTURES -->
+    <section class="section" id="fixtures">
+      <div class="section-head">
+        <h2 class="section-title">Fixtures</h2>
+        <span class="section-note">Kickoffs in your local time</span>
+      </div>
+      {
+        hasFixtures ? (
+          <Fragment>
+            <FixturesList fixtures={windowFx} />
+            <p class="more-link">
+              <a href={links.standings()}>Full schedule &amp; standings →</a>
+            </p>
+          </Fragment>
+        ) : (
+          <div class="empty-state">
+            <div class="es-emoji">🗓️</div>
+            <h3>Schedule loads after the first sync</h3>
+            <p>
+              Once the data pipeline runs, all 104 fixtures appear here grouped by day, with live status and
+              scores. Finished matches become clickable for full stats.
+            </p>
+          </div>
+        )
+      }
+    </section>
+
+    <!-- GROUP STANDINGS -->
+    <section class="section" id="groups">
+      <div class="section-head">
+        <h2 class="section-title">Groups</h2>
+        <span class="section-note">
+          {hasStandings ? 'Top 2 advance · 8 best 3rd-placed too' : 'Final draw · standings update post-match'}
+        </span>
+      </div>
+      {hasStandings ? <GroupTables /> : <GroupsPreview />}
+    </section>
+
+    <!-- GOLDEN BOOT -->
+    <section class="section" id="golden-boot">
+      <div class="section-head">
+        <h2 class="section-title">Golden Boot</h2>
+        <span class="section-note">Goals · then assists · then minutes</span>
+      </div>
+      {
+        hasScorers ? (
+          <GoldenBoot />
+        ) : (
+          <div class="empty-state">
+            <div class="es-emoji">👟</div>
+            <h3>The race starts at kickoff</h3>
+            <p>The Golden Boot leaderboard fills in as goals go in — ranked by goals, then assists, then minutes.</p>
+          </div>
+        )
+      }
+    </section>
+  </div>
+</Base>
+
+<style>
+  .more-link {
+    margin-top: 14px;
+    text-align: center;
+  }
+  .more-link a {
+    font-family: var(--font-head);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    font-size: 0.85rem;
+    color: var(--turf-bright);
+    padding: 8px 16px;
+    border: 1px solid var(--line-2);
+    border-radius: 999px;
+    transition: background 0.15s, border-color 0.15s;
+  }
+  .more-link a:hover {
+    background: var(--surface-2);
+    border-color: var(--turf);
+  }
+</style>

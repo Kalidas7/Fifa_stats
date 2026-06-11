@@ -1,0 +1,762 @@
+{
+  "fixtureId": 730055,
+  "fetchedAt": "2026-06-18T19:30:00.000Z",
+  "teams": {
+    "home": {
+      "id": 65184,
+      "name": "Austria",
+      "code": "AUT",
+      "logo": null,
+      "goals": 4
+    },
+    "away": {
+      "id": 73645,
+      "name": "Jordan",
+      "code": "JOR",
+      "logo": null,
+      "goals": 4
+    }
+  },
+  "statsByTeam": [
+    {
+      "teamId": 65184,
+      "name": "Austria",
+      "stats": {
+        "shotsOnTarget": 7,
+        "totalShots": 20,
+        "possession": 52,
+        "corners": 2,
+        "fouls": 9,
+        "offsides": 2,
+        "yellow": 0,
+        "red": 0,
+        "saves": 1,
+        "passes": 524,
+        "passesAccurate": 412,
+        "passAccuracy": 79
+      }
+    },
+    {
+      "teamId": 73645,
+      "name": "Jordan",
+      "stats": {
+        "shotsOnTarget": 5,
+        "totalShots": 17,
+        "possession": 48,
+        "corners": 10,
+        "fouls": 8,
+        "offsides": 0,
+        "yellow": 2,
+        "red": 0,
+        "saves": 3,
+        "passes": 551,
+        "passesAccurate": 417,
+        "passAccuracy": 76
+      }
+    }
+  ],
+  "events": [
+    {
+      "minute": 1,
+      "extra": null,
+      "teamId": 73645,
+      "teamName": "Jordan",
+      "player": "M. Novák",
+      "playerId": 89267,
+      "assist": null,
+      "assistId": null,
+      "type": "Goal",
+      "detail": "Penalty"
+    },
+    {
+      "minute": 7,
+      "extra": null,
+      "teamId": 73645,
+      "teamName": "Jordan",
+      "player": "V. Castro",
+      "playerId": 30121,
+      "assist": null,
+      "assistId": null,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    },
+    {
+      "minute": 18,
+      "extra": null,
+      "teamId": 65184,
+      "teamName": "Austria",
+      "player": "M. Müller",
+      "playerId": 66245,
+      "assist": "C. Dubois",
+      "assistId": 76605,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    },
+    {
+      "minute": 45,
+      "extra": null,
+      "teamId": 73645,
+      "teamName": "Jordan",
+      "player": "V. Castro",
+      "playerId": 30121,
+      "assist": null,
+      "assistId": null,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    },
+    {
+      "minute": 47,
+      "extra": null,
+      "teamId": 65184,
+      "teamName": "Austria",
+      "player": "C. Dubois",
+      "playerId": 76605,
+      "assist": null,
+      "assistId": null,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    },
+    {
+      "minute": 68,
+      "extra": null,
+      "teamId": 65184,
+      "teamName": "Austria",
+      "player": "A. Müller",
+      "playerId": 50831,
+      "assist": "S. Hassan",
+      "assistId": 32491,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    },
+    {
+      "minute": 69,
+      "extra": null,
+      "teamId": 65184,
+      "teamName": "Austria",
+      "player": "S. Hassan",
+      "playerId": 32491,
+      "assist": "A. Müller",
+      "assistId": 50831,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    },
+    {
+      "minute": 80,
+      "extra": null,
+      "teamId": 73645,
+      "teamName": "Jordan",
+      "player": "D. Marković",
+      "playerId": 36411,
+      "assist": null,
+      "assistId": null,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    }
+  ],
+  "lineups": [
+    {
+      "teamId": 65184,
+      "name": "Austria",
+      "formation": "4-3-3",
+      "coach": "AUT Manager",
+      "startXI": [
+        {
+          "id": 83382,
+          "name": "O. Walsh",
+          "number": 1,
+          "pos": "G",
+          "grid": "1:1"
+        },
+        {
+          "id": 96388,
+          "name": "O. Lindholm",
+          "number": 2,
+          "pos": "D",
+          "grid": "2:1"
+        },
+        {
+          "id": 88597,
+          "name": "G. Romero",
+          "number": 3,
+          "pos": "D",
+          "grid": "2:2"
+        },
+        {
+          "id": 44052,
+          "name": "L. Moreno",
+          "number": 4,
+          "pos": "D",
+          "grid": "2:3"
+        },
+        {
+          "id": 25113,
+          "name": "H. García",
+          "number": 5,
+          "pos": "D",
+          "grid": "2:4"
+        },
+        {
+          "id": 3968,
+          "name": "R. Müller",
+          "number": 6,
+          "pos": "M",
+          "grid": "3:1"
+        },
+        {
+          "id": 32491,
+          "name": "S. Hassan",
+          "number": 7,
+          "pos": "M",
+          "grid": "3:2"
+        },
+        {
+          "id": 66245,
+          "name": "M. Müller",
+          "number": 8,
+          "pos": "M",
+          "grid": "3:3"
+        },
+        {
+          "id": 50831,
+          "name": "A. Müller",
+          "number": 9,
+          "pos": "F",
+          "grid": "4:1"
+        },
+        {
+          "id": 76605,
+          "name": "C. Dubois",
+          "number": 10,
+          "pos": "F",
+          "grid": "4:2"
+        },
+        {
+          "id": 38912,
+          "name": "B. Costa",
+          "number": 11,
+          "pos": "F",
+          "grid": "4:3"
+        }
+      ],
+      "subs": [
+        {
+          "id": 42645,
+          "name": "G. Marković",
+          "number": 12,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 35550,
+          "name": "L. Larsson",
+          "number": 13,
+          "pos": "F",
+          "grid": null
+        },
+        {
+          "id": 12731,
+          "name": "V. Eriksen",
+          "number": 14,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 23659,
+          "name": "M. Reyes",
+          "number": 15,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 18485,
+          "name": "R. Abara",
+          "number": 16,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 49956,
+          "name": "L. Fischer",
+          "number": 17,
+          "pos": "G",
+          "grid": null
+        },
+        {
+          "id": 38882,
+          "name": "H. Dubois",
+          "number": 18,
+          "pos": "F",
+          "grid": null
+        }
+      ]
+    },
+    {
+      "teamId": 73645,
+      "name": "Jordan",
+      "formation": "4-3-3",
+      "coach": "JOR Manager",
+      "startXI": [
+        {
+          "id": 36202,
+          "name": "T. Oliveira",
+          "number": 1,
+          "pos": "G",
+          "grid": "1:1"
+        },
+        {
+          "id": 33923,
+          "name": "G. Abara",
+          "number": 2,
+          "pos": "D",
+          "grid": "2:1"
+        },
+        {
+          "id": 41757,
+          "name": "A. Jovanović",
+          "number": 3,
+          "pos": "D",
+          "grid": "2:2"
+        },
+        {
+          "id": 89241,
+          "name": "V. Wagner",
+          "number": 4,
+          "pos": "D",
+          "grid": "2:3"
+        },
+        {
+          "id": 3747,
+          "name": "B. Haddad",
+          "number": 5,
+          "pos": "D",
+          "grid": "2:4"
+        },
+        {
+          "id": 30121,
+          "name": "V. Castro",
+          "number": 6,
+          "pos": "M",
+          "grid": "3:1"
+        },
+        {
+          "id": 8857,
+          "name": "N. Rossi",
+          "number": 7,
+          "pos": "M",
+          "grid": "3:2"
+        },
+        {
+          "id": 36411,
+          "name": "D. Marković",
+          "number": 8,
+          "pos": "M",
+          "grid": "3:3"
+        },
+        {
+          "id": 6851,
+          "name": "T. Larsson",
+          "number": 9,
+          "pos": "F",
+          "grid": "4:1"
+        },
+        {
+          "id": 47313,
+          "name": "C. Schneider",
+          "number": 10,
+          "pos": "F",
+          "grid": "4:2"
+        },
+        {
+          "id": 89267,
+          "name": "M. Novák",
+          "number": 11,
+          "pos": "F",
+          "grid": "4:3"
+        }
+      ],
+      "subs": [
+        {
+          "id": 93325,
+          "name": "L. Kovač",
+          "number": 12,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 56307,
+          "name": "J. Fischer",
+          "number": 13,
+          "pos": "F",
+          "grid": null
+        },
+        {
+          "id": 47796,
+          "name": "A. Hassan",
+          "number": 14,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 42638,
+          "name": "S. Greco",
+          "number": 15,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 2691,
+          "name": "L. Costa",
+          "number": 16,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 15157,
+          "name": "S. Oliveira",
+          "number": 17,
+          "pos": "G",
+          "grid": null
+        },
+        {
+          "id": 203,
+          "name": "R. Horvat",
+          "number": 18,
+          "pos": "F",
+          "grid": null
+        }
+      ]
+    }
+  ],
+  "players": [
+    {
+      "id": 83382,
+      "name": "O. Walsh",
+      "teamId": 65184,
+      "number": 1,
+      "pos": "G",
+      "minutes": 90,
+      "rating": 6.6,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 96388,
+      "name": "O. Lindholm",
+      "teamId": 65184,
+      "number": 2,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.9,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 88597,
+      "name": "G. Romero",
+      "teamId": 65184,
+      "number": 3,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 44052,
+      "name": "L. Moreno",
+      "teamId": 65184,
+      "number": 4,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 25113,
+      "name": "H. García",
+      "teamId": 65184,
+      "number": 5,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.2,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 3968,
+      "name": "R. Müller",
+      "teamId": 65184,
+      "number": 6,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.2,
+      "goals": 0,
+      "assists": 0,
+      "shots": 1,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 32491,
+      "name": "S. Hassan",
+      "teamId": 65184,
+      "number": 7,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 8.1,
+      "goals": 1,
+      "assists": 1,
+      "shots": 3,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 66245,
+      "name": "M. Müller",
+      "teamId": 65184,
+      "number": 8,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7,
+      "goals": 1,
+      "assists": 0,
+      "shots": 3,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 50831,
+      "name": "A. Müller",
+      "teamId": 65184,
+      "number": 9,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.2,
+      "goals": 1,
+      "assists": 1,
+      "shots": 5,
+      "shotsOnTarget": 2,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 76605,
+      "name": "C. Dubois",
+      "teamId": 65184,
+      "number": 10,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.8,
+      "goals": 1,
+      "assists": 1,
+      "shots": 4,
+      "shotsOnTarget": 2,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 38912,
+      "name": "B. Costa",
+      "teamId": 65184,
+      "number": 11,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.1,
+      "goals": 0,
+      "assists": 0,
+      "shots": 4,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 36202,
+      "name": "T. Oliveira",
+      "teamId": 73645,
+      "number": 1,
+      "pos": "G",
+      "minutes": 90,
+      "rating": 6.2,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "id": 33923,
+      "name": "G. Abara",
+      "teamId": 73645,
+      "number": 2,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.5,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 41757,
+      "name": "A. Jovanović",
+      "teamId": 73645,
+      "number": 3,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.4,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "id": 89241,
+      "name": "V. Wagner",
+      "teamId": 73645,
+      "number": 4,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.2,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 3747,
+      "name": "B. Haddad",
+      "teamId": 73645,
+      "number": 5,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 30121,
+      "name": "V. Castro",
+      "teamId": 73645,
+      "number": 6,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 8.1,
+      "goals": 2,
+      "assists": 0,
+      "shots": 4,
+      "shotsOnTarget": 2,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 8857,
+      "name": "N. Rossi",
+      "teamId": 73645,
+      "number": 7,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.1,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 36411,
+      "name": "D. Marković",
+      "teamId": 73645,
+      "number": 8,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.1,
+      "goals": 1,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 6851,
+      "name": "T. Larsson",
+      "teamId": 73645,
+      "number": 9,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 6.4,
+      "goals": 0,
+      "assists": 0,
+      "shots": 4,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 47313,
+      "name": "C. Schneider",
+      "teamId": 73645,
+      "number": 10,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.1,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 89267,
+      "name": "M. Novák",
+      "teamId": 73645,
+      "number": 11,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.1,
+      "goals": 1,
+      "assists": 0,
+      "shots": 3,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+name: Deploy site (GitHub Pages)
+
+# Builds the static site and publishes it to GitHub Pages.
+# Runs on every push to main (including the data commits made by update.yml),
+# so the live site refreshes automatically whenever new match data lands.
+#
+# Using a different host (Cloudflare Pages / Vercel / Netlify)? You can delete this
+# file — those hosts build on push themselves. Build command: `npm run build`,
+# output directory: `dist`, Node 20. See README "Deployment".
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Least-privilege permissions required by the Pages deploy.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow one concurrent deployment; don't cancel an in-progress one.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - name: Configure Pages
+        id: pages
+        uses: actions/configure-pages@v5
+      - name: Build
+        # configure-pages hands us the correct origin + sub-path so links work whether
+        # this is a user/org root site or a project site under /<repo>/.
+        env:
+          SITE_URL: ${{ steps.pages.outputs.origin }}
+          BASE_PATH: ${{ steps.pages.outputs.base_path }}
+        run: npm run build
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

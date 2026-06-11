@@ -1,0 +1,716 @@
+{
+  "fixtureId": 730012,
+  "fetchedAt": "2026-06-18T19:30:00.000Z",
+  "teams": {
+    "home": {
+      "id": 66033,
+      "name": "Brazil",
+      "code": "BRA",
+      "logo": null,
+      "goals": 0
+    },
+    "away": {
+      "id": 76094,
+      "name": "Morocco",
+      "code": "MAR",
+      "logo": null,
+      "goals": 4
+    }
+  },
+  "statsByTeam": [
+    {
+      "teamId": 66033,
+      "name": "Brazil",
+      "stats": {
+        "shotsOnTarget": 2,
+        "totalShots": 10,
+        "possession": 53,
+        "corners": 6,
+        "fouls": 16,
+        "offsides": 3,
+        "yellow": 0,
+        "red": 0,
+        "saves": 3,
+        "passes": 328,
+        "passesAccurate": 259,
+        "passAccuracy": 79,
+        "xg": 0.6
+      }
+    },
+    {
+      "teamId": 76094,
+      "name": "Morocco",
+      "stats": {
+        "shotsOnTarget": 7,
+        "totalShots": 19,
+        "possession": 47,
+        "corners": 6,
+        "fouls": 14,
+        "offsides": 3,
+        "yellow": 2,
+        "red": 0,
+        "saves": 2,
+        "passes": 460,
+        "passesAccurate": 344,
+        "passAccuracy": 75,
+        "xg": 4.2
+      }
+    }
+  ],
+  "events": [
+    {
+      "minute": 12,
+      "extra": null,
+      "teamId": 76094,
+      "teamName": "Morocco",
+      "player": "D. Eriksen",
+      "playerId": 57387,
+      "assist": "G. Silva",
+      "assistId": 88474,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    },
+    {
+      "minute": 18,
+      "extra": null,
+      "teamId": 76094,
+      "teamName": "Morocco",
+      "player": "D. Suzuki",
+      "playerId": 78637,
+      "assist": "A. Hassan",
+      "assistId": 84389,
+      "type": "Goal",
+      "detail": "Penalty"
+    },
+    {
+      "minute": 75,
+      "extra": null,
+      "teamId": 76094,
+      "teamName": "Morocco",
+      "player": "K. Murphy",
+      "playerId": 76106,
+      "assist": "A. Hassan",
+      "assistId": 84389,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    },
+    {
+      "minute": 78,
+      "extra": null,
+      "teamId": 76094,
+      "teamName": "Morocco",
+      "player": "D. Suzuki",
+      "playerId": 78637,
+      "assist": "F. Fischer",
+      "assistId": 56760,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    }
+  ],
+  "lineups": [
+    {
+      "teamId": 66033,
+      "name": "Brazil",
+      "formation": "4-3-3",
+      "coach": "BRA Manager",
+      "startXI": [
+        {
+          "id": 73814,
+          "name": "D. Abara",
+          "number": 1,
+          "pos": "G",
+          "grid": "1:1"
+        },
+        {
+          "id": 91862,
+          "name": "O. Greco",
+          "number": 2,
+          "pos": "D",
+          "grid": "2:1"
+        },
+        {
+          "id": 35404,
+          "name": "C. Dubois",
+          "number": 3,
+          "pos": "D",
+          "grid": "2:2"
+        },
+        {
+          "id": 99835,
+          "name": "C. Novák",
+          "number": 4,
+          "pos": "D",
+          "grid": "2:3"
+        },
+        {
+          "id": 17112,
+          "name": "A. Tanaka",
+          "number": 5,
+          "pos": "D",
+          "grid": "2:4"
+        },
+        {
+          "id": 86456,
+          "name": "K. Castro",
+          "number": 6,
+          "pos": "M",
+          "grid": "3:1"
+        },
+        {
+          "id": 41331,
+          "name": "H. Khan",
+          "number": 7,
+          "pos": "M",
+          "grid": "3:2"
+        },
+        {
+          "id": 92602,
+          "name": "R. Diallo",
+          "number": 8,
+          "pos": "M",
+          "grid": "3:3"
+        },
+        {
+          "id": 64377,
+          "name": "Vinícius Júnior",
+          "number": 9,
+          "pos": "F",
+          "grid": "4:1"
+        },
+        {
+          "id": 67866,
+          "name": "C. Ali",
+          "number": 10,
+          "pos": "F",
+          "grid": "4:2"
+        },
+        {
+          "id": 34714,
+          "name": "G. Ferreira",
+          "number": 11,
+          "pos": "F",
+          "grid": "4:3"
+        }
+      ],
+      "subs": [
+        {
+          "id": 45867,
+          "name": "D. Sørensen",
+          "number": 12,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 70944,
+          "name": "B. Oliveira",
+          "number": 13,
+          "pos": "F",
+          "grid": null
+        },
+        {
+          "id": 29471,
+          "name": "C. Lindholm",
+          "number": 14,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 60992,
+          "name": "D. Suzuki",
+          "number": 15,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 7171,
+          "name": "V. Costa",
+          "number": 16,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 59961,
+          "name": "R. Nguyen",
+          "number": 17,
+          "pos": "G",
+          "grid": null
+        },
+        {
+          "id": 52639,
+          "name": "D. Greco",
+          "number": 18,
+          "pos": "F",
+          "grid": null
+        }
+      ]
+    },
+    {
+      "teamId": 76094,
+      "name": "Morocco",
+      "formation": "4-3-3",
+      "coach": "MAR Manager",
+      "startXI": [
+        {
+          "id": 20115,
+          "name": "G. Ferreira",
+          "number": 1,
+          "pos": "G",
+          "grid": "1:1"
+        },
+        {
+          "id": 21358,
+          "name": "A. Bauer",
+          "number": 2,
+          "pos": "D",
+          "grid": "2:1"
+        },
+        {
+          "id": 48476,
+          "name": "R. Fischer",
+          "number": 3,
+          "pos": "D",
+          "grid": "2:2"
+        },
+        {
+          "id": 76132,
+          "name": "J. Nguyen",
+          "number": 4,
+          "pos": "D",
+          "grid": "2:3"
+        },
+        {
+          "id": 74450,
+          "name": "G. Murphy",
+          "number": 5,
+          "pos": "D",
+          "grid": "2:4"
+        },
+        {
+          "id": 57387,
+          "name": "D. Eriksen",
+          "number": 6,
+          "pos": "M",
+          "grid": "3:1"
+        },
+        {
+          "id": 56760,
+          "name": "F. Fischer",
+          "number": 7,
+          "pos": "M",
+          "grid": "3:2"
+        },
+        {
+          "id": 88474,
+          "name": "G. Silva",
+          "number": 8,
+          "pos": "M",
+          "grid": "3:3"
+        },
+        {
+          "id": 84389,
+          "name": "A. Hassan",
+          "number": 9,
+          "pos": "F",
+          "grid": "4:1"
+        },
+        {
+          "id": 78637,
+          "name": "D. Suzuki",
+          "number": 10,
+          "pos": "F",
+          "grid": "4:2"
+        },
+        {
+          "id": 76106,
+          "name": "K. Murphy",
+          "number": 11,
+          "pos": "F",
+          "grid": "4:3"
+        }
+      ],
+      "subs": [
+        {
+          "id": 42148,
+          "name": "G. Schneider",
+          "number": 12,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 66646,
+          "name": "R. Bianchi",
+          "number": 13,
+          "pos": "F",
+          "grid": null
+        },
+        {
+          "id": 57501,
+          "name": "S. Tanaka",
+          "number": 14,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 43236,
+          "name": "K. Jovanović",
+          "number": 15,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 83770,
+          "name": "H. Fischer",
+          "number": 16,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 84693,
+          "name": "E. Ferreira",
+          "number": 17,
+          "pos": "G",
+          "grid": null
+        },
+        {
+          "id": 93415,
+          "name": "A. Okafor",
+          "number": 18,
+          "pos": "F",
+          "grid": null
+        }
+      ]
+    }
+  ],
+  "players": [
+    {
+      "id": 73814,
+      "name": "D. Abara",
+      "teamId": 66033,
+      "number": 1,
+      "pos": "G",
+      "minutes": 90,
+      "rating": 6.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 91862,
+      "name": "O. Greco",
+      "teamId": 66033,
+      "number": 2,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.8,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 35404,
+      "name": "C. Dubois",
+      "teamId": 66033,
+      "number": 3,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 99835,
+      "name": "C. Novák",
+      "teamId": 66033,
+      "number": 4,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 17112,
+      "name": "A. Tanaka",
+      "teamId": 66033,
+      "number": 5,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.4,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 86456,
+      "name": "K. Castro",
+      "teamId": 66033,
+      "number": 6,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.5,
+      "goals": 0,
+      "assists": 0,
+      "shots": 1,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 41331,
+      "name": "H. Khan",
+      "teamId": 66033,
+      "number": 7,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 1,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 92602,
+      "name": "R. Diallo",
+      "teamId": 66033,
+      "number": 8,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 1,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 64377,
+      "name": "Vinícius Júnior",
+      "teamId": 66033,
+      "number": 9,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 3,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 67866,
+      "name": "C. Ali",
+      "teamId": 66033,
+      "number": 10,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 6.8,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 34714,
+      "name": "G. Ferreira",
+      "teamId": 66033,
+      "number": 11,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 20115,
+      "name": "G. Ferreira",
+      "teamId": 76094,
+      "number": 1,
+      "pos": "G",
+      "minutes": 90,
+      "rating": 6.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 21358,
+      "name": "A. Bauer",
+      "teamId": 76094,
+      "number": 2,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.4,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 48476,
+      "name": "R. Fischer",
+      "teamId": 76094,
+      "number": 3,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 76132,
+      "name": "J. Nguyen",
+      "teamId": 76094,
+      "number": 4,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "id": 74450,
+      "name": "G. Murphy",
+      "teamId": 76094,
+      "number": 5,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.4,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 57387,
+      "name": "D. Eriksen",
+      "teamId": 76094,
+      "number": 6,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.2,
+      "goals": 1,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 56760,
+      "name": "F. Fischer",
+      "teamId": 76094,
+      "number": 7,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.1,
+      "goals": 0,
+      "assists": 1,
+      "shots": 1,
+      "shotsOnTarget": 0,
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "id": 88474,
+      "name": "G. Silva",
+      "teamId": 76094,
+      "number": 8,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7,
+      "goals": 0,
+      "assists": 1,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 84389,
+      "name": "A. Hassan",
+      "teamId": 76094,
+      "number": 9,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.9,
+      "goals": 0,
+      "assists": 2,
+      "shots": 4,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 78637,
+      "name": "D. Suzuki",
+      "teamId": 76094,
+      "number": 10,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.8,
+      "goals": 2,
+      "assists": 0,
+      "shots": 6,
+      "shotsOnTarget": 4,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 76106,
+      "name": "K. Murphy",
+      "teamId": 76094,
+      "number": 11,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.7,
+      "goals": 1,
+      "assists": 0,
+      "shots": 4,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    }
+  ]
+}

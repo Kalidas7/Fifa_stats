@@ -1,0 +1,704 @@
+{
+  "fixtureId": 730048,
+  "fetchedAt": "2026-06-18T19:30:00.000Z",
+  "teams": {
+    "home": {
+      "id": 69877,
+      "name": "France",
+      "code": "FRA",
+      "logo": null,
+      "goals": 0
+    },
+    "away": {
+      "id": 81980,
+      "name": "Senegal",
+      "code": "SEN",
+      "logo": null,
+      "goals": 3
+    }
+  },
+  "statsByTeam": [
+    {
+      "teamId": 69877,
+      "name": "France",
+      "stats": {
+        "shotsOnTarget": 1,
+        "totalShots": 14,
+        "possession": 50,
+        "corners": 3,
+        "fouls": 14,
+        "offsides": 0,
+        "yellow": 1,
+        "red": 0,
+        "saves": 3,
+        "passes": 617,
+        "passesAccurate": 462,
+        "passAccuracy": 75,
+        "xg": 0.5
+      }
+    },
+    {
+      "teamId": 81980,
+      "name": "Senegal",
+      "stats": {
+        "shotsOnTarget": 6,
+        "totalShots": 16,
+        "possession": 50,
+        "corners": 5,
+        "fouls": 10,
+        "offsides": 2,
+        "yellow": 2,
+        "red": 0,
+        "saves": 1,
+        "passes": 411,
+        "passesAccurate": 309,
+        "passAccuracy": 75,
+        "xg": 3.5
+      }
+    }
+  ],
+  "events": [
+    {
+      "minute": 29,
+      "extra": null,
+      "teamId": 81980,
+      "teamName": "Senegal",
+      "player": "B. Larsson",
+      "playerId": 33468,
+      "assist": "J. Romero",
+      "assistId": 64046,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    },
+    {
+      "minute": 65,
+      "extra": null,
+      "teamId": 81980,
+      "teamName": "Senegal",
+      "player": "A. Greco",
+      "playerId": 52943,
+      "assist": "B. Larsson",
+      "assistId": 33468,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    },
+    {
+      "minute": 74,
+      "extra": null,
+      "teamId": 81980,
+      "teamName": "Senegal",
+      "player": "A. Greco",
+      "playerId": 52943,
+      "assist": "T. García",
+      "assistId": 28681,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    }
+  ],
+  "lineups": [
+    {
+      "teamId": 69877,
+      "name": "France",
+      "formation": "4-3-3",
+      "coach": "FRA Manager",
+      "startXI": [
+        {
+          "id": 66086,
+          "name": "G. Ali",
+          "number": 1,
+          "pos": "G",
+          "grid": "1:1"
+        },
+        {
+          "id": 70154,
+          "name": "E. Rossi",
+          "number": 2,
+          "pos": "D",
+          "grid": "2:1"
+        },
+        {
+          "id": 20894,
+          "name": "K. Moreno",
+          "number": 3,
+          "pos": "D",
+          "grid": "2:2"
+        },
+        {
+          "id": 33039,
+          "name": "N. Sørensen",
+          "number": 4,
+          "pos": "D",
+          "grid": "2:3"
+        },
+        {
+          "id": 70318,
+          "name": "S. Fischer",
+          "number": 5,
+          "pos": "D",
+          "grid": "2:4"
+        },
+        {
+          "id": 62029,
+          "name": "N. Ali",
+          "number": 6,
+          "pos": "M",
+          "grid": "3:1"
+        },
+        {
+          "id": 85772,
+          "name": "R. Oliveira",
+          "number": 7,
+          "pos": "M",
+          "grid": "3:2"
+        },
+        {
+          "id": 45135,
+          "name": "A. Eriksen",
+          "number": 8,
+          "pos": "M",
+          "grid": "3:3"
+        },
+        {
+          "id": 70768,
+          "name": "Kylian Mbappé",
+          "number": 9,
+          "pos": "F",
+          "grid": "4:1"
+        },
+        {
+          "id": 33433,
+          "name": "H. Rossi",
+          "number": 10,
+          "pos": "F",
+          "grid": "4:2"
+        },
+        {
+          "id": 11841,
+          "name": "B. Ali",
+          "number": 11,
+          "pos": "F",
+          "grid": "4:3"
+        }
+      ],
+      "subs": [
+        {
+          "id": 94669,
+          "name": "J. Reyes",
+          "number": 12,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 59245,
+          "name": "T. Kovač",
+          "number": 13,
+          "pos": "F",
+          "grid": null
+        },
+        {
+          "id": 16925,
+          "name": "M. Eriksen",
+          "number": 14,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 78453,
+          "name": "L. Kovač",
+          "number": 15,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 63629,
+          "name": "N. Dubois",
+          "number": 16,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 94743,
+          "name": "O. Oliveira",
+          "number": 17,
+          "pos": "G",
+          "grid": null
+        },
+        {
+          "id": 83809,
+          "name": "J. Petrović",
+          "number": 18,
+          "pos": "F",
+          "grid": null
+        }
+      ]
+    },
+    {
+      "teamId": 81980,
+      "name": "Senegal",
+      "formation": "4-3-3",
+      "coach": "SEN Manager",
+      "startXI": [
+        {
+          "id": 505,
+          "name": "H. Walsh",
+          "number": 1,
+          "pos": "G",
+          "grid": "1:1"
+        },
+        {
+          "id": 40836,
+          "name": "P. Fischer",
+          "number": 2,
+          "pos": "D",
+          "grid": "2:1"
+        },
+        {
+          "id": 88076,
+          "name": "R. Costa",
+          "number": 3,
+          "pos": "D",
+          "grid": "2:2"
+        },
+        {
+          "id": 39927,
+          "name": "O. Okafor",
+          "number": 4,
+          "pos": "D",
+          "grid": "2:3"
+        },
+        {
+          "id": 67466,
+          "name": "H. Andersen",
+          "number": 5,
+          "pos": "D",
+          "grid": "2:4"
+        },
+        {
+          "id": 26268,
+          "name": "N. Andersen",
+          "number": 6,
+          "pos": "M",
+          "grid": "3:1"
+        },
+        {
+          "id": 52943,
+          "name": "A. Greco",
+          "number": 7,
+          "pos": "M",
+          "grid": "3:2"
+        },
+        {
+          "id": 28681,
+          "name": "T. García",
+          "number": 8,
+          "pos": "M",
+          "grid": "3:3"
+        },
+        {
+          "id": 64046,
+          "name": "J. Romero",
+          "number": 9,
+          "pos": "F",
+          "grid": "4:1"
+        },
+        {
+          "id": 33468,
+          "name": "B. Larsson",
+          "number": 10,
+          "pos": "F",
+          "grid": "4:2"
+        },
+        {
+          "id": 61690,
+          "name": "L. Andersen",
+          "number": 11,
+          "pos": "F",
+          "grid": "4:3"
+        }
+      ],
+      "subs": [
+        {
+          "id": 26442,
+          "name": "V. Park",
+          "number": 12,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 37718,
+          "name": "D. Haddad",
+          "number": 13,
+          "pos": "F",
+          "grid": null
+        },
+        {
+          "id": 47445,
+          "name": "B. Jovanović",
+          "number": 14,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 80709,
+          "name": "G. Fischer",
+          "number": 15,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 80359,
+          "name": "E. Wagner",
+          "number": 16,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 12629,
+          "name": "B. Bauer",
+          "number": 17,
+          "pos": "G",
+          "grid": null
+        },
+        {
+          "id": 69243,
+          "name": "R. Diallo",
+          "number": 18,
+          "pos": "F",
+          "grid": null
+        }
+      ]
+    }
+  ],
+  "players": [
+    {
+      "id": 66086,
+      "name": "G. Ali",
+      "teamId": 69877,
+      "number": 1,
+      "pos": "G",
+      "minutes": 90,
+      "rating": 6.7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 70154,
+      "name": "E. Rossi",
+      "teamId": 69877,
+      "number": 2,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.4,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 20894,
+      "name": "K. Moreno",
+      "teamId": 69877,
+      "number": 3,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 33039,
+      "name": "N. Sørensen",
+      "teamId": 69877,
+      "number": 4,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.1,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 70318,
+      "name": "S. Fischer",
+      "teamId": 69877,
+      "number": 5,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 62029,
+      "name": "N. Ali",
+      "teamId": 69877,
+      "number": 6,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.9,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 85772,
+      "name": "R. Oliveira",
+      "teamId": 69877,
+      "number": 7,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.2,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 45135,
+      "name": "A. Eriksen",
+      "teamId": 69877,
+      "number": 8,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 1,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 70768,
+      "name": "Kylian Mbappé",
+      "teamId": 69877,
+      "number": 9,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.1,
+      "goals": 0,
+      "assists": 0,
+      "shots": 4,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 33433,
+      "name": "H. Rossi",
+      "teamId": 69877,
+      "number": 10,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.1,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 11841,
+      "name": "B. Ali",
+      "teamId": 69877,
+      "number": 11,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 6.7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 3,
+      "shotsOnTarget": 0,
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "id": 505,
+      "name": "H. Walsh",
+      "teamId": 81980,
+      "number": 1,
+      "pos": "G",
+      "minutes": 90,
+      "rating": 6.2,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "id": 40836,
+      "name": "P. Fischer",
+      "teamId": 81980,
+      "number": 2,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.2,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 88076,
+      "name": "R. Costa",
+      "teamId": 81980,
+      "number": 3,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.8,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 39927,
+      "name": "O. Okafor",
+      "teamId": 81980,
+      "number": 4,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.6,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 67466,
+      "name": "H. Andersen",
+      "teamId": 81980,
+      "number": 5,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 26268,
+      "name": "N. Andersen",
+      "teamId": 81980,
+      "number": 6,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.4,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "id": 52943,
+      "name": "A. Greco",
+      "teamId": 81980,
+      "number": 7,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.6,
+      "goals": 2,
+      "assists": 0,
+      "shots": 4,
+      "shotsOnTarget": 3,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 28681,
+      "name": "T. García",
+      "teamId": 81980,
+      "number": 8,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.7,
+      "goals": 0,
+      "assists": 1,
+      "shots": 1,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 64046,
+      "name": "J. Romero",
+      "teamId": 81980,
+      "number": 9,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 6.9,
+      "goals": 0,
+      "assists": 1,
+      "shots": 3,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 33468,
+      "name": "B. Larsson",
+      "teamId": 81980,
+      "number": 10,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 8,
+      "goals": 1,
+      "assists": 1,
+      "shots": 4,
+      "shotsOnTarget": 2,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 61690,
+      "name": "L. Andersen",
+      "teamId": 81980,
+      "number": 11,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 6.4,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    }
+  ]
+}

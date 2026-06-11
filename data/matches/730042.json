@@ -1,0 +1,692 @@
+{
+  "fixtureId": 730042,
+  "fetchedAt": "2026-06-18T19:30:00.000Z",
+  "teams": {
+    "home": {
+      "id": 68962,
+      "name": "Spain",
+      "code": "ESP",
+      "logo": null,
+      "goals": 1
+    },
+    "away": {
+      "id": 66953,
+      "name": "Cape Verde",
+      "code": "CPV",
+      "logo": null,
+      "goals": 1
+    }
+  },
+  "statsByTeam": [
+    {
+      "teamId": 68962,
+      "name": "Spain",
+      "stats": {
+        "shotsOnTarget": 5,
+        "totalShots": 17,
+        "possession": 43,
+        "corners": 3,
+        "fouls": 12,
+        "offsides": 4,
+        "yellow": 1,
+        "red": 0,
+        "saves": 2,
+        "passes": 400,
+        "passesAccurate": 313,
+        "passAccuracy": 78,
+        "xg": 2.2
+      }
+    },
+    {
+      "teamId": 66953,
+      "name": "Cape Verde",
+      "stats": {
+        "shotsOnTarget": 3,
+        "totalShots": 16,
+        "possession": 57,
+        "corners": 7,
+        "fouls": 7,
+        "offsides": 1,
+        "yellow": 0,
+        "red": 0,
+        "saves": 4,
+        "passes": 432,
+        "passesAccurate": 376,
+        "passAccuracy": 87,
+        "xg": 1.5
+      }
+    }
+  ],
+  "events": [
+    {
+      "minute": 60,
+      "extra": null,
+      "teamId": 68962,
+      "teamName": "Spain",
+      "player": "B. Bianchi",
+      "playerId": 30558,
+      "assist": "N. Dubois",
+      "assistId": 32986,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    },
+    {
+      "minute": 77,
+      "extra": null,
+      "teamId": 66953,
+      "teamName": "Cape Verde",
+      "player": "N. Abara",
+      "playerId": 2056,
+      "assist": null,
+      "assistId": null,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    }
+  ],
+  "lineups": [
+    {
+      "teamId": 68962,
+      "name": "Spain",
+      "formation": "4-3-3",
+      "coach": "ESP Manager",
+      "startXI": [
+        {
+          "id": 27043,
+          "name": "O. Okafor",
+          "number": 1,
+          "pos": "G",
+          "grid": "1:1"
+        },
+        {
+          "id": 89536,
+          "name": "S. Jovanović",
+          "number": 2,
+          "pos": "D",
+          "grid": "2:1"
+        },
+        {
+          "id": 69146,
+          "name": "R. Mensah",
+          "number": 3,
+          "pos": "D",
+          "grid": "2:2"
+        },
+        {
+          "id": 83898,
+          "name": "D. Ferreira",
+          "number": 4,
+          "pos": "D",
+          "grid": "2:3"
+        },
+        {
+          "id": 50509,
+          "name": "A. Castro",
+          "number": 5,
+          "pos": "D",
+          "grid": "2:4"
+        },
+        {
+          "id": 90518,
+          "name": "H. Wagner",
+          "number": 6,
+          "pos": "M",
+          "grid": "3:1"
+        },
+        {
+          "id": 69171,
+          "name": "H. Lindholm",
+          "number": 7,
+          "pos": "M",
+          "grid": "3:2"
+        },
+        {
+          "id": 30558,
+          "name": "B. Bianchi",
+          "number": 8,
+          "pos": "M",
+          "grid": "3:3"
+        },
+        {
+          "id": 32986,
+          "name": "N. Dubois",
+          "number": 9,
+          "pos": "F",
+          "grid": "4:1"
+        },
+        {
+          "id": 97181,
+          "name": "O. Fischer",
+          "number": 10,
+          "pos": "F",
+          "grid": "4:2"
+        },
+        {
+          "id": 70500,
+          "name": "T. Andersen",
+          "number": 11,
+          "pos": "F",
+          "grid": "4:3"
+        }
+      ],
+      "subs": [
+        {
+          "id": 28341,
+          "name": "K. Greco",
+          "number": 12,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 23907,
+          "name": "A. Romero",
+          "number": 13,
+          "pos": "F",
+          "grid": null
+        },
+        {
+          "id": 26222,
+          "name": "D. Wagner",
+          "number": 14,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 57536,
+          "name": "F. Khan",
+          "number": 15,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 45584,
+          "name": "D. Castro",
+          "number": 16,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 59444,
+          "name": "F. Horvat",
+          "number": 17,
+          "pos": "G",
+          "grid": null
+        },
+        {
+          "id": 47823,
+          "name": "N. Diallo",
+          "number": 18,
+          "pos": "F",
+          "grid": null
+        }
+      ]
+    },
+    {
+      "teamId": 66953,
+      "name": "Cape Verde",
+      "formation": "4-3-3",
+      "coach": "CPV Manager",
+      "startXI": [
+        {
+          "id": 10184,
+          "name": "A. Wagner",
+          "number": 1,
+          "pos": "G",
+          "grid": "1:1"
+        },
+        {
+          "id": 79157,
+          "name": "O. Bauer",
+          "number": 2,
+          "pos": "D",
+          "grid": "2:1"
+        },
+        {
+          "id": 50826,
+          "name": "C. Fischer",
+          "number": 3,
+          "pos": "D",
+          "grid": "2:2"
+        },
+        {
+          "id": 74962,
+          "name": "C. Nguyen",
+          "number": 4,
+          "pos": "D",
+          "grid": "2:3"
+        },
+        {
+          "id": 34059,
+          "name": "N. Horvat",
+          "number": 5,
+          "pos": "D",
+          "grid": "2:4"
+        },
+        {
+          "id": 2056,
+          "name": "N. Abara",
+          "number": 6,
+          "pos": "M",
+          "grid": "3:1"
+        },
+        {
+          "id": 17319,
+          "name": "R. Horvat",
+          "number": 7,
+          "pos": "M",
+          "grid": "3:2"
+        },
+        {
+          "id": 93333,
+          "name": "B. Khan",
+          "number": 8,
+          "pos": "M",
+          "grid": "3:3"
+        },
+        {
+          "id": 31074,
+          "name": "D. Abara",
+          "number": 9,
+          "pos": "F",
+          "grid": "4:1"
+        },
+        {
+          "id": 84624,
+          "name": "K. Castro",
+          "number": 10,
+          "pos": "F",
+          "grid": "4:2"
+        },
+        {
+          "id": 43638,
+          "name": "D. Bauer",
+          "number": 11,
+          "pos": "F",
+          "grid": "4:3"
+        }
+      ],
+      "subs": [
+        {
+          "id": 69839,
+          "name": "J. Castro",
+          "number": 12,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 7562,
+          "name": "E. Castro",
+          "number": 13,
+          "pos": "F",
+          "grid": null
+        },
+        {
+          "id": 9593,
+          "name": "T. Khan",
+          "number": 14,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 5623,
+          "name": "F. Greco",
+          "number": 15,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 36133,
+          "name": "F. Costa",
+          "number": 16,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 77276,
+          "name": "D. Murphy",
+          "number": 17,
+          "pos": "G",
+          "grid": null
+        },
+        {
+          "id": 16769,
+          "name": "P. Sørensen",
+          "number": 18,
+          "pos": "F",
+          "grid": null
+        }
+      ]
+    }
+  ],
+  "players": [
+    {
+      "id": 27043,
+      "name": "O. Okafor",
+      "teamId": 68962,
+      "number": 1,
+      "pos": "G",
+      "minutes": 90,
+      "rating": 6.5,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 89536,
+      "name": "S. Jovanović",
+      "teamId": 68962,
+      "number": 2,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.4,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 69146,
+      "name": "R. Mensah",
+      "teamId": 68962,
+      "number": 3,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.1,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "id": 83898,
+      "name": "D. Ferreira",
+      "teamId": 68962,
+      "number": 4,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.4,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 50509,
+      "name": "A. Castro",
+      "teamId": 68962,
+      "number": 5,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 90518,
+      "name": "H. Wagner",
+      "teamId": 68962,
+      "number": 6,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.1,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 69171,
+      "name": "H. Lindholm",
+      "teamId": 68962,
+      "number": 7,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.2,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 30558,
+      "name": "B. Bianchi",
+      "teamId": 68962,
+      "number": 8,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.9,
+      "goals": 1,
+      "assists": 0,
+      "shots": 3,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 32986,
+      "name": "N. Dubois",
+      "teamId": 68962,
+      "number": 9,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.5,
+      "goals": 0,
+      "assists": 1,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 97181,
+      "name": "O. Fischer",
+      "teamId": 68962,
+      "number": 10,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 4,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 70500,
+      "name": "T. Andersen",
+      "teamId": 68962,
+      "number": 11,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.2,
+      "goals": 0,
+      "assists": 0,
+      "shots": 4,
+      "shotsOnTarget": 2,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 10184,
+      "name": "A. Wagner",
+      "teamId": 66953,
+      "number": 1,
+      "pos": "G",
+      "minutes": 90,
+      "rating": 6.7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 79157,
+      "name": "O. Bauer",
+      "teamId": 66953,
+      "number": 2,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.9,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 50826,
+      "name": "C. Fischer",
+      "teamId": 66953,
+      "number": 3,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.9,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 74962,
+      "name": "C. Nguyen",
+      "teamId": 66953,
+      "number": 4,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.2,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 34059,
+      "name": "N. Horvat",
+      "teamId": 66953,
+      "number": 5,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.1,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 2056,
+      "name": "N. Abara",
+      "teamId": 66953,
+      "number": 6,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.6,
+      "goals": 1,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 17319,
+      "name": "R. Horvat",
+      "teamId": 66953,
+      "number": 7,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 93333,
+      "name": "B. Khan",
+      "teamId": 66953,
+      "number": 8,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.5,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 31074,
+      "name": "D. Abara",
+      "teamId": 66953,
+      "number": 9,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 6.5,
+      "goals": 0,
+      "assists": 0,
+      "shots": 4,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 84624,
+      "name": "K. Castro",
+      "teamId": 66953,
+      "number": 10,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 6.9,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 43638,
+      "name": "D. Bauer",
+      "teamId": 66953,
+      "number": 11,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 6.4,
+      "goals": 0,
+      "assists": 0,
+      "shots": 4,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    }
+  ]
+}

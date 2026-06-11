@@ -1,0 +1,704 @@
+{
+  "fixtureId": 730030,
+  "fetchedAt": "2026-06-18T19:30:00.000Z",
+  "teams": {
+    "home": {
+      "id": 77165,
+      "name": "Netherlands",
+      "code": "NED",
+      "logo": null,
+      "goals": 2
+    },
+    "away": {
+      "id": 73672,
+      "name": "Japan",
+      "code": "JPN",
+      "logo": null,
+      "goals": 1
+    }
+  },
+  "statsByTeam": [
+    {
+      "teamId": 77165,
+      "name": "Netherlands",
+      "stats": {
+        "shotsOnTarget": 5,
+        "totalShots": 20,
+        "possession": 55,
+        "corners": 5,
+        "fouls": 16,
+        "offsides": 4,
+        "yellow": 0,
+        "red": 0,
+        "saves": 3,
+        "passes": 586,
+        "passesAccurate": 485,
+        "passAccuracy": 83,
+        "xg": 2.7
+      }
+    },
+    {
+      "teamId": 73672,
+      "name": "Japan",
+      "stats": {
+        "shotsOnTarget": 4,
+        "totalShots": 17,
+        "possession": 45,
+        "corners": 8,
+        "fouls": 10,
+        "offsides": 4,
+        "yellow": 0,
+        "red": 0,
+        "saves": 3,
+        "passes": 636,
+        "passesAccurate": 506,
+        "passAccuracy": 80,
+        "xg": 1.9
+      }
+    }
+  ],
+  "events": [
+    {
+      "minute": 23,
+      "extra": null,
+      "teamId": 73672,
+      "teamName": "Japan",
+      "player": "L. Romero",
+      "playerId": 21384,
+      "assist": "N. Castro",
+      "assistId": 6356,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    },
+    {
+      "minute": 54,
+      "extra": null,
+      "teamId": 77165,
+      "teamName": "Netherlands",
+      "player": "N. Haddad",
+      "playerId": 83727,
+      "assist": "N. Petrović",
+      "assistId": 63595,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    },
+    {
+      "minute": 84,
+      "extra": null,
+      "teamId": 77165,
+      "teamName": "Netherlands",
+      "player": "K. Hassan",
+      "playerId": 26186,
+      "assist": null,
+      "assistId": null,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    }
+  ],
+  "lineups": [
+    {
+      "teamId": 77165,
+      "name": "Netherlands",
+      "formation": "4-3-3",
+      "coach": "NED Manager",
+      "startXI": [
+        {
+          "id": 39442,
+          "name": "P. Oliveira",
+          "number": 1,
+          "pos": "G",
+          "grid": "1:1"
+        },
+        {
+          "id": 74149,
+          "name": "N. Romero",
+          "number": 2,
+          "pos": "D",
+          "grid": "2:1"
+        },
+        {
+          "id": 49812,
+          "name": "K. Müller",
+          "number": 3,
+          "pos": "D",
+          "grid": "2:2"
+        },
+        {
+          "id": 79048,
+          "name": "C. Bianchi",
+          "number": 4,
+          "pos": "D",
+          "grid": "2:3"
+        },
+        {
+          "id": 7729,
+          "name": "M. Silva",
+          "number": 5,
+          "pos": "D",
+          "grid": "2:4"
+        },
+        {
+          "id": 26186,
+          "name": "K. Hassan",
+          "number": 6,
+          "pos": "M",
+          "grid": "3:1"
+        },
+        {
+          "id": 50376,
+          "name": "K. Petrović",
+          "number": 7,
+          "pos": "M",
+          "grid": "3:2"
+        },
+        {
+          "id": 26874,
+          "name": "C. Fischer",
+          "number": 8,
+          "pos": "M",
+          "grid": "3:3"
+        },
+        {
+          "id": 85022,
+          "name": "Cody Gakpo",
+          "number": 9,
+          "pos": "F",
+          "grid": "4:1"
+        },
+        {
+          "id": 83727,
+          "name": "N. Haddad",
+          "number": 10,
+          "pos": "F",
+          "grid": "4:2"
+        },
+        {
+          "id": 63595,
+          "name": "N. Petrović",
+          "number": 11,
+          "pos": "F",
+          "grid": "4:3"
+        }
+      ],
+      "subs": [
+        {
+          "id": 45552,
+          "name": "E. Sørensen",
+          "number": 12,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 51518,
+          "name": "J. Kaur",
+          "number": 13,
+          "pos": "F",
+          "grid": null
+        },
+        {
+          "id": 88350,
+          "name": "P. Walsh",
+          "number": 14,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 40271,
+          "name": "B. Khan",
+          "number": 15,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 9337,
+          "name": "B. Marković",
+          "number": 16,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 30139,
+          "name": "H. Petrović",
+          "number": 17,
+          "pos": "G",
+          "grid": null
+        },
+        {
+          "id": 31560,
+          "name": "D. Silva",
+          "number": 18,
+          "pos": "F",
+          "grid": null
+        }
+      ]
+    },
+    {
+      "teamId": 73672,
+      "name": "Japan",
+      "formation": "4-3-3",
+      "coach": "JPN Manager",
+      "startXI": [
+        {
+          "id": 36986,
+          "name": "J. Romero",
+          "number": 1,
+          "pos": "G",
+          "grid": "1:1"
+        },
+        {
+          "id": 97034,
+          "name": "O. Bauer",
+          "number": 2,
+          "pos": "D",
+          "grid": "2:1"
+        },
+        {
+          "id": 33514,
+          "name": "H. Okafor",
+          "number": 3,
+          "pos": "D",
+          "grid": "2:2"
+        },
+        {
+          "id": 76095,
+          "name": "M. Khan",
+          "number": 4,
+          "pos": "D",
+          "grid": "2:3"
+        },
+        {
+          "id": 47254,
+          "name": "T. Andersen",
+          "number": 5,
+          "pos": "D",
+          "grid": "2:4"
+        },
+        {
+          "id": 10673,
+          "name": "H. Silva",
+          "number": 6,
+          "pos": "M",
+          "grid": "3:1"
+        },
+        {
+          "id": 6356,
+          "name": "N. Castro",
+          "number": 7,
+          "pos": "M",
+          "grid": "3:2"
+        },
+        {
+          "id": 21384,
+          "name": "L. Romero",
+          "number": 8,
+          "pos": "M",
+          "grid": "3:3"
+        },
+        {
+          "id": 17812,
+          "name": "F. Larsson",
+          "number": 9,
+          "pos": "F",
+          "grid": "4:1"
+        },
+        {
+          "id": 94748,
+          "name": "F. Reyes",
+          "number": 10,
+          "pos": "F",
+          "grid": "4:2"
+        },
+        {
+          "id": 14745,
+          "name": "E. Petrović",
+          "number": 11,
+          "pos": "F",
+          "grid": "4:3"
+        }
+      ],
+      "subs": [
+        {
+          "id": 54247,
+          "name": "F. Schneider",
+          "number": 12,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 82198,
+          "name": "M. Kaur",
+          "number": 13,
+          "pos": "F",
+          "grid": null
+        },
+        {
+          "id": 84515,
+          "name": "M. Costa",
+          "number": 14,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 71633,
+          "name": "O. Moreno",
+          "number": 15,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 73359,
+          "name": "C. Ali",
+          "number": 16,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 70802,
+          "name": "R. Romero",
+          "number": 17,
+          "pos": "G",
+          "grid": null
+        },
+        {
+          "id": 7748,
+          "name": "L. Hassan",
+          "number": 18,
+          "pos": "F",
+          "grid": null
+        }
+      ]
+    }
+  ],
+  "players": [
+    {
+      "id": 39442,
+      "name": "P. Oliveira",
+      "teamId": 77165,
+      "number": 1,
+      "pos": "G",
+      "minutes": 90,
+      "rating": 6.9,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 74149,
+      "name": "N. Romero",
+      "teamId": 77165,
+      "number": 2,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 49812,
+      "name": "K. Müller",
+      "teamId": 77165,
+      "number": 3,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 79048,
+      "name": "C. Bianchi",
+      "teamId": 77165,
+      "number": 4,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.2,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 7729,
+      "name": "M. Silva",
+      "teamId": 77165,
+      "number": 5,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.9,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 26186,
+      "name": "K. Hassan",
+      "teamId": 77165,
+      "number": 6,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.4,
+      "goals": 1,
+      "assists": 0,
+      "shots": 3,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 50376,
+      "name": "K. Petrović",
+      "teamId": 77165,
+      "number": 7,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 26874,
+      "name": "C. Fischer",
+      "teamId": 77165,
+      "number": 8,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.1,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 85022,
+      "name": "Cody Gakpo",
+      "teamId": 77165,
+      "number": 9,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 6.5,
+      "goals": 0,
+      "assists": 0,
+      "shots": 4,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 83727,
+      "name": "N. Haddad",
+      "teamId": 77165,
+      "number": 10,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 6.8,
+      "goals": 1,
+      "assists": 0,
+      "shots": 5,
+      "shotsOnTarget": 2,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 63595,
+      "name": "N. Petrović",
+      "teamId": 77165,
+      "number": 11,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 6.6,
+      "goals": 0,
+      "assists": 1,
+      "shots": 4,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 36986,
+      "name": "J. Romero",
+      "teamId": 73672,
+      "number": 1,
+      "pos": "G",
+      "minutes": 90,
+      "rating": 6.9,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 97034,
+      "name": "O. Bauer",
+      "teamId": 73672,
+      "number": 2,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 33514,
+      "name": "H. Okafor",
+      "teamId": 73672,
+      "number": 3,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 76095,
+      "name": "M. Khan",
+      "teamId": 73672,
+      "number": 4,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 47254,
+      "name": "T. Andersen",
+      "teamId": 73672,
+      "number": 5,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 10673,
+      "name": "H. Silva",
+      "teamId": 73672,
+      "number": 6,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 6356,
+      "name": "N. Castro",
+      "teamId": 73672,
+      "number": 7,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.6,
+      "goals": 0,
+      "assists": 1,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 21384,
+      "name": "L. Romero",
+      "teamId": 73672,
+      "number": 8,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.9,
+      "goals": 1,
+      "assists": 0,
+      "shots": 3,
+      "shotsOnTarget": 2,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 17812,
+      "name": "F. Larsson",
+      "teamId": 73672,
+      "number": 9,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 6.9,
+      "goals": 0,
+      "assists": 0,
+      "shots": 3,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 94748,
+      "name": "F. Reyes",
+      "teamId": 73672,
+      "number": 10,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 6.8,
+      "goals": 0,
+      "assists": 0,
+      "shots": 4,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 14745,
+      "name": "E. Petrović",
+      "teamId": 73672,
+      "number": 11,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 6.9,
+      "goals": 0,
+      "assists": 0,
+      "shots": 3,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    }
+  ]
+}

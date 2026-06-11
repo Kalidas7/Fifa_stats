@@ -1,0 +1,704 @@
+{
+  "fixtureId": 730014,
+  "fetchedAt": "2026-06-18T19:30:00.000Z",
+  "teams": {
+    "home": {
+      "id": 66033,
+      "name": "Brazil",
+      "code": "BRA",
+      "logo": null,
+      "goals": 0
+    },
+    "away": {
+      "id": 71280,
+      "name": "Haiti",
+      "code": "HAI",
+      "logo": null,
+      "goals": 3
+    }
+  },
+  "statsByTeam": [
+    {
+      "teamId": 66033,
+      "name": "Brazil",
+      "stats": {
+        "shotsOnTarget": 3,
+        "totalShots": 14,
+        "possession": 55,
+        "corners": 6,
+        "fouls": 13,
+        "offsides": 3,
+        "yellow": 1,
+        "red": 0,
+        "saves": 2,
+        "passes": 507,
+        "passesAccurate": 419,
+        "passAccuracy": 83,
+        "xg": 1.2
+      }
+    },
+    {
+      "teamId": 71280,
+      "name": "Haiti",
+      "stats": {
+        "shotsOnTarget": 5,
+        "totalShots": 15,
+        "possession": 45,
+        "corners": 5,
+        "fouls": 12,
+        "offsides": 2,
+        "yellow": 1,
+        "red": 0,
+        "saves": 3,
+        "passes": 679,
+        "passesAccurate": 597,
+        "passAccuracy": 88,
+        "xg": 3.3
+      }
+    }
+  ],
+  "events": [
+    {
+      "minute": 60,
+      "extra": null,
+      "teamId": 71280,
+      "teamName": "Haiti",
+      "player": "M. Horvat",
+      "playerId": 8877,
+      "assist": "P. Andersen",
+      "assistId": 99562,
+      "type": "Goal",
+      "detail": "Penalty"
+    },
+    {
+      "minute": 63,
+      "extra": null,
+      "teamId": 71280,
+      "teamName": "Haiti",
+      "player": "F. Ali",
+      "playerId": 46634,
+      "assist": "T. Bauer",
+      "assistId": 22541,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    },
+    {
+      "minute": 83,
+      "extra": null,
+      "teamId": 71280,
+      "teamName": "Haiti",
+      "player": "P. Mensah",
+      "playerId": 98730,
+      "assist": "T. Bauer",
+      "assistId": 22541,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    }
+  ],
+  "lineups": [
+    {
+      "teamId": 66033,
+      "name": "Brazil",
+      "formation": "4-3-3",
+      "coach": "BRA Manager",
+      "startXI": [
+        {
+          "id": 73814,
+          "name": "D. Abara",
+          "number": 1,
+          "pos": "G",
+          "grid": "1:1"
+        },
+        {
+          "id": 91862,
+          "name": "O. Greco",
+          "number": 2,
+          "pos": "D",
+          "grid": "2:1"
+        },
+        {
+          "id": 35404,
+          "name": "C. Dubois",
+          "number": 3,
+          "pos": "D",
+          "grid": "2:2"
+        },
+        {
+          "id": 99835,
+          "name": "C. Novák",
+          "number": 4,
+          "pos": "D",
+          "grid": "2:3"
+        },
+        {
+          "id": 17112,
+          "name": "A. Tanaka",
+          "number": 5,
+          "pos": "D",
+          "grid": "2:4"
+        },
+        {
+          "id": 86456,
+          "name": "K. Castro",
+          "number": 6,
+          "pos": "M",
+          "grid": "3:1"
+        },
+        {
+          "id": 41331,
+          "name": "H. Khan",
+          "number": 7,
+          "pos": "M",
+          "grid": "3:2"
+        },
+        {
+          "id": 92602,
+          "name": "R. Diallo",
+          "number": 8,
+          "pos": "M",
+          "grid": "3:3"
+        },
+        {
+          "id": 64377,
+          "name": "Vinícius Júnior",
+          "number": 9,
+          "pos": "F",
+          "grid": "4:1"
+        },
+        {
+          "id": 67866,
+          "name": "C. Ali",
+          "number": 10,
+          "pos": "F",
+          "grid": "4:2"
+        },
+        {
+          "id": 34714,
+          "name": "G. Ferreira",
+          "number": 11,
+          "pos": "F",
+          "grid": "4:3"
+        }
+      ],
+      "subs": [
+        {
+          "id": 45867,
+          "name": "D. Sørensen",
+          "number": 12,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 70944,
+          "name": "B. Oliveira",
+          "number": 13,
+          "pos": "F",
+          "grid": null
+        },
+        {
+          "id": 29471,
+          "name": "C. Lindholm",
+          "number": 14,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 60992,
+          "name": "D. Suzuki",
+          "number": 15,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 7171,
+          "name": "V. Costa",
+          "number": 16,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 59961,
+          "name": "R. Nguyen",
+          "number": 17,
+          "pos": "G",
+          "grid": null
+        },
+        {
+          "id": 52639,
+          "name": "D. Greco",
+          "number": 18,
+          "pos": "F",
+          "grid": null
+        }
+      ]
+    },
+    {
+      "teamId": 71280,
+      "name": "Haiti",
+      "formation": "4-3-3",
+      "coach": "HAI Manager",
+      "startXI": [
+        {
+          "id": 75785,
+          "name": "E. Ali",
+          "number": 1,
+          "pos": "G",
+          "grid": "1:1"
+        },
+        {
+          "id": 19037,
+          "name": "N. Diallo",
+          "number": 2,
+          "pos": "D",
+          "grid": "2:1"
+        },
+        {
+          "id": 81581,
+          "name": "M. Wagner",
+          "number": 3,
+          "pos": "D",
+          "grid": "2:2"
+        },
+        {
+          "id": 62437,
+          "name": "A. Petrović",
+          "number": 4,
+          "pos": "D",
+          "grid": "2:3"
+        },
+        {
+          "id": 64574,
+          "name": "M. Diallo",
+          "number": 5,
+          "pos": "D",
+          "grid": "2:4"
+        },
+        {
+          "id": 8877,
+          "name": "M. Horvat",
+          "number": 6,
+          "pos": "M",
+          "grid": "3:1"
+        },
+        {
+          "id": 22541,
+          "name": "T. Bauer",
+          "number": 7,
+          "pos": "M",
+          "grid": "3:2"
+        },
+        {
+          "id": 46634,
+          "name": "F. Ali",
+          "number": 8,
+          "pos": "M",
+          "grid": "3:3"
+        },
+        {
+          "id": 98730,
+          "name": "P. Mensah",
+          "number": 9,
+          "pos": "F",
+          "grid": "4:1"
+        },
+        {
+          "id": 99562,
+          "name": "P. Andersen",
+          "number": 10,
+          "pos": "F",
+          "grid": "4:2"
+        },
+        {
+          "id": 28539,
+          "name": "G. Ferreira",
+          "number": 11,
+          "pos": "F",
+          "grid": "4:3"
+        }
+      ],
+      "subs": [
+        {
+          "id": 68718,
+          "name": "F. Park",
+          "number": 12,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 64468,
+          "name": "R. Petrović",
+          "number": 13,
+          "pos": "F",
+          "grid": null
+        },
+        {
+          "id": 93456,
+          "name": "J. Mensah",
+          "number": 14,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 11365,
+          "name": "P. Eriksen",
+          "number": 15,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 21001,
+          "name": "R. Traoré",
+          "number": 16,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 47382,
+          "name": "R. Tanaka",
+          "number": 17,
+          "pos": "G",
+          "grid": null
+        },
+        {
+          "id": 29347,
+          "name": "D. Oliveira",
+          "number": 18,
+          "pos": "F",
+          "grid": null
+        }
+      ]
+    }
+  ],
+  "players": [
+    {
+      "id": 73814,
+      "name": "D. Abara",
+      "teamId": 66033,
+      "number": 1,
+      "pos": "G",
+      "minutes": 90,
+      "rating": 6.7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 91862,
+      "name": "O. Greco",
+      "teamId": 66033,
+      "number": 2,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.4,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 35404,
+      "name": "C. Dubois",
+      "teamId": 66033,
+      "number": 3,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.6,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 99835,
+      "name": "C. Novák",
+      "teamId": 66033,
+      "number": 4,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.2,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 17112,
+      "name": "A. Tanaka",
+      "teamId": 66033,
+      "number": 5,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.5,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 86456,
+      "name": "K. Castro",
+      "teamId": 66033,
+      "number": 6,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.9,
+      "goals": 0,
+      "assists": 0,
+      "shots": 1,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 41331,
+      "name": "H. Khan",
+      "teamId": 66033,
+      "number": 7,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.8,
+      "goals": 0,
+      "assists": 0,
+      "shots": 1,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 92602,
+      "name": "R. Diallo",
+      "teamId": 66033,
+      "number": 8,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.1,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 64377,
+      "name": "Vinícius Júnior",
+      "teamId": 66033,
+      "number": 9,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 3,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 67866,
+      "name": "C. Ali",
+      "teamId": 66033,
+      "number": 10,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 3,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 34714,
+      "name": "G. Ferreira",
+      "teamId": 66033,
+      "number": 11,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 6.6,
+      "goals": 0,
+      "assists": 0,
+      "shots": 4,
+      "shotsOnTarget": 1,
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "id": 75785,
+      "name": "E. Ali",
+      "teamId": 71280,
+      "number": 1,
+      "pos": "G",
+      "minutes": 90,
+      "rating": 6.4,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 19037,
+      "name": "N. Diallo",
+      "teamId": 71280,
+      "number": 2,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.1,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "id": 81581,
+      "name": "M. Wagner",
+      "teamId": 71280,
+      "number": 3,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.6,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 62437,
+      "name": "A. Petrović",
+      "teamId": 71280,
+      "number": 4,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 64574,
+      "name": "M. Diallo",
+      "teamId": 71280,
+      "number": 5,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.8,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 8877,
+      "name": "M. Horvat",
+      "teamId": 71280,
+      "number": 6,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 8,
+      "goals": 1,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 22541,
+      "name": "T. Bauer",
+      "teamId": 71280,
+      "number": 7,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.2,
+      "goals": 0,
+      "assists": 2,
+      "shots": 1,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 46634,
+      "name": "F. Ali",
+      "teamId": 71280,
+      "number": 8,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.1,
+      "goals": 1,
+      "assists": 0,
+      "shots": 3,
+      "shotsOnTarget": 2,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 98730,
+      "name": "P. Mensah",
+      "teamId": 71280,
+      "number": 9,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.7,
+      "goals": 1,
+      "assists": 0,
+      "shots": 3,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 99562,
+      "name": "P. Andersen",
+      "teamId": 71280,
+      "number": 10,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.6,
+      "goals": 0,
+      "assists": 1,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 28539,
+      "name": "G. Ferreira",
+      "teamId": 71280,
+      "number": 11,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 6.7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 4,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    }
+  ]
+}

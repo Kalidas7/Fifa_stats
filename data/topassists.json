@@ -1,0 +1,221 @@
+{
+  "updatedAt": "2026-06-18T19:30:00.000Z",
+  "players": [
+    {
+      "player": {
+        "id": 900003,
+        "name": "Vinícius Júnior",
+        "photo": null
+      },
+      "team": {
+        "id": 66033,
+        "name": "Brazil",
+        "code": "BRA",
+        "logo": null
+      },
+      "goals": 3,
+      "assists": 3,
+      "minutes": 227,
+      "appearances": 2,
+      "penalties": 0
+    },
+    {
+      "player": {
+        "id": 900008,
+        "name": "Florian Wirtz",
+        "photo": null
+      },
+      "team": {
+        "id": 70452,
+        "name": "Germany",
+        "code": "GER",
+        "logo": null
+      },
+      "goals": 3,
+      "assists": 2,
+      "minutes": 212,
+      "appearances": 2,
+      "penalties": 0
+    },
+    {
+      "player": {
+        "id": 900001,
+        "name": "Harry Kane",
+        "photo": null
+      },
+      "team": {
+        "id": 68798,
+        "name": "England",
+        "code": "ENG",
+        "logo": null
+      },
+      "goals": 2,
+      "assists": 4,
+      "minutes": 236,
+      "appearances": 2,
+      "penalties": 1
+    },
+    {
+      "player": {
+        "id": 900007,
+        "name": "Cody Gakpo",
+        "photo": null
+      },
+      "team": {
+        "id": 77165,
+        "name": "Netherlands",
+        "code": "NED",
+        "logo": null
+      },
+      "goals": 2,
+      "assists": 2,
+      "minutes": 203,
+      "appearances": 2,
+      "penalties": 0
+    },
+    {
+      "player": {
+        "id": 900010,
+        "name": "Christian Pulisic",
+        "photo": null
+      },
+      "team": {
+        "id": 84323,
+        "name": "United States",
+        "code": "USA",
+        "logo": null
+      },
+      "goals": 2,
+      "assists": 2,
+      "minutes": 226,
+      "appearances": 2,
+      "penalties": 0
+    },
+    {
+      "player": {
+        "id": 900000,
+        "name": "Kylian Mbappé",
+        "photo": null
+      },
+      "team": {
+        "id": 69877,
+        "name": "France",
+        "code": "FRA",
+        "logo": null
+      },
+      "goals": 1,
+      "assists": 5,
+      "minutes": 247,
+      "appearances": 2,
+      "penalties": 0
+    },
+    {
+      "player": {
+        "id": 900004,
+        "name": "Lautaro Martínez",
+        "photo": null
+      },
+      "team": {
+        "id": 65078,
+        "name": "Argentina",
+        "code": "ARG",
+        "logo": null
+      },
+      "goals": 1,
+      "assists": 3,
+      "minutes": 226,
+      "appearances": 2,
+      "penalties": 0
+    },
+    {
+      "player": {
+        "id": 900005,
+        "name": "Mohamed Salah",
+        "photo": null
+      },
+      "team": {
+        "id": 68599,
+        "name": "Egypt",
+        "code": "EGY",
+        "logo": null
+      },
+      "goals": 1,
+      "assists": 3,
+      "minutes": 213,
+      "appearances": 2,
+      "penalties": 0
+    },
+    {
+      "player": {
+        "id": 900009,
+        "name": "Romelu Lukaku",
+        "photo": null
+      },
+      "team": {
+        "id": 65641,
+        "name": "Belgium",
+        "code": "BEL",
+        "logo": null
+      },
+      "goals": 1,
+      "assists": 2,
+      "minutes": 242,
+      "appearances": 2,
+      "penalties": 0
+    },
+    {
+      "player": {
+        "id": 900011,
+        "name": "Son Heung-min",
+        "photo": null
+      },
+      "team": {
+        "id": 74606,
+        "name": "South Korea",
+        "code": "KOR",
+        "logo": null
+      },
+      "goals": 1,
+      "assists": 2,
+      "minutes": 242,
+      "appearances": 2,
+      "penalties": 0
+    },
+    {
+      "player": {
+        "id": 900013,
+        "name": "Julián Álvarez",
+        "photo": null
+      },
+      "team": {
+        "id": 65078,
+        "name": "Argentina",
+        "code": "ARG",
+        "logo": null
+      },
+      "goals": 1,
+      "assists": 2,
+      "minutes": 239,
+      "appearances": 2,
+      "penalties": 0
+    },
+    {
+      "player": {
+        "id": 900002,
+        "name": "Erling Haaland",
+        "photo": null
+      },
+      "team": {
+        "id": 77489,
+        "name": "Norway",
+        "code": "NOR",
+        "logo": null
+      },
+      "goals": 0,
+      "assists": 4,
+      "minutes": 218,
+      "appearances": 2,
+      "penalties": 0
+    }
+  ]
+}

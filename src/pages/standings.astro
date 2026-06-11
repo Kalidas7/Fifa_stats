@@ -1,0 +1,43 @@
+---
+import Base from '../layouts/Base.astro';
+import GroupsPreview from '../components/GroupsPreview.astro';
+import GroupTables from '../components/GroupTables.astro';
+import Bracket from '../components/Bracket.astro';
+import FixturesList from '../components/FixturesList.astro';
+import { fixtures, standings, hasKnockoutsStarted, lastUpdated } from '../lib/data';
+
+// During the group stage: 12 tables. From the Round of 32 onward this becomes a bracket
+// (Phase 6) — driven by fixture `round`, never by us computing third-place qualification.
+const knockouts = hasKnockoutsStarted();
+const hasStandings = standings.length > 0;
+const updatedAt = lastUpdated();
+const allFixtures = fixtures;
+const hasFixtures = allFixtures.length > 0;
+---
+
+<Base current="standings" title="Standings & Schedule — FootStats" updatedAt={updatedAt}>
+  <div class="container">
+    <section class="section" style="margin-top: clamp(24px, 4vw, 40px)">
+      <div class="section-head">
+        <h2 class="section-title">{knockouts ? 'Bracket' : 'Group Standings'}</h2>
+        <span class="section-note">
+          {knockouts ? 'Round of 32 onward' : '12 groups · top 2 + 8 best 3rd advance'}
+        </span>
+      </div>
+
+      {knockouts ? <Bracket /> : hasStandings ? <GroupTables /> : <GroupsPreview />}
+    </section>
+
+    {
+      hasFixtures && (
+        <section class="section" id="schedule">
+          <div class="section-head">
+            <h2 class="section-title">Full Schedule</h2>
+            <span class="section-note">All 104 matches · your local time</span>
+          </div>
+          <FixturesList fixtures={allFixtures} />
+        </section>
+      )
+    }
+  </div>
+</Base>

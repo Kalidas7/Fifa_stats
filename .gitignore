@@ -1,0 +1,19 @@
+# dependencies
+node_modules/
+
+# build output
+dist/
+.astro/
+
+# secrets — the API key lives in a GitHub Actions secret (APISPORTS_KEY), never in the repo
+.env
+.env.*
+!.env.example
+
+# os / editor
+.DS_Store
+*.log
+npm-debug.log*
+
+# NOTE: /data is intentionally NOT ignored — fetched JSON is committed to the repo
+# so the static build has data without an always-on backend.

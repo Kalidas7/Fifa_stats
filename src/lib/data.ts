@@ -1,0 +1,109 @@
+// Build-time data access. The JSON files are committed to /data and imported directly,
+// so the static build has everything it needs with no backend. All accessors are
+// defensive: a missing/placeholder file just yields an empty list.
+import fixturesJson from '../../data/fixtures.json';
+import standingsJson from '../../data/standings.json';
+import topscorersJson from '../../data/topscorers.json';
+import topassistsJson from '../../data/topassists.json';
+import playersJson from '../../data/players.json';
+import type {
+  FixturesFile,
+  StandingsFile,
+  ScorersFile,
+  PlayersFile,
+  Fixture,
+  GroupStanding,
+  ScorerEntry,
+  PlayerAggregate,
+} from './types';
+
+export const fixturesFile = fixturesJson as unknown as FixturesFile;
+export const standingsFile = standingsJson as unknown as StandingsFile;
+export const topscorersFile = topscorersJson as unknown as ScorersFile;
+export const topassistsFile = topassistsJson as unknown as ScorersFile;
+export const playersFile = playersJson as unknown as PlayersFile;
+
+export const fixtures: Fixture[] = fixturesFile.fixtures ?? [];
+export const standings: GroupStanding[] = standingsFile.groups ?? [];
+export const topscorers: ScorerEntry[] = topscorersFile.players ?? [];
+export const topassists: ScorerEntry[] = topassistsFile.players ?? [];
+export const players: PlayerAggregate[] = playersFile.players ?? [];
+
+// Which player ids have a profile page (built from players.json by aggregate.mjs).
+// Components link a player name only when its profile exists — no dead routes.
+const playerMap = new Map<number, PlayerAggregate>(players.map((p) => [p.id, p]));
+export const playerIds = new Set<number>(playerMap.keys());
+export function getPlayer(id: number | string): PlayerAggregate | undefined {
+  return playerMap.get(Number(id));
+}
+
+export const FINISHED = new Set(['FT', 'AET', 'PEN']);
+export const LIVE = new Set(['1H', '2H', 'HT', 'ET', 'BT', 'P', 'LIVE', 'INT']);
+
+export function isFinished(f: Fixture): boolean {
+  return f.finished || FINISHED.has(f.status?.short ?? '');
+}
+export function isLive(f: Fixture): boolean {
+  return LIVE.has(f.status?.short ?? '');
+}
+
+// Group fixtures by calendar day (UTC date key) for the Home fixtures list.
+export function fixturesByDate(list: Fixture[] = fixtures): { date: string; fixtures: Fixture[] }[] {
+  const map = new Map<string, Fixture[]>();
+  for (const f of list) {
+    const key = (f.utcDate ?? '').slice(0, 10) || 'TBD';
+    if (!map.has(key)) map.set(key, []);
+    map.get(key)!.push(f);
+  }
+  return [...map.entries()]
+    .sort(([a], [b]) => a.localeCompare(b))
+    .map(([date, fx]) => ({
+      date,
+      fixtures: fx.sort((a, b) => (a.timestamp ?? 0) - (b.timestamp ?? 0)),
+    }));
+}
+
+// Knockouts start at Round of 32; used to switch Standings between tables and a bracket.
+const KNOCKOUT_ROUNDS = [
+  'Round of 32',
+  'Round of 16',
+  'Quarter-finals',
+  'Semi-finals',
+  '3rd Place Final',
+  'Final',
+];
+export function isKnockoutRound(round?: string | null): boolean {
+  if (!round) return false;
+  return KNOCKOUT_ROUNDS.some((r) => round.toLowerCase().includes(r.toLowerCase()));
+}
+export function hasKnockoutsStarted(list: Fixture[] = fixtures): boolean {
+  return list.some((f) => isKnockoutRound(f.round) && (isFinished(f) || isLive(f)));
+}
+
+export function lastUpdated(): string | null {
+  return fixturesFile.updatedAt ?? standingsFile.updatedAt ?? null;
+}
+
+// A focused "what's on now" slice for the Home page: the most recent day that already
+// has a finished/live match, plus the next few upcoming days — instead of all 104 rows.
+export function currentFixtureWindow(
+  list: Fixture[] = fixtures,
+  { daysBefore = 1, daysAfter = 2 }: { daysBefore?: number; daysAfter?: number } = {}
+): Fixture[] {
+  const days = fixturesByDate(list);
+  if (days.length === 0) return [];
+  // Pivot = first day that is NOT fully finished (i.e. has upcoming/live games).
+  let pivot = days.findIndex((d) => d.fixtures.some((f) => !isFinished(f)));
+  if (pivot === -1) pivot = days.length - 1; // tournament over: show the last days
+  const start = Math.max(0, pivot - daysBefore);
+  const end = Math.min(days.length, pivot + daysAfter + 1);
+  return days.slice(start, end).flatMap((d) => d.fixtures);
+}
+
+export function finishedFixtures(list: Fixture[] = fixtures): Fixture[] {
+  return list.filter(isFinished);
+}
+
+export function fixtureById(id: number): Fixture | undefined {
+  return fixtures.find((f) => f.id === id);
+}

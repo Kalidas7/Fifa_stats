@@ -1,0 +1,704 @@
+{
+  "fixtureId": 730002,
+  "fetchedAt": "2026-06-18T19:30:00.000Z",
+  "teams": {
+    "home": {
+      "id": 76224,
+      "name": "Mexico",
+      "code": "MEX",
+      "logo": null,
+      "goals": 2
+    },
+    "away": {
+      "id": 74606,
+      "name": "South Korea",
+      "code": "KOR",
+      "logo": null,
+      "goals": 1
+    }
+  },
+  "statsByTeam": [
+    {
+      "teamId": 76224,
+      "name": "Mexico",
+      "stats": {
+        "shotsOnTarget": 4,
+        "totalShots": 16,
+        "possession": 45,
+        "corners": 5,
+        "fouls": 9,
+        "offsides": 2,
+        "yellow": 1,
+        "red": 0,
+        "saves": 2,
+        "passes": 536,
+        "passesAccurate": 472,
+        "passAccuracy": 88,
+        "xg": 2.1
+      }
+    },
+    {
+      "teamId": 74606,
+      "name": "South Korea",
+      "stats": {
+        "shotsOnTarget": 3,
+        "totalShots": 13,
+        "possession": 55,
+        "corners": 10,
+        "fouls": 15,
+        "offsides": 3,
+        "yellow": 1,
+        "red": 0,
+        "saves": 2,
+        "passes": 578,
+        "passesAccurate": 470,
+        "passAccuracy": 81,
+        "xg": 1.5
+      }
+    }
+  ],
+  "events": [
+    {
+      "minute": 37,
+      "extra": null,
+      "teamId": 76224,
+      "teamName": "Mexico",
+      "player": "M. Suzuki",
+      "playerId": 51494,
+      "assist": "F. Hassan",
+      "assistId": 73986,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    },
+    {
+      "minute": 62,
+      "extra": null,
+      "teamId": 74606,
+      "teamName": "South Korea",
+      "player": "O. Horvat",
+      "playerId": 21391,
+      "assist": "Son Heung-min",
+      "assistId": 59398,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    },
+    {
+      "minute": 81,
+      "extra": null,
+      "teamId": 76224,
+      "teamName": "Mexico",
+      "player": "B. Haddad",
+      "playerId": 15280,
+      "assist": "A. Walsh",
+      "assistId": 39132,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    }
+  ],
+  "lineups": [
+    {
+      "teamId": 76224,
+      "name": "Mexico",
+      "formation": "4-3-3",
+      "coach": "MEX Manager",
+      "startXI": [
+        {
+          "id": 5369,
+          "name": "L. Walsh",
+          "number": 1,
+          "pos": "G",
+          "grid": "1:1"
+        },
+        {
+          "id": 55561,
+          "name": "C. Ali",
+          "number": 2,
+          "pos": "D",
+          "grid": "2:1"
+        },
+        {
+          "id": 62121,
+          "name": "R. Diallo",
+          "number": 3,
+          "pos": "D",
+          "grid": "2:2"
+        },
+        {
+          "id": 3272,
+          "name": "N. Dubois",
+          "number": 4,
+          "pos": "D",
+          "grid": "2:3"
+        },
+        {
+          "id": 61794,
+          "name": "D. Reyes",
+          "number": 5,
+          "pos": "D",
+          "grid": "2:4"
+        },
+        {
+          "id": 20225,
+          "name": "R. Bauer",
+          "number": 6,
+          "pos": "M",
+          "grid": "3:1"
+        },
+        {
+          "id": 15280,
+          "name": "B. Haddad",
+          "number": 7,
+          "pos": "M",
+          "grid": "3:2"
+        },
+        {
+          "id": 3224,
+          "name": "D. Romero",
+          "number": 8,
+          "pos": "M",
+          "grid": "3:3"
+        },
+        {
+          "id": 51494,
+          "name": "M. Suzuki",
+          "number": 9,
+          "pos": "F",
+          "grid": "4:1"
+        },
+        {
+          "id": 39132,
+          "name": "A. Walsh",
+          "number": 10,
+          "pos": "F",
+          "grid": "4:2"
+        },
+        {
+          "id": 73986,
+          "name": "F. Hassan",
+          "number": 11,
+          "pos": "F",
+          "grid": "4:3"
+        }
+      ],
+      "subs": [
+        {
+          "id": 72999,
+          "name": "K. Haddad",
+          "number": 12,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 75551,
+          "name": "D. Schneider",
+          "number": 13,
+          "pos": "F",
+          "grid": null
+        },
+        {
+          "id": 97553,
+          "name": "A. Haddad",
+          "number": 14,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 67448,
+          "name": "B. Mensah",
+          "number": 15,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 61981,
+          "name": "E. Nguyen",
+          "number": 16,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 91261,
+          "name": "E. Sørensen",
+          "number": 17,
+          "pos": "G",
+          "grid": null
+        },
+        {
+          "id": 40709,
+          "name": "L. Jovanović",
+          "number": 18,
+          "pos": "F",
+          "grid": null
+        }
+      ]
+    },
+    {
+      "teamId": 74606,
+      "name": "South Korea",
+      "formation": "4-3-3",
+      "coach": "KOR Manager",
+      "startXI": [
+        {
+          "id": 77314,
+          "name": "D. Tanaka",
+          "number": 1,
+          "pos": "G",
+          "grid": "1:1"
+        },
+        {
+          "id": 85637,
+          "name": "M. Park",
+          "number": 2,
+          "pos": "D",
+          "grid": "2:1"
+        },
+        {
+          "id": 87041,
+          "name": "G. Rossi",
+          "number": 3,
+          "pos": "D",
+          "grid": "2:2"
+        },
+        {
+          "id": 51454,
+          "name": "N. Bianchi",
+          "number": 4,
+          "pos": "D",
+          "grid": "2:3"
+        },
+        {
+          "id": 72791,
+          "name": "F. García",
+          "number": 5,
+          "pos": "D",
+          "grid": "2:4"
+        },
+        {
+          "id": 47756,
+          "name": "B. Hassan",
+          "number": 6,
+          "pos": "M",
+          "grid": "3:1"
+        },
+        {
+          "id": 91894,
+          "name": "K. Lindholm",
+          "number": 7,
+          "pos": "M",
+          "grid": "3:2"
+        },
+        {
+          "id": 10514,
+          "name": "K. García",
+          "number": 8,
+          "pos": "M",
+          "grid": "3:3"
+        },
+        {
+          "id": 59398,
+          "name": "Son Heung-min",
+          "number": 9,
+          "pos": "F",
+          "grid": "4:1"
+        },
+        {
+          "id": 89036,
+          "name": "J. Wagner",
+          "number": 10,
+          "pos": "F",
+          "grid": "4:2"
+        },
+        {
+          "id": 21391,
+          "name": "O. Horvat",
+          "number": 11,
+          "pos": "F",
+          "grid": "4:3"
+        }
+      ],
+      "subs": [
+        {
+          "id": 93762,
+          "name": "G. Murphy",
+          "number": 12,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 86656,
+          "name": "B. Greco",
+          "number": 13,
+          "pos": "F",
+          "grid": null
+        },
+        {
+          "id": 85601,
+          "name": "H. Kaur",
+          "number": 14,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 71509,
+          "name": "E. Kovač",
+          "number": 15,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 84796,
+          "name": "D. Müller",
+          "number": 16,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 80005,
+          "name": "O. Dubois",
+          "number": 17,
+          "pos": "G",
+          "grid": null
+        },
+        {
+          "id": 68056,
+          "name": "H. Müller",
+          "number": 18,
+          "pos": "F",
+          "grid": null
+        }
+      ]
+    }
+  ],
+  "players": [
+    {
+      "id": 5369,
+      "name": "L. Walsh",
+      "teamId": 76224,
+      "number": 1,
+      "pos": "G",
+      "minutes": 90,
+      "rating": 6.5,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 55561,
+      "name": "C. Ali",
+      "teamId": 76224,
+      "number": 2,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.1,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 62121,
+      "name": "R. Diallo",
+      "teamId": 76224,
+      "number": 3,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "id": 3272,
+      "name": "N. Dubois",
+      "teamId": 76224,
+      "number": 4,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.8,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 61794,
+      "name": "D. Reyes",
+      "teamId": 76224,
+      "number": 5,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 20225,
+      "name": "R. Bauer",
+      "teamId": 76224,
+      "number": 6,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 15280,
+      "name": "B. Haddad",
+      "teamId": 76224,
+      "number": 7,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.6,
+      "goals": 1,
+      "assists": 0,
+      "shots": 3,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 3224,
+      "name": "D. Romero",
+      "teamId": 76224,
+      "number": 8,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.6,
+      "goals": 0,
+      "assists": 0,
+      "shots": 1,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 51494,
+      "name": "M. Suzuki",
+      "teamId": 76224,
+      "number": 9,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 6.9,
+      "goals": 1,
+      "assists": 0,
+      "shots": 5,
+      "shotsOnTarget": 2,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 39132,
+      "name": "A. Walsh",
+      "teamId": 76224,
+      "number": 10,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.4,
+      "goals": 0,
+      "assists": 1,
+      "shots": 2,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 73986,
+      "name": "F. Hassan",
+      "teamId": 76224,
+      "number": 11,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.6,
+      "goals": 0,
+      "assists": 1,
+      "shots": 3,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 77314,
+      "name": "D. Tanaka",
+      "teamId": 74606,
+      "number": 1,
+      "pos": "G",
+      "minutes": 90,
+      "rating": 6.7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 85637,
+      "name": "M. Park",
+      "teamId": 74606,
+      "number": 2,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.1,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 87041,
+      "name": "G. Rossi",
+      "teamId": 74606,
+      "number": 3,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.1,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 51454,
+      "name": "N. Bianchi",
+      "teamId": 74606,
+      "number": 4,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.4,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 72791,
+      "name": "F. García",
+      "teamId": 74606,
+      "number": 5,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.5,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 47756,
+      "name": "B. Hassan",
+      "teamId": 74606,
+      "number": 6,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 91894,
+      "name": "K. Lindholm",
+      "teamId": 74606,
+      "number": 7,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 1,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 10514,
+      "name": "K. García",
+      "teamId": 74606,
+      "number": 8,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 1,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 59398,
+      "name": "Son Heung-min",
+      "teamId": 74606,
+      "number": 9,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.2,
+      "goals": 0,
+      "assists": 1,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "id": 89036,
+      "name": "J. Wagner",
+      "teamId": 74606,
+      "number": 10,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 6.4,
+      "goals": 0,
+      "assists": 0,
+      "shots": 4,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 21391,
+      "name": "O. Horvat",
+      "teamId": 74606,
+      "number": 11,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.4,
+      "goals": 1,
+      "assists": 0,
+      "shots": 3,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    }
+  ]
+}

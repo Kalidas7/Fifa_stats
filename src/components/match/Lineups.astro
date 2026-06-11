@@ -1,0 +1,246 @@
+---
+import { links } from '../../lib/url';
+import { playerIds } from '../../lib/data';
+import type { TeamLineup, LineupPlayer } from '../../lib/types';
+
+interface Props {
+  lineups: TeamLineup[];
+  homeAccent: string;
+  awayAccent: string;
+}
+const { lineups, homeAccent, awayAccent } = Astro.props;
+
+function surname(name: string): string {
+  const parts = name.trim().split(/\s+/);
+  return parts[parts.length - 1] || name;
+}
+
+// Place startXI on a pitch from API "row:col" grids (row 1 = keeper, at the back).
+function place(lineup: TeamLineup) {
+  const byRow = new Map<number, (LineupPlayer & { col: number })[]>();
+  for (const p of lineup.startXI ?? []) {
+    const [rowS, colS] = (p.grid ?? '1:1').split(':');
+    const row = Number(rowS) || 1;
+    const col = Number(colS) || 1;
+    if (!byRow.has(row)) byRow.set(row, []);
+    byRow.get(row)!.push({ ...p, col });
+  }
+  const maxRow = Math.max(1, ...byRow.keys());
+  const out: { p: LineupPlayer; x: number; y: number }[] = [];
+  for (const [row, ps] of byRow) {
+    ps.sort((a, b) => a.col - b.col);
+    const n = ps.length;
+    ps.forEach((p, i) => {
+      out.push({ p, x: ((i + 1) / (n + 1)) * 100, y: (1 - row / (maxRow + 1)) * 100 });
+    });
+  }
+  return out;
+}
+
+const sides = (lineups ?? []).slice(0, 2).map((l, idx) => ({
+  lineup: l,
+  accent: idx === 0 ? homeAccent : awayAccent,
+  placed: place(l),
+  subs: (l.subs ?? []).map((s) => ({
+    ...s,
+    linkable: s.id != null && playerIds.has(s.id),
+  })),
+}));
+---
+
+<div class="lineups">
+  {
+    sides.map(({ lineup, accent, placed, subs }) => (
+      <article class="lu-team" style={`--c:${accent}`}>
+        <header class="lu-head">
+          <span class="lu-name">{lineup.name}</span>
+          <span class="lu-form">{lineup.formation ?? '—'}</span>
+        </header>
+
+        {placed.length > 0 ? (
+          <div class="pitch">
+            {placed.map(({ p, x, y }) => {
+              const linkable = p.id != null && playerIds.has(p.id);
+              return (
+                <span class="pp" style={`left:${x}%;top:${y}%`}>
+                  <span class="pp-dot">{p.number ?? ''}</span>
+                  <span class="pp-name">
+                    {linkable ? <a href={links.player(p.id!)}>{surname(p.name)}</a> : surname(p.name)}
+                  </span>
+                </span>
+              );
+            })}
+          </div>
+        ) : (
+          <p class="lu-empty">Lineup not available.</p>
+        )}
+
+        {lineup.coach && <p class="lu-coach">Coach · {lineup.coach}</p>}
+
+        {subs.length > 0 && (
+          <div class="lu-subs">
+            <span class="lu-subs-label">Subs</span>
+            <span class="lu-subs-list">
+              {subs.map((s) => (
+                <span class="lu-sub">
+                  {s.linkable ? <a href={links.player(s.id!)}>{s.name}</a> : s.name}
+                </span>
+              ))}
+            </span>
+          </div>
+        )}
+      </article>
+    ))
+  }
+</div>
+
+<style>
+  .lineups {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  .lu-team {
+    background: linear-gradient(180deg, var(--surface), var(--bg-2));
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 14px;
+  }
+
+  .lu-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  }
+
+  .lu-name {
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 1.05rem;
+  }
+
+  .lu-form {
+    font-family: var(--font-display);
+    color: var(--c);
+    font-size: 1.05rem;
+    letter-spacing: 1px;
+  }
+
+  .pitch {
+    position: relative;
+    aspect-ratio: 3 / 4;
+    border-radius: 10px;
+    border: 1px solid var(--line-2);
+    background:
+      linear-gradient(0deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px) 0 0 / 100% 16.66%,
+      radial-gradient(60% 40% at 50% 0%, color-mix(in srgb, var(--c) 12%, transparent), transparent 70%),
+      repeating-linear-gradient(0deg, #0f1d16 0 18px, #0d1a14 18px 36px);
+    overflow: hidden;
+  }
+
+  /* centre circle + halfway line accents */
+  .pitch::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 64px;
+    height: 64px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .pp {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    width: 56px;
+  }
+
+  .pp-dot {
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background: var(--c);
+    color: #08120d;
+    display: grid;
+    place-items: center;
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 0.78rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(255, 255, 255, 0.18) inset;
+  }
+
+  .pp-name {
+    font-family: var(--font-head);
+    font-size: 0.68rem;
+    font-weight: 600;
+    color: var(--text);
+    text-align: center;
+    white-space: nowrap;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+    max-width: 64px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .pp-name a:hover {
+    color: var(--turf-bright);
+  }
+
+  .lu-empty {
+    color: var(--muted);
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 24px 0;
+  }
+
+  .lu-coach {
+    margin: 12px 0 0;
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+
+  .lu-subs {
+    margin-top: 10px;
+    border-top: 1px solid var(--line);
+    padding-top: 10px;
+  }
+
+  .lu-subs-label {
+    display: block;
+    font-family: var(--font-head);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.66rem;
+    color: var(--faint);
+    margin-bottom: 4px;
+  }
+
+  .lu-subs-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px 10px;
+  }
+
+  .lu-sub {
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+
+  .lu-sub a:hover {
+    color: var(--turf-bright);
+  }
+
+  @media (max-width: 600px) {
+    .lineups {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

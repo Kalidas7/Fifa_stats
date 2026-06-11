@@ -1,0 +1,702 @@
+{
+  "fixtureId": 730037,
+  "fetchedAt": "2026-06-18T19:30:00.000Z",
+  "teams": {
+    "home": {
+      "id": 72773,
+      "name": "Iran",
+      "code": "IRN",
+      "logo": null,
+      "goals": 0
+    },
+    "away": {
+      "id": 77824,
+      "name": "New Zealand",
+      "code": "NZL",
+      "logo": null,
+      "goals": 3
+    }
+  },
+  "statsByTeam": [
+    {
+      "teamId": 72773,
+      "name": "Iran",
+      "stats": {
+        "shotsOnTarget": 1,
+        "totalShots": 12,
+        "possession": 53,
+        "corners": 10,
+        "fouls": 15,
+        "offsides": 3,
+        "yellow": 1,
+        "red": 0,
+        "saves": 2,
+        "passes": 617,
+        "passesAccurate": 483,
+        "passAccuracy": 78
+      }
+    },
+    {
+      "teamId": 77824,
+      "name": "New Zealand",
+      "stats": {
+        "shotsOnTarget": 5,
+        "totalShots": 16,
+        "possession": 47,
+        "corners": 10,
+        "fouls": 6,
+        "offsides": 1,
+        "yellow": 2,
+        "red": 0,
+        "saves": 1,
+        "passes": 565,
+        "passesAccurate": 488,
+        "passAccuracy": 86
+      }
+    }
+  ],
+  "events": [
+    {
+      "minute": 1,
+      "extra": null,
+      "teamId": 77824,
+      "teamName": "New Zealand",
+      "player": "M. Hassan",
+      "playerId": 48731,
+      "assist": null,
+      "assistId": null,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    },
+    {
+      "minute": 9,
+      "extra": null,
+      "teamId": 77824,
+      "teamName": "New Zealand",
+      "player": "K. Lindholm",
+      "playerId": 37432,
+      "assist": "E. Murphy",
+      "assistId": 31186,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    },
+    {
+      "minute": 76,
+      "extra": null,
+      "teamId": 77824,
+      "teamName": "New Zealand",
+      "player": "M. Hassan",
+      "playerId": 48731,
+      "assist": "D. Costa",
+      "assistId": 72610,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    }
+  ],
+  "lineups": [
+    {
+      "teamId": 72773,
+      "name": "Iran",
+      "formation": "4-3-3",
+      "coach": "IRN Manager",
+      "startXI": [
+        {
+          "id": 42629,
+          "name": "H. Hassan",
+          "number": 1,
+          "pos": "G",
+          "grid": "1:1"
+        },
+        {
+          "id": 86902,
+          "name": "A. Müller",
+          "number": 2,
+          "pos": "D",
+          "grid": "2:1"
+        },
+        {
+          "id": 81867,
+          "name": "J. Horvat",
+          "number": 3,
+          "pos": "D",
+          "grid": "2:2"
+        },
+        {
+          "id": 19759,
+          "name": "L. Petrović",
+          "number": 4,
+          "pos": "D",
+          "grid": "2:3"
+        },
+        {
+          "id": 35779,
+          "name": "M. Schneider",
+          "number": 5,
+          "pos": "D",
+          "grid": "2:4"
+        },
+        {
+          "id": 74897,
+          "name": "C. García",
+          "number": 6,
+          "pos": "M",
+          "grid": "3:1"
+        },
+        {
+          "id": 13688,
+          "name": "H. Diallo",
+          "number": 7,
+          "pos": "M",
+          "grid": "3:2"
+        },
+        {
+          "id": 97003,
+          "name": "T. Park",
+          "number": 8,
+          "pos": "M",
+          "grid": "3:3"
+        },
+        {
+          "id": 51655,
+          "name": "H. Okafor",
+          "number": 9,
+          "pos": "F",
+          "grid": "4:1"
+        },
+        {
+          "id": 67436,
+          "name": "A. Fischer",
+          "number": 10,
+          "pos": "F",
+          "grid": "4:2"
+        },
+        {
+          "id": 44873,
+          "name": "J. Romero",
+          "number": 11,
+          "pos": "F",
+          "grid": "4:3"
+        }
+      ],
+      "subs": [
+        {
+          "id": 17270,
+          "name": "F. Murphy",
+          "number": 12,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 88943,
+          "name": "R. Romero",
+          "number": 13,
+          "pos": "F",
+          "grid": null
+        },
+        {
+          "id": 8944,
+          "name": "S. Bianchi",
+          "number": 14,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 72398,
+          "name": "A. Mensah",
+          "number": 15,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 66923,
+          "name": "V. Ferreira",
+          "number": 16,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 18203,
+          "name": "E. Eriksen",
+          "number": 17,
+          "pos": "G",
+          "grid": null
+        },
+        {
+          "id": 29485,
+          "name": "T. Reyes",
+          "number": 18,
+          "pos": "F",
+          "grid": null
+        }
+      ]
+    },
+    {
+      "teamId": 77824,
+      "name": "New Zealand",
+      "formation": "4-3-3",
+      "coach": "NZL Manager",
+      "startXI": [
+        {
+          "id": 68219,
+          "name": "V. Oliveira",
+          "number": 1,
+          "pos": "G",
+          "grid": "1:1"
+        },
+        {
+          "id": 93526,
+          "name": "L. Andersen",
+          "number": 2,
+          "pos": "D",
+          "grid": "2:1"
+        },
+        {
+          "id": 76205,
+          "name": "E. Haddad",
+          "number": 3,
+          "pos": "D",
+          "grid": "2:2"
+        },
+        {
+          "id": 60482,
+          "name": "S. Bauer",
+          "number": 4,
+          "pos": "D",
+          "grid": "2:3"
+        },
+        {
+          "id": 35018,
+          "name": "P. Rossi",
+          "number": 5,
+          "pos": "D",
+          "grid": "2:4"
+        },
+        {
+          "id": 37432,
+          "name": "K. Lindholm",
+          "number": 6,
+          "pos": "M",
+          "grid": "3:1"
+        },
+        {
+          "id": 72610,
+          "name": "D. Costa",
+          "number": 7,
+          "pos": "M",
+          "grid": "3:2"
+        },
+        {
+          "id": 31186,
+          "name": "E. Murphy",
+          "number": 8,
+          "pos": "M",
+          "grid": "3:3"
+        },
+        {
+          "id": 89556,
+          "name": "C. Murphy",
+          "number": 9,
+          "pos": "F",
+          "grid": "4:1"
+        },
+        {
+          "id": 10021,
+          "name": "M. Haddad",
+          "number": 10,
+          "pos": "F",
+          "grid": "4:2"
+        },
+        {
+          "id": 48731,
+          "name": "M. Hassan",
+          "number": 11,
+          "pos": "F",
+          "grid": "4:3"
+        }
+      ],
+      "subs": [
+        {
+          "id": 24956,
+          "name": "B. Dubois",
+          "number": 12,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 93043,
+          "name": "N. Diallo",
+          "number": 13,
+          "pos": "F",
+          "grid": null
+        },
+        {
+          "id": 94618,
+          "name": "V. Wagner",
+          "number": 14,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 46628,
+          "name": "B. Bianchi",
+          "number": 15,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 18406,
+          "name": "N. Sørensen",
+          "number": 16,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 664,
+          "name": "D. Ali",
+          "number": 17,
+          "pos": "G",
+          "grid": null
+        },
+        {
+          "id": 45442,
+          "name": "J. Kovač",
+          "number": 18,
+          "pos": "F",
+          "grid": null
+        }
+      ]
+    }
+  ],
+  "players": [
+    {
+      "id": 42629,
+      "name": "H. Hassan",
+      "teamId": 72773,
+      "number": 1,
+      "pos": "G",
+      "minutes": 90,
+      "rating": 7.2,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 86902,
+      "name": "A. Müller",
+      "teamId": 72773,
+      "number": 2,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.9,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 81867,
+      "name": "J. Horvat",
+      "teamId": 72773,
+      "number": 3,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.6,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 19759,
+      "name": "L. Petrović",
+      "teamId": 72773,
+      "number": 4,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.9,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 35779,
+      "name": "M. Schneider",
+      "teamId": 72773,
+      "number": 5,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 74897,
+      "name": "C. García",
+      "teamId": 72773,
+      "number": 6,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 13688,
+      "name": "H. Diallo",
+      "teamId": 72773,
+      "number": 7,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.8,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 97003,
+      "name": "T. Park",
+      "teamId": 72773,
+      "number": 8,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.8,
+      "goals": 0,
+      "assists": 0,
+      "shots": 1,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 51655,
+      "name": "H. Okafor",
+      "teamId": 72773,
+      "number": 9,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 6.7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "id": 67436,
+      "name": "A. Fischer",
+      "teamId": 72773,
+      "number": 10,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.2,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 44873,
+      "name": "J. Romero",
+      "teamId": 72773,
+      "number": 11,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 6.5,
+      "goals": 0,
+      "assists": 0,
+      "shots": 3,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 68219,
+      "name": "V. Oliveira",
+      "teamId": 77824,
+      "number": 1,
+      "pos": "G",
+      "minutes": 90,
+      "rating": 7.2,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 93526,
+      "name": "L. Andersen",
+      "teamId": 77824,
+      "number": 2,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.4,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 76205,
+      "name": "E. Haddad",
+      "teamId": 77824,
+      "number": 3,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.1,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 60482,
+      "name": "S. Bauer",
+      "teamId": 77824,
+      "number": 4,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 35018,
+      "name": "P. Rossi",
+      "teamId": 77824,
+      "number": 5,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 37432,
+      "name": "K. Lindholm",
+      "teamId": 77824,
+      "number": 6,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.2,
+      "goals": 1,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 72610,
+      "name": "D. Costa",
+      "teamId": 77824,
+      "number": 7,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.6,
+      "goals": 0,
+      "assists": 1,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 31186,
+      "name": "E. Murphy",
+      "teamId": 77824,
+      "number": 8,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.7,
+      "goals": 0,
+      "assists": 1,
+      "shots": 1,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 89556,
+      "name": "C. Murphy",
+      "teamId": 77824,
+      "number": 9,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "id": 10021,
+      "name": "M. Haddad",
+      "teamId": 77824,
+      "number": 10,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.1,
+      "goals": 0,
+      "assists": 0,
+      "shots": 4,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 48731,
+      "name": "M. Hassan",
+      "teamId": 77824,
+      "number": 11,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.7,
+      "goals": 2,
+      "assists": 0,
+      "shots": 5,
+      "shotsOnTarget": 3,
+      "yellow": 1,
+      "red": 0
+    }
+  ]
+}

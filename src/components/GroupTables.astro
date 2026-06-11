@@ -1,0 +1,288 @@
+---
+import { standings as defaultStandings } from '../lib/data';
+import { teamTheme, readableAccent } from '../lib/teams';
+import type { GroupStanding } from '../lib/types';
+
+interface Props {
+  groups?: GroupStanding[];
+}
+const { groups = defaultStandings } = Astro.props;
+
+// Precompute everything here — Astro's template parser treats bare `<`/`>` as tags, so
+// comparisons (rank <= 2, goalDiff > 0) must not live inside {} expressions.
+const view = groups.map((g) => ({
+  letter: g.letter,
+  rows: g.table.map((r) => {
+    const th = teamTheme(r.team.name);
+    return {
+      rank: r.rank,
+      name: r.team.name,
+      code: r.team.code ?? '',
+      accent: readableAccent(th),
+      qual: r.rank <= 2,
+      played: r.played,
+      win: r.win,
+      draw: r.draw,
+      lose: r.lose,
+      gd: r.goalDiff > 0 ? `+${r.goalDiff}` : String(r.goalDiff),
+      points: r.points,
+      form: (r.form ?? '')
+        .slice(-5)
+        .split('')
+        .map((c) => ({ c, cls: c === 'W' ? 'w' : c === 'L' ? 'l' : 'd' })),
+    };
+  }),
+}));
+---
+
+<div class="gtables">
+  {
+    view.map((g) => (
+      <article class="gtable">
+        <header class="gth">
+          <span class="gth-letter">{g.letter}</span>
+          <span class="gth-tag">Group {g.letter}</span>
+        </header>
+
+        <div class="gtr gtr-head" aria-hidden="true">
+          <span class="gtr-rank" />
+          <span class="gtr-dot-cell" />
+          <span class="gtr-name" />
+          <span class="gtr-stat">P</span>
+          <span class="gtr-stat wdl">W</span>
+          <span class="gtr-stat wdl">D</span>
+          <span class="gtr-stat wdl">L</span>
+          <span class="gtr-stat">GD</span>
+          <span class="gtr-pts">Pts</span>
+          <span class="gtr-form-head">Form</span>
+        </div>
+
+        <ol class="gtr-list">
+          {g.rows.map((r) => (
+            <li class:list={['gtr', { qual: r.qual }]} style={`--c:${r.accent}`}>
+              <span class="gtr-rank">{r.rank}</span>
+              <span class="gtr-dot-cell">
+                <span class="gtr-dot" aria-hidden="true" />
+              </span>
+              <span class="gtr-name">
+                <span class="full">{r.name}</span>
+                <span class="abbr">{r.code}</span>
+              </span>
+              <span class="gtr-stat">{r.played}</span>
+              <span class="gtr-stat wdl">{r.win}</span>
+              <span class="gtr-stat wdl">{r.draw}</span>
+              <span class="gtr-stat wdl">{r.lose}</span>
+              <span class="gtr-stat">{r.gd}</span>
+              <span class="gtr-pts">{r.points}</span>
+              <span class="gtr-form">
+                {r.form.map((f) => (
+                  <i class={f.cls}>{f.c}</i>
+                ))}
+              </span>
+            </li>
+          ))}
+        </ol>
+      </article>
+    ))
+  }
+</div>
+
+<style>
+  .gtables {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 16px;
+  }
+
+  .gtable {
+    background: linear-gradient(180deg, var(--surface), var(--bg-2));
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 12px 16px 14px;
+    box-shadow: var(--shadow);
+  }
+
+  .gth {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+
+  .gth-letter {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    color: var(--turf-bright);
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-items: center;
+    border-radius: 8px;
+    background: var(--surface-3);
+    border: 1px solid var(--line-2);
+  }
+
+  .gth-tag {
+    font-family: var(--font-head);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 0.74rem;
+    color: var(--faint);
+  }
+
+  /* Shared grid for header row + body rows → columns always line up. */
+  .gtr {
+    display: grid;
+    grid-template-columns: 16px 14px minmax(0, 1fr) repeat(5, 24px) 30px auto;
+    align-items: center;
+    gap: 4px;
+    padding: 6px 2px;
+    border-radius: 6px;
+    position: relative;
+  }
+
+  .gtr-head {
+    padding-block: 2px 4px;
+    border-bottom: 1px solid var(--line);
+    margin-bottom: 2px;
+  }
+
+  .gtr-head .gtr-stat,
+  .gtr-head .gtr-pts,
+  .gtr-form-head {
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: var(--faint);
+  }
+
+  .gtr-form-head {
+    text-align: right;
+    padding-right: 2px;
+  }
+
+  .gtr-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1px;
+  }
+
+  .gtr.qual::before {
+    content: '';
+    position: absolute;
+    left: -16px;
+    top: 4px;
+    bottom: 4px;
+    width: 3px;
+    border-radius: 2px;
+    background: var(--turf-bright);
+  }
+
+  .gtr-rank {
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 0.82rem;
+    color: var(--muted);
+    text-align: center;
+  }
+
+  .gtr-dot-cell {
+    display: grid;
+    place-items: center;
+  }
+
+  .gtr-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--c);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.16) inset;
+  }
+
+  .gtr-name {
+    min-width: 0;
+    font-family: var(--font-head);
+    font-weight: 600;
+    font-size: 0.94rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .gtr-name .abbr {
+    display: none;
+    color: var(--c);
+    font-weight: 700;
+  }
+
+  .gtr-stat {
+    font-variant-numeric: tabular-nums;
+    font-size: 0.84rem;
+    color: var(--muted);
+    text-align: center;
+  }
+
+  .gtr-pts {
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 0.96rem;
+    color: var(--text);
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .gtr-form {
+    display: flex;
+    gap: 2px;
+    justify-content: flex-end;
+    padding-left: 4px;
+  }
+
+  .gtr-form i {
+    width: 13px;
+    height: 13px;
+    border-radius: 3px;
+    font-style: normal;
+    font-size: 0.58rem;
+    font-weight: 700;
+    display: grid;
+    place-items: center;
+  }
+
+  .gtr-form .w {
+    background: var(--turf-bright);
+    color: #08120d;
+  }
+  .gtr-form .d {
+    background: var(--surface-3);
+    color: var(--muted);
+    box-shadow: 0 0 0 1px var(--line-2) inset;
+  }
+  .gtr-form .l {
+    background: var(--live);
+    color: #fff;
+  }
+
+  @media (max-width: 470px) {
+    .gtables {
+      grid-template-columns: 1fr;
+    }
+    .gtr {
+      grid-template-columns: 16px 14px minmax(0, 1fr) 24px 24px 30px;
+    }
+    .gtr .wdl,
+    .gtr-form,
+    .gtr-form-head {
+      display: none;
+    }
+    .gtr-name .full {
+      display: none;
+    }
+    .gtr-name .abbr {
+      display: inline;
+    }
+  }
+</style>

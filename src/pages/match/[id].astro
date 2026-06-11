@@ -1,0 +1,281 @@
+---
+import Base from '../../layouts/Base.astro';
+import ShotsHero from '../../components/match/ShotsHero.astro';
+import StatBars from '../../components/match/StatBars.astro';
+import GoalsTimeline from '../../components/match/GoalsTimeline.astro';
+import Lineups from '../../components/match/Lineups.astro';
+import Standout from '../../components/match/Standout.astro';
+import { allMatches } from '../../lib/matches';
+import { fixtureById, lastUpdated } from '../../lib/data';
+import { matchAccents } from '../../lib/teams';
+import { links } from '../../lib/url';
+import type { MatchFile } from '../../lib/types';
+
+export function getStaticPaths() {
+  return allMatches().map((m) => ({
+    params: { id: String(m.fixtureId) },
+    props: { match: m },
+  }));
+}
+
+interface Props {
+  match: MatchFile;
+}
+const { match } = Astro.props;
+const fixture = fixtureById(match.fixtureId);
+
+const home = match.teams.home;
+const away = match.teams.away;
+const { home: homeAccent, away: awayAccent } = matchAccents(home?.name, away?.name);
+
+const homeStats = match.statsByTeam?.[0] ?? { teamId: home?.id ?? null, name: home?.name ?? '', stats: {} };
+const awayStats = match.statsByTeam?.[1] ?? { teamId: away?.id ?? null, name: away?.name ?? '', stats: {} };
+const homeSot = Number(homeStats.stats?.shotsOnTarget ?? 0);
+const awaySot = Number(awayStats.stats?.shotsOnTarget ?? 0);
+
+const hg = home?.goals ?? 0;
+const ag = away?.goals ?? 0;
+
+const standout = [...(match.players ?? [])]
+  .filter((p) => p.rating != null)
+  .sort((a, b) => (b.rating ?? 0) - (a.rating ?? 0))[0];
+const standoutTeam = standout ? (standout.teamId === home?.id ? home : away) : null;
+
+const hasGoals = (match.events ?? []).some((e) => e.type === 'Goal');
+const hasLineups = (match.lineups ?? []).some((l) => (l.startXI ?? []).length > 0);
+
+// Build the per-side shot list for the net animation: goals (labeled scorer · minute,
+// from the real events) first, padded out to the shots-on-target count with generic
+// on-target shots. We have no real shot coordinates, so the rest are stylised.
+const goalEvents = (match.events ?? []).filter((e) => e.type === 'Goal');
+const surnameOf = (n: string | null) => {
+  const parts = (n ?? '').trim().split(/\s+/);
+  return parts[parts.length - 1] || (n ?? '');
+};
+function buildShots(sot: number, gevs: typeof goalEvents) {
+  const goals = gevs.map((e) => ({
+    isGoal: true,
+    label: `${surnameOf(e.player)} ${e.minute ?? ''}'`,
+  }));
+  const n = Math.max(sot, goals.length);
+  return Array.from({ length: n }, (_, i) => goals[i] ?? { isGoal: false });
+}
+const homeShots = buildShots(homeSot, goalEvents.filter((e) => e.teamId === home?.id));
+const awayShots = buildShots(awaySot, goalEvents.filter((e) => e.teamId === away?.id));
+
+const dateLabel = fixture?.utcDate
+  ? new Date(fixture.utcDate).toLocaleDateString('en-GB', {
+      day: 'numeric',
+      month: 'short',
+      year: 'numeric',
+      timeZone: 'UTC',
+    })
+  : '';
+const roundLabel = [fixture?.round, fixture?.group ? `Group ${fixture.group}` : null]
+  .filter(Boolean)
+  .join(' · ');
+const venue = fixture?.venue?.name ?? null;
+
+const title = `${home?.name ?? 'TBD'} ${hg}–${ag} ${away?.name ?? 'TBD'} — FootStats`;
+---
+
+<Base title={title} accent={homeAccent} accent2={awayAccent} updatedAt={lastUpdated()}>
+  <div class="container match">
+    <a class="back" href={links.home()}>← All matches</a>
+
+    <!-- scoreboard -->
+    <header class="scoreboard" style={`--home:${homeAccent};--away:${awayAccent}`}>
+      <div class="sb-meta">
+        <span>{roundLabel}</span>
+        {dateLabel && <span>· {dateLabel}</span>}
+        {venue && <span>· {venue}</span>}
+      </div>
+      <div class="sb-teams">
+        <div class="sb-team home">
+          <span class="sb-tname">{home?.name}</span>
+          <span class="sb-tcode">{home?.code}</span>
+        </div>
+        <div class="sb-score">
+          <b>{hg}</b><i>–</i><b>{ag}</b>
+          <span class="sb-ft">Full time</span>
+        </div>
+        <div class="sb-team away">
+          <span class="sb-tname">{away?.name}</span>
+          <span class="sb-tcode">{away?.code}</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- hero: shots on target -->
+    <ShotsHero
+      home={home}
+      away={away}
+      homeShots={homeShots}
+      awayShots={awayShots}
+      homeAccent={homeAccent}
+      awayAccent={awayAccent}
+    />
+
+    <!-- stat comparison -->
+    <section class="section match-section">
+      <div class="section-head">
+        <h2 class="section-title">Match Stats</h2>
+        <span class="section-note">{home?.code} vs {away?.code}</span>
+      </div>
+      <StatBars home={homeStats} away={awayStats} homeAccent={homeAccent} awayAccent={awayAccent} />
+    </section>
+
+    {
+      standout && standoutTeam && (
+        <section class="section match-section">
+          <div class="section-head">
+            <h2 class="section-title">Standout</h2>
+            <span class="section-note">Highest match rating</span>
+          </div>
+          <Standout player={standout} team={standoutTeam} />
+        </section>
+      )
+    }
+
+    {
+      hasGoals && (
+        <section class="section match-section">
+          <div class="section-head">
+            <h2 class="section-title">Goals</h2>
+            <span class="section-note">Scorer · minute · assist</span>
+          </div>
+          <GoalsTimeline
+            events={match.events}
+            homeId={home?.id ?? null}
+            homeAccent={homeAccent}
+            awayAccent={awayAccent}
+          />
+        </section>
+      )
+    }
+
+    {
+      hasLineups && (
+        <section class="section match-section">
+          <div class="section-head">
+            <h2 class="section-title">Lineups</h2>
+            <span class="section-note">Formation &amp; XI</span>
+          </div>
+          <Lineups lineups={match.lineups} homeAccent={homeAccent} awayAccent={awayAccent} />
+        </section>
+      )
+    }
+  </div>
+</Base>
+
+<style>
+  .match {
+    padding-top: 18px;
+  }
+
+  .back {
+    display: inline-block;
+    font-family: var(--font-head);
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    font-size: 0.82rem;
+    color: var(--muted);
+    margin-bottom: 16px;
+  }
+  .back:hover {
+    color: var(--turf-bright);
+  }
+
+  .scoreboard {
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    background: linear-gradient(180deg, var(--surface), var(--bg-2));
+    padding: 16px clamp(16px, 4vw, 32px) 20px;
+    margin-bottom: 16px;
+  }
+
+  .sb-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    justify-content: center;
+    font-family: var(--font-head);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    font-size: 0.74rem;
+    color: var(--faint);
+    margin-bottom: 14px;
+  }
+
+  .sb-teams {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .sb-team {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+  .sb-team.home {
+    align-items: flex-end;
+    text-align: right;
+  }
+  .sb-team.away {
+    align-items: flex-start;
+  }
+
+  .sb-tname {
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: clamp(1.05rem, 3.5vw, 1.7rem);
+  }
+  .sb-team.home .sb-tname {
+    border-right: 3px solid var(--home);
+    padding-right: 10px;
+  }
+  .sb-team.away .sb-tname {
+    border-left: 3px solid var(--away);
+    padding-left: 10px;
+  }
+
+  .sb-tcode {
+    font-family: var(--font-head);
+    font-weight: 700;
+    color: var(--faint);
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+  }
+
+  .sb-score {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: var(--font-display);
+    font-size: clamp(2.4rem, 9vw, 3.6rem);
+    line-height: 1;
+    position: relative;
+  }
+  .sb-score i {
+    color: var(--faint);
+    font-style: normal;
+  }
+  .sb-ft {
+    position: absolute;
+    bottom: -16px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: var(--font-head);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.62rem;
+    color: var(--turf-bright);
+    white-space: nowrap;
+  }
+
+  .match-section {
+    margin-top: clamp(28px, 5vw, 44px);
+  }
+</style>

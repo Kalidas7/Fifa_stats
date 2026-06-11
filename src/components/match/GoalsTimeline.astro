@@ -1,0 +1,207 @@
+---
+import { links } from '../../lib/url';
+import { playerIds } from '../../lib/data';
+import type { MatchEvent } from '../../lib/types';
+
+interface Props {
+  events: MatchEvent[];
+  homeId: number | null;
+  homeAccent: string;
+  awayAccent: string;
+}
+const { events, homeId, homeAccent, awayAccent } = Astro.props;
+
+const goals = events
+  .filter((e) => e.type === 'Goal')
+  .sort((a, b) => (a.minute ?? 0) - (b.minute ?? 0))
+  .map((e) => ({
+    side: e.teamId === homeId ? 'home' : 'away',
+    minute: e.minute ?? 0,
+    extra: e.extra,
+    player: e.player ?? 'Unknown',
+    playerId: e.playerId,
+    linkable: e.playerId != null && playerIds.has(e.playerId),
+    assist: e.assist,
+    isOwn: /own/i.test(e.detail),
+    isPen: /penal/i.test(e.detail),
+  }));
+---
+
+{
+  goals.length > 0 && (
+    <ol class="timeline" style={`--home:${homeAccent};--away:${awayAccent}`}>
+      {goals.map((g) => (
+        <li class:list={['tl-goal', g.side]}>
+          <span class="tl-min">
+            {g.minute}
+            {g.extra ? `+${g.extra}` : ''}′
+          </span>
+          <span class="tl-card">
+            <span class="tl-icon" aria-hidden="true">
+              ⚽
+            </span>
+            <span class="tl-body">
+              <span class="tl-scorer">
+                {g.linkable ? (
+                  <a href={links.player(g.playerId!)}>{g.player}</a>
+                ) : (
+                  g.player
+                )}
+                {g.isPen && <em class="tl-tag">pen</em>}
+                {g.isOwn && <em class="tl-tag og">o.g.</em>}
+              </span>
+              {g.assist && <span class="tl-assist">assist · {g.assist}</span>}
+            </span>
+          </span>
+        </li>
+      ))}
+    </ol>
+  )
+}
+
+<style>
+  .timeline {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: grid;
+    gap: 10px;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--line-2);
+    transform: translateX(-50%);
+  }
+
+  .tl-goal {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 50%;
+    position: relative;
+  }
+
+  .tl-goal.home {
+    justify-content: flex-end;
+    padding-right: 22px;
+  }
+
+  .tl-goal.away {
+    margin-left: 50%;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    padding-left: 22px;
+  }
+
+  .tl-min {
+    font-family: var(--font-display);
+    font-size: 0.95rem;
+    color: var(--text);
+    flex: none;
+  }
+
+  .tl-card {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .tl-goal.away .tl-card {
+    flex-direction: row-reverse;
+    text-align: right;
+  }
+
+  .tl-icon {
+    font-size: 0.9rem;
+    filter: grayscale(0.2);
+  }
+
+  .tl-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tl-scorer {
+    font-family: var(--font-head);
+    font-weight: 600;
+    font-size: 0.96rem;
+  }
+
+  .tl-scorer a:hover {
+    color: var(--turf-bright);
+    text-decoration: underline;
+  }
+
+  .tl-tag {
+    font-style: normal;
+    font-size: 0.62rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #08120d;
+    background: var(--gold);
+    padding: 1px 5px;
+    border-radius: 4px;
+    margin-left: 6px;
+  }
+
+  .tl-tag.og {
+    background: var(--live);
+    color: #fff;
+  }
+
+  .tl-assist {
+    font-size: 0.76rem;
+    color: var(--faint);
+  }
+
+  /* coloured node on the centre line */
+  .tl-goal::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    border: 2px solid var(--bg);
+  }
+  .tl-goal.home::after {
+    right: -6px;
+    background: var(--home);
+  }
+  .tl-goal.away::after {
+    left: -6px;
+    background: var(--away);
+  }
+
+  @media (max-width: 560px) {
+    .timeline::before {
+      left: 7px;
+    }
+    .tl-goal,
+    .tl-goal.away {
+      width: 100%;
+      margin-left: 0;
+      flex-direction: row;
+      justify-content: flex-start;
+      padding-left: 22px;
+      padding-right: 0;
+    }
+    .tl-goal.away .tl-card {
+      flex-direction: row;
+      text-align: left;
+    }
+    .tl-goal.home::after,
+    .tl-goal.away::after {
+      left: 2px;
+      right: auto;
+    }
+  }
+</style>

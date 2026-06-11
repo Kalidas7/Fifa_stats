@@ -1,0 +1,977 @@
+{
+  "updatedAt": "2026-06-18T19:30:00.000Z",
+  "groups": [
+    {
+      "letter": "A",
+      "table": [
+        {
+          "rank": 1,
+          "team": {
+            "id": 67246,
+            "name": "Czechia",
+            "code": "CZE",
+            "logo": null
+          },
+          "played": 2,
+          "win": 1,
+          "draw": 0,
+          "lose": 1,
+          "goalsFor": 4,
+          "goalsAgainst": 3,
+          "goalDiff": 1,
+          "points": 3,
+          "form": "LW",
+          "description": "Advances to knockout stage"
+        },
+        {
+          "rank": 2,
+          "team": {
+            "id": 74606,
+            "name": "South Korea",
+            "code": "KOR",
+            "logo": null
+          },
+          "played": 2,
+          "win": 1,
+          "draw": 0,
+          "lose": 1,
+          "goalsFor": 3,
+          "goalsAgainst": 2,
+          "goalDiff": 1,
+          "points": 3,
+          "form": "WL",
+          "description": "Advances to knockout stage"
+        },
+        {
+          "rank": 3,
+          "team": {
+            "id": 76224,
+            "name": "Mexico",
+            "code": "MEX",
+            "logo": null
+          },
+          "played": 2,
+          "win": 1,
+          "draw": 0,
+          "lose": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 2,
+          "goalDiff": 0,
+          "points": 3,
+          "form": "LW",
+          "description": null
+        },
+        {
+          "rank": 4,
+          "team": {
+            "id": 81440,
+            "name": "South Africa",
+            "code": "RSA",
+            "logo": null
+          },
+          "played": 2,
+          "win": 1,
+          "draw": 0,
+          "lose": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 4,
+          "goalDiff": -2,
+          "points": 3,
+          "form": "WL",
+          "description": null
+        }
+      ]
+    },
+    {
+      "letter": "B",
+      "table": [
+        {
+          "rank": 1,
+          "team": {
+            "id": 65761,
+            "name": "Bosnia and Herzegovina",
+            "code": "BIH",
+            "logo": null
+          },
+          "played": 2,
+          "win": 1,
+          "draw": 1,
+          "lose": 0,
+          "goalsFor": 3,
+          "goalsAgainst": 1,
+          "goalDiff": 2,
+          "points": 4,
+          "form": "DW",
+          "description": "Advances to knockout stage"
+        },
+        {
+          "rank": 2,
+          "team": {
+            "id": 66480,
+            "name": "Canada",
+            "code": "CAN",
+            "logo": null
+          },
+          "played": 2,
+          "win": 1,
+          "draw": 1,
+          "lose": 0,
+          "goalsFor": 3,
+          "goalsAgainst": 2,
+          "goalDiff": 1,
+          "points": 4,
+          "form": "DW",
+          "description": "Advances to knockout stage"
+        },
+        {
+          "rank": 3,
+          "team": {
+            "id": 79940,
+            "name": "Qatar",
+            "code": "QAT",
+            "logo": null
+          },
+          "played": 2,
+          "win": 1,
+          "draw": 0,
+          "lose": 1,
+          "goalsFor": 3,
+          "goalsAgainst": 2,
+          "goalDiff": 1,
+          "points": 3,
+          "form": "WL",
+          "description": null
+        },
+        {
+          "rank": 4,
+          "team": {
+            "id": 82471,
+            "name": "Switzerland",
+            "code": "SUI",
+            "logo": null
+          },
+          "played": 2,
+          "win": 0,
+          "draw": 0,
+          "lose": 2,
+          "goalsFor": 0,
+          "goalsAgainst": 4,
+          "goalDiff": -4,
+          "points": 0,
+          "form": "LL",
+          "description": null
+        }
+      ]
+    },
+    {
+      "letter": "C",
+      "table": [
+        {
+          "rank": 1,
+          "team": {
+            "id": 76094,
+            "name": "Morocco",
+            "code": "MAR",
+            "logo": null
+          },
+          "played": 2,
+          "win": 2,
+          "draw": 0,
+          "lose": 0,
+          "goalsFor": 6,
+          "goalsAgainst": 1,
+          "goalDiff": 5,
+          "points": 6,
+          "form": "WW",
+          "description": "Advances to knockout stage"
+        },
+        {
+          "rank": 2,
+          "team": {
+            "id": 71280,
+            "name": "Haiti",
+            "code": "HAI",
+            "logo": null
+          },
+          "played": 2,
+          "win": 1,
+          "draw": 1,
+          "lose": 0,
+          "goalsFor": 4,
+          "goalsAgainst": 1,
+          "goalDiff": 3,
+          "points": 4,
+          "form": "DW",
+          "description": "Advances to knockout stage"
+        },
+        {
+          "rank": 3,
+          "team": {
+            "id": 81919,
+            "name": "Scotland",
+            "code": "SCO",
+            "logo": null
+          },
+          "played": 2,
+          "win": 0,
+          "draw": 1,
+          "lose": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 3,
+          "goalDiff": -1,
+          "points": 1,
+          "form": "DL",
+          "description": null
+        },
+        {
+          "rank": 4,
+          "team": {
+            "id": 66033,
+            "name": "Brazil",
+            "code": "BRA",
+            "logo": null
+          },
+          "played": 2,
+          "win": 0,
+          "draw": 0,
+          "lose": 2,
+          "goalsFor": 0,
+          "goalsAgainst": 7,
+          "goalDiff": -7,
+          "points": 0,
+          "form": "LL",
+          "description": null
+        }
+      ]
+    },
+    {
+      "letter": "D",
+      "table": [
+        {
+          "rank": 1,
+          "team": {
+            "id": 84323,
+            "name": "United States",
+            "code": "USA",
+            "logo": null
+          },
+          "played": 2,
+          "win": 1,
+          "draw": 1,
+          "lose": 0,
+          "goalsFor": 4,
+          "goalsAgainst": 3,
+          "goalDiff": 1,
+          "points": 4,
+          "form": "DW",
+          "description": "Advances to knockout stage"
+        },
+        {
+          "rank": 2,
+          "team": {
+            "id": 65183,
+            "name": "Australia",
+            "code": "AUS",
+            "logo": null
+          },
+          "played": 2,
+          "win": 1,
+          "draw": 0,
+          "lose": 1,
+          "goalsFor": 3,
+          "goalsAgainst": 3,
+          "goalDiff": 0,
+          "points": 3,
+          "form": "WL",
+          "description": "Advances to knockout stage"
+        },
+        {
+          "rank": 3,
+          "team": {
+            "id": 78977,
+            "name": "Paraguay",
+            "code": "PAR",
+            "logo": null
+          },
+          "played": 1,
+          "win": 0,
+          "draw": 1,
+          "lose": 0,
+          "goalsFor": 2,
+          "goalsAgainst": 2,
+          "goalDiff": 0,
+          "points": 1,
+          "form": "D",
+          "description": null
+        },
+        {
+          "rank": 4,
+          "team": {
+            "id": 83441,
+            "name": "Turkey",
+            "code": "TUR",
+            "logo": null
+          },
+          "played": 1,
+          "win": 0,
+          "draw": 0,
+          "lose": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 2,
+          "goalDiff": -1,
+          "points": 0,
+          "form": "L",
+          "description": null
+        }
+      ]
+    },
+    {
+      "letter": "E",
+      "table": [
+        {
+          "rank": 1,
+          "team": {
+            "id": 67109,
+            "name": "Curacao",
+            "code": "CUW",
+            "logo": null
+          },
+          "played": 1,
+          "win": 1,
+          "draw": 0,
+          "lose": 0,
+          "goalsFor": 3,
+          "goalsAgainst": 0,
+          "goalDiff": 3,
+          "points": 3,
+          "form": "W",
+          "description": "Advances to knockout stage"
+        },
+        {
+          "rank": 2,
+          "team": {
+            "id": 66736,
+            "name": "Ivory Coast",
+            "code": "CIV",
+            "logo": null
+          },
+          "played": 2,
+          "win": 0,
+          "draw": 2,
+          "lose": 0,
+          "goalsFor": 2,
+          "goalsAgainst": 2,
+          "goalDiff": 0,
+          "points": 2,
+          "form": "DD",
+          "description": "Advances to knockout stage"
+        },
+        {
+          "rank": 3,
+          "team": {
+            "id": 68471,
+            "name": "Ecuador",
+            "code": "ECU",
+            "logo": null
+          },
+          "played": 1,
+          "win": 0,
+          "draw": 1,
+          "lose": 0,
+          "goalsFor": 1,
+          "goalsAgainst": 1,
+          "goalDiff": 0,
+          "points": 1,
+          "form": "D",
+          "description": null
+        },
+        {
+          "rank": 4,
+          "team": {
+            "id": 70452,
+            "name": "Germany",
+            "code": "GER",
+            "logo": null
+          },
+          "played": 2,
+          "win": 0,
+          "draw": 1,
+          "lose": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 4,
+          "goalDiff": -3,
+          "points": 1,
+          "form": "LD",
+          "description": null
+        }
+      ]
+    },
+    {
+      "letter": "F",
+      "table": [
+        {
+          "rank": 1,
+          "team": {
+            "id": 77165,
+            "name": "Netherlands",
+            "code": "NED",
+            "logo": null
+          },
+          "played": 2,
+          "win": 1,
+          "draw": 1,
+          "lose": 0,
+          "goalsFor": 3,
+          "goalsAgainst": 2,
+          "goalDiff": 1,
+          "points": 4,
+          "form": "WD",
+          "description": "Advances to knockout stage"
+        },
+        {
+          "rank": 2,
+          "team": {
+            "id": 83437,
+            "name": "Tunisia",
+            "code": "TUN",
+            "logo": null
+          },
+          "played": 1,
+          "win": 1,
+          "draw": 0,
+          "lose": 0,
+          "goalsFor": 2,
+          "goalsAgainst": 1,
+          "goalDiff": 1,
+          "points": 3,
+          "form": "W",
+          "description": "Advances to knockout stage"
+        },
+        {
+          "rank": 3,
+          "team": {
+            "id": 82529,
+            "name": "Sweden",
+            "code": "SWE",
+            "logo": null
+          },
+          "played": 2,
+          "win": 0,
+          "draw": 1,
+          "lose": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 3,
+          "goalDiff": -1,
+          "points": 1,
+          "form": "LD",
+          "description": null
+        },
+        {
+          "rank": 4,
+          "team": {
+            "id": 73672,
+            "name": "Japan",
+            "code": "JPN",
+            "logo": null
+          },
+          "played": 1,
+          "win": 0,
+          "draw": 0,
+          "lose": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 2,
+          "goalDiff": -1,
+          "points": 0,
+          "form": "L",
+          "description": null
+        }
+      ]
+    },
+    {
+      "letter": "G",
+      "table": [
+        {
+          "rank": 1,
+          "team": {
+            "id": 77824,
+            "name": "New Zealand",
+            "code": "NZL",
+            "logo": null
+          },
+          "played": 1,
+          "win": 1,
+          "draw": 0,
+          "lose": 0,
+          "goalsFor": 3,
+          "goalsAgainst": 0,
+          "goalDiff": 3,
+          "points": 3,
+          "form": "W",
+          "description": "Advances to knockout stage"
+        },
+        {
+          "rank": 2,
+          "team": {
+            "id": 65641,
+            "name": "Belgium",
+            "code": "BEL",
+            "logo": null
+          },
+          "played": 1,
+          "win": 0,
+          "draw": 1,
+          "lose": 0,
+          "goalsFor": 1,
+          "goalsAgainst": 1,
+          "goalDiff": 0,
+          "points": 1,
+          "form": "D",
+          "description": "Advances to knockout stage"
+        },
+        {
+          "rank": 3,
+          "team": {
+            "id": 68599,
+            "name": "Egypt",
+            "code": "EGY",
+            "logo": null
+          },
+          "played": 1,
+          "win": 0,
+          "draw": 1,
+          "lose": 0,
+          "goalsFor": 1,
+          "goalsAgainst": 1,
+          "goalDiff": 0,
+          "points": 1,
+          "form": "D",
+          "description": null
+        },
+        {
+          "rank": 4,
+          "team": {
+            "id": 72773,
+            "name": "Iran",
+            "code": "IRN",
+            "logo": null
+          },
+          "played": 1,
+          "win": 0,
+          "draw": 0,
+          "lose": 1,
+          "goalsFor": 0,
+          "goalsAgainst": 3,
+          "goalDiff": -3,
+          "points": 0,
+          "form": "L",
+          "description": null
+        }
+      ]
+    },
+    {
+      "letter": "H",
+      "table": [
+        {
+          "rank": 1,
+          "team": {
+            "id": 84312,
+            "name": "Uruguay",
+            "code": "URU",
+            "logo": null
+          },
+          "played": 1,
+          "win": 1,
+          "draw": 0,
+          "lose": 0,
+          "goalsFor": 4,
+          "goalsAgainst": 2,
+          "goalDiff": 2,
+          "points": 3,
+          "form": "W",
+          "description": "Advances to knockout stage"
+        },
+        {
+          "rank": 2,
+          "team": {
+            "id": 66953,
+            "name": "Cape Verde",
+            "code": "CPV",
+            "logo": null
+          },
+          "played": 1,
+          "win": 0,
+          "draw": 1,
+          "lose": 0,
+          "goalsFor": 1,
+          "goalsAgainst": 1,
+          "goalDiff": 0,
+          "points": 1,
+          "form": "D",
+          "description": "Advances to knockout stage"
+        },
+        {
+          "rank": 3,
+          "team": {
+            "id": 68962,
+            "name": "Spain",
+            "code": "ESP",
+            "logo": null
+          },
+          "played": 1,
+          "win": 0,
+          "draw": 1,
+          "lose": 0,
+          "goalsFor": 1,
+          "goalsAgainst": 1,
+          "goalDiff": 0,
+          "points": 1,
+          "form": "D",
+          "description": null
+        },
+        {
+          "rank": 4,
+          "team": {
+            "id": 74713,
+            "name": "Saudi Arabia",
+            "code": "KSA",
+            "logo": null
+          },
+          "played": 1,
+          "win": 0,
+          "draw": 0,
+          "lose": 1,
+          "goalsFor": 2,
+          "goalsAgainst": 4,
+          "goalDiff": -2,
+          "points": 0,
+          "form": "L",
+          "description": null
+        }
+      ]
+    },
+    {
+      "letter": "I",
+      "table": [
+        {
+          "rank": 1,
+          "team": {
+            "id": 81980,
+            "name": "Senegal",
+            "code": "SEN",
+            "logo": null
+          },
+          "played": 1,
+          "win": 1,
+          "draw": 0,
+          "lose": 0,
+          "goalsFor": 3,
+          "goalsAgainst": 0,
+          "goalDiff": 3,
+          "points": 3,
+          "form": "W",
+          "description": "Advances to knockout stage"
+        },
+        {
+          "rank": 2,
+          "team": {
+            "id": 72776,
+            "name": "Iraq",
+            "code": "IRQ",
+            "logo": null
+          },
+          "played": 1,
+          "win": 0,
+          "draw": 1,
+          "lose": 0,
+          "goalsFor": 2,
+          "goalsAgainst": 2,
+          "goalDiff": 0,
+          "points": 1,
+          "form": "D",
+          "description": "Advances to knockout stage"
+        },
+        {
+          "rank": 3,
+          "team": {
+            "id": 77489,
+            "name": "Norway",
+            "code": "NOR",
+            "logo": null
+          },
+          "played": 1,
+          "win": 0,
+          "draw": 1,
+          "lose": 0,
+          "goalsFor": 2,
+          "goalsAgainst": 2,
+          "goalDiff": 0,
+          "points": 1,
+          "form": "D",
+          "description": null
+        },
+        {
+          "rank": 4,
+          "team": {
+            "id": 69877,
+            "name": "France",
+            "code": "FRA",
+            "logo": null
+          },
+          "played": 1,
+          "win": 0,
+          "draw": 0,
+          "lose": 1,
+          "goalsFor": 0,
+          "goalsAgainst": 3,
+          "goalDiff": -3,
+          "points": 0,
+          "form": "L",
+          "description": null
+        }
+      ]
+    },
+    {
+      "letter": "J",
+      "table": [
+        {
+          "rank": 1,
+          "team": {
+            "id": 64892,
+            "name": "Algeria",
+            "code": "ALG",
+            "logo": null
+          },
+          "played": 1,
+          "win": 1,
+          "draw": 0,
+          "lose": 0,
+          "goalsFor": 2,
+          "goalsAgainst": 1,
+          "goalDiff": 1,
+          "points": 3,
+          "form": "W",
+          "description": "Advances to knockout stage"
+        },
+        {
+          "rank": 2,
+          "team": {
+            "id": 65184,
+            "name": "Austria",
+            "code": "AUT",
+            "logo": null
+          },
+          "played": 1,
+          "win": 0,
+          "draw": 1,
+          "lose": 0,
+          "goalsFor": 4,
+          "goalsAgainst": 4,
+          "goalDiff": 0,
+          "points": 1,
+          "form": "D",
+          "description": "Advances to knockout stage"
+        },
+        {
+          "rank": 3,
+          "team": {
+            "id": 73645,
+            "name": "Jordan",
+            "code": "JOR",
+            "logo": null
+          },
+          "played": 1,
+          "win": 0,
+          "draw": 1,
+          "lose": 0,
+          "goalsFor": 4,
+          "goalsAgainst": 4,
+          "goalDiff": 0,
+          "points": 1,
+          "form": "D",
+          "description": null
+        },
+        {
+          "rank": 4,
+          "team": {
+            "id": 65078,
+            "name": "Argentina",
+            "code": "ARG",
+            "logo": null
+          },
+          "played": 1,
+          "win": 0,
+          "draw": 0,
+          "lose": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 2,
+          "goalDiff": -1,
+          "points": 0,
+          "form": "L",
+          "description": null
+        }
+      ]
+    },
+    {
+      "letter": "K",
+      "table": [
+        {
+          "rank": 1,
+          "team": {
+            "id": 84541,
+            "name": "Uzbekistan",
+            "code": "UZB",
+            "logo": null
+          },
+          "played": 1,
+          "win": 1,
+          "draw": 0,
+          "lose": 0,
+          "goalsFor": 2,
+          "goalsAgainst": 1,
+          "goalDiff": 1,
+          "points": 3,
+          "form": "W",
+          "description": "Advances to knockout stage"
+        },
+        {
+          "rank": 2,
+          "team": {
+            "id": 66904,
+            "name": "DR Congo",
+            "code": "COD",
+            "logo": null
+          },
+          "played": 1,
+          "win": 1,
+          "draw": 0,
+          "lose": 0,
+          "goalsFor": 1,
+          "goalsAgainst": 0,
+          "goalDiff": 1,
+          "points": 3,
+          "form": "W",
+          "description": "Advances to knockout stage"
+        },
+        {
+          "rank": 3,
+          "team": {
+            "id": 66912,
+            "name": "Colombia",
+            "code": "COL",
+            "logo": null
+          },
+          "played": 1,
+          "win": 0,
+          "draw": 0,
+          "lose": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 2,
+          "goalDiff": -1,
+          "points": 0,
+          "form": "L",
+          "description": null
+        },
+        {
+          "rank": 4,
+          "team": {
+            "id": 79411,
+            "name": "Portugal",
+            "code": "POR",
+            "logo": null
+          },
+          "played": 1,
+          "win": 0,
+          "draw": 0,
+          "lose": 1,
+          "goalsFor": 0,
+          "goalsAgainst": 1,
+          "goalDiff": -1,
+          "points": 0,
+          "form": "L",
+          "description": null
+        }
+      ]
+    },
+    {
+      "letter": "L",
+      "table": [
+        {
+          "rank": 1,
+          "team": {
+            "id": 78973,
+            "name": "Panama",
+            "code": "PAN",
+            "logo": null
+          },
+          "played": 1,
+          "win": 1,
+          "draw": 0,
+          "lose": 0,
+          "goalsFor": 3,
+          "goalsAgainst": 0,
+          "goalDiff": 3,
+          "points": 3,
+          "form": "W",
+          "description": "Advances to knockout stage"
+        },
+        {
+          "rank": 2,
+          "team": {
+            "id": 68798,
+            "name": "England",
+            "code": "ENG",
+            "logo": null
+          },
+          "played": 1,
+          "win": 1,
+          "draw": 0,
+          "lose": 0,
+          "goalsFor": 2,
+          "goalsAgainst": 1,
+          "goalDiff": 1,
+          "points": 3,
+          "form": "W",
+          "description": "Advances to knockout stage"
+        },
+        {
+          "rank": 3,
+          "team": {
+            "id": 67008,
+            "name": "Croatia",
+            "code": "CRO",
+            "logo": null
+          },
+          "played": 1,
+          "win": 0,
+          "draw": 0,
+          "lose": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 2,
+          "goalDiff": -1,
+          "points": 0,
+          "form": "L",
+          "description": null
+        },
+        {
+          "rank": 4,
+          "team": {
+            "id": 70528,
+            "name": "Ghana",
+            "code": "GHA",
+            "logo": null
+          },
+          "played": 1,
+          "win": 0,
+          "draw": 0,
+          "lose": 1,
+          "goalsFor": 0,
+          "goalsAgainst": 3,
+          "goalDiff": -3,
+          "points": 0,
+          "form": "L",
+          "description": null
+        }
+      ]
+    }
+  ]
+}

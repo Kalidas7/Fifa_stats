@@ -1,0 +1,46 @@
+name: Update data
+
+# Refreshes the committed JSON every 3 hours during the tournament. Each run makes the
+# 4 daily list calls + per-match calls for any newly-finished fixture (Phase 2), each
+# fetched ONCE. 8 runs/day x 4 = 32 list calls + <=24 match calls = well under the 100/day
+# free cap. A push of changed /data triggers deploy.yml, so the live site self-updates.
+
+on:
+  schedule:
+    - cron: '0 */3 * * *'
+  workflow_dispatch: # allow manual runs from the Actions tab
+
+permissions:
+  contents: write # commit refreshed data back to the repo
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+
+      - name: Fetch + aggregate
+        env:
+          APISPORTS_KEY: ${{ secrets.APISPORTS_KEY }}
+        run: node scripts/fetch.mjs && node scripts/aggregate.mjs
+
+      - name: Commit data if changed
+        run: |
+          git config user.name "footstats-bot"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data
+          if git diff --cached --quiet; then
+            echo "No data changes this run."
+          else
+            git commit -m "data: refresh $(date -u +%Y-%m-%dT%H:%MZ)"
+            git push
+          fi

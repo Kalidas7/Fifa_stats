@@ -1,0 +1,3337 @@
+{
+  "updatedAt": "2026-06-18T19:30:00.000Z",
+  "league": {
+    "id": 1,
+    "season": 2026
+  },
+  "fixtures": [
+    {
+      "id": 730000,
+      "utcDate": "2026-06-11T16:00:00.000Z",
+      "timestamp": 1781193600,
+      "venue": {
+        "name": "Mercedes-Benz Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 1",
+      "group": "A",
+      "status": {
+        "short": "FT",
+        "long": "Match Finished",
+        "elapsed": 90
+      },
+      "finished": true,
+      "home": {
+        "id": 76224,
+        "name": "Mexico",
+        "code": "MEX",
+        "logo": null,
+        "goals": 0
+      },
+      "away": {
+        "id": 81440,
+        "name": "South Africa",
+        "code": "RSA",
+        "logo": null,
+        "goals": 1
+      }
+    },
+    {
+      "id": 730001,
+      "utcDate": "2026-06-11T19:00:00.000Z",
+      "timestamp": 1781204400,
+      "venue": {
+        "name": "BMO Field",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 1",
+      "group": "A",
+      "status": {
+        "short": "FT",
+        "long": "Match Finished",
+        "elapsed": 90
+      },
+      "finished": true,
+      "home": {
+        "id": 74606,
+        "name": "South Korea",
+        "code": "KOR",
+        "logo": null,
+        "goals": 2
+      },
+      "away": {
+        "id": 67246,
+        "name": "Czechia",
+        "code": "CZE",
+        "logo": null,
+        "goals": 0
+      }
+    },
+    {
+      "id": 730002,
+      "utcDate": "2026-06-17T16:00:00.000Z",
+      "timestamp": 1781712000,
+      "venue": {
+        "name": "Arrowhead Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 2",
+      "group": "A",
+      "status": {
+        "short": "FT",
+        "long": "Match Finished",
+        "elapsed": 90
+      },
+      "finished": true,
+      "home": {
+        "id": 76224,
+        "name": "Mexico",
+        "code": "MEX",
+        "logo": null,
+        "goals": 2
+      },
+      "away": {
+        "id": 74606,
+        "name": "South Korea",
+        "code": "KOR",
+        "logo": null,
+        "goals": 1
+      }
+    },
+    {
+      "id": 730003,
+      "utcDate": "2026-06-17T19:00:00.000Z",
+      "timestamp": 1781722800,
+      "venue": {
+        "name": "AT&T Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 2",
+      "group": "A",
+      "status": {
+        "short": "FT",
+        "long": "Match Finished",
+        "elapsed": 90
+      },
+      "finished": true,
+      "home": {
+        "id": 67246,
+        "name": "Czechia",
+        "code": "CZE",
+        "logo": null,
+        "goals": 4
+      },
+      "away": {
+        "id": 81440,
+        "name": "South Africa",
+        "code": "RSA",
+        "logo": null,
+        "goals": 1
+      }
+    },
+    {
+      "id": 730004,
+      "utcDate": "2026-06-24T16:00:00.000Z",
+      "timestamp": 1782316800,
+      "venue": {
+        "name": "Estadio Azteca",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 3",
+      "group": "A",
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": 67246,
+        "name": "Czechia",
+        "code": "CZE",
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": 76224,
+        "name": "Mexico",
+        "code": "MEX",
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730005,
+      "utcDate": "2026-06-24T19:00:00.000Z",
+      "timestamp": 1782327600,
+      "venue": {
+        "name": "Gillette Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 3",
+      "group": "A",
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": 81440,
+        "name": "South Africa",
+        "code": "RSA",
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": 74606,
+        "name": "South Korea",
+        "code": "KOR",
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730006,
+      "utcDate": "2026-06-11T16:00:00.000Z",
+      "timestamp": 1781193600,
+      "venue": {
+        "name": "Hard Rock Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 1",
+      "group": "B",
+      "status": {
+        "short": "FT",
+        "long": "Match Finished",
+        "elapsed": 90
+      },
+      "finished": true,
+      "home": {
+        "id": 66480,
+        "name": "Canada",
+        "code": "CAN",
+        "logo": null,
+        "goals": 1
+      },
+      "away": {
+        "id": 65761,
+        "name": "Bosnia and Herzegovina",
+        "code": "BIH",
+        "logo": null,
+        "goals": 1
+      }
+    },
+    {
+      "id": 730007,
+      "utcDate": "2026-06-11T19:00:00.000Z",
+      "timestamp": 1781204400,
+      "venue": {
+        "name": "AT&T Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 1",
+      "group": "B",
+      "status": {
+        "short": "FT",
+        "long": "Match Finished",
+        "elapsed": 90
+      },
+      "finished": true,
+      "home": {
+        "id": 79940,
+        "name": "Qatar",
+        "code": "QAT",
+        "logo": null,
+        "goals": 2
+      },
+      "away": {
+        "id": 82471,
+        "name": "Switzerland",
+        "code": "SUI",
+        "logo": null,
+        "goals": 0
+      }
+    },
+    {
+      "id": 730008,
+      "utcDate": "2026-06-17T16:00:00.000Z",
+      "timestamp": 1781712000,
+      "venue": {
+        "name": "BC Place",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 2",
+      "group": "B",
+      "status": {
+        "short": "FT",
+        "long": "Match Finished",
+        "elapsed": 90
+      },
+      "finished": true,
+      "home": {
+        "id": 66480,
+        "name": "Canada",
+        "code": "CAN",
+        "logo": null,
+        "goals": 2
+      },
+      "away": {
+        "id": 79940,
+        "name": "Qatar",
+        "code": "QAT",
+        "logo": null,
+        "goals": 1
+      }
+    },
+    {
+      "id": 730009,
+      "utcDate": "2026-06-17T19:00:00.000Z",
+      "timestamp": 1781722800,
+      "venue": {
+        "name": "AT&T Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 2",
+      "group": "B",
+      "status": {
+        "short": "FT",
+        "long": "Match Finished",
+        "elapsed": 90
+      },
+      "finished": true,
+      "home": {
+        "id": 82471,
+        "name": "Switzerland",
+        "code": "SUI",
+        "logo": null,
+        "goals": 0
+      },
+      "away": {
+        "id": 65761,
+        "name": "Bosnia and Herzegovina",
+        "code": "BIH",
+        "logo": null,
+        "goals": 2
+      }
+    },
+    {
+      "id": 730010,
+      "utcDate": "2026-06-24T16:00:00.000Z",
+      "timestamp": 1782316800,
+      "venue": {
+        "name": "Levi’s Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 3",
+      "group": "B",
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": 82471,
+        "name": "Switzerland",
+        "code": "SUI",
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": 66480,
+        "name": "Canada",
+        "code": "CAN",
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730011,
+      "utcDate": "2026-06-24T19:00:00.000Z",
+      "timestamp": 1782327600,
+      "venue": {
+        "name": "Estadio Azteca",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 3",
+      "group": "B",
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": 65761,
+        "name": "Bosnia and Herzegovina",
+        "code": "BIH",
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": 79940,
+        "name": "Qatar",
+        "code": "QAT",
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730012,
+      "utcDate": "2026-06-11T16:00:00.000Z",
+      "timestamp": 1781193600,
+      "venue": {
+        "name": "Arrowhead Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 1",
+      "group": "C",
+      "status": {
+        "short": "FT",
+        "long": "Match Finished",
+        "elapsed": 90
+      },
+      "finished": true,
+      "home": {
+        "id": 66033,
+        "name": "Brazil",
+        "code": "BRA",
+        "logo": null,
+        "goals": 0
+      },
+      "away": {
+        "id": 76094,
+        "name": "Morocco",
+        "code": "MAR",
+        "logo": null,
+        "goals": 4
+      }
+    },
+    {
+      "id": 730013,
+      "utcDate": "2026-06-11T19:00:00.000Z",
+      "timestamp": 1781204400,
+      "venue": {
+        "name": "Mercedes-Benz Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 1",
+      "group": "C",
+      "status": {
+        "short": "FT",
+        "long": "Match Finished",
+        "elapsed": 90
+      },
+      "finished": true,
+      "home": {
+        "id": 71280,
+        "name": "Haiti",
+        "code": "HAI",
+        "logo": null,
+        "goals": 1
+      },
+      "away": {
+        "id": 81919,
+        "name": "Scotland",
+        "code": "SCO",
+        "logo": null,
+        "goals": 1
+      }
+    },
+    {
+      "id": 730014,
+      "utcDate": "2026-06-17T16:00:00.000Z",
+      "timestamp": 1781712000,
+      "venue": {
+        "name": "BC Place",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 2",
+      "group": "C",
+      "status": {
+        "short": "FT",
+        "long": "Match Finished",
+        "elapsed": 90
+      },
+      "finished": true,
+      "home": {
+        "id": 66033,
+        "name": "Brazil",
+        "code": "BRA",
+        "logo": null,
+        "goals": 0
+      },
+      "away": {
+        "id": 71280,
+        "name": "Haiti",
+        "code": "HAI",
+        "logo": null,
+        "goals": 3
+      }
+    },
+    {
+      "id": 730015,
+      "utcDate": "2026-06-17T19:00:00.000Z",
+      "timestamp": 1781722800,
+      "venue": {
+        "name": "Hard Rock Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 2",
+      "group": "C",
+      "status": {
+        "short": "FT",
+        "long": "Match Finished",
+        "elapsed": 90
+      },
+      "finished": true,
+      "home": {
+        "id": 81919,
+        "name": "Scotland",
+        "code": "SCO",
+        "logo": null,
+        "goals": 1
+      },
+      "away": {
+        "id": 76094,
+        "name": "Morocco",
+        "code": "MAR",
+        "logo": null,
+        "goals": 2
+      }
+    },
+    {
+      "id": 730016,
+      "utcDate": "2026-06-24T16:00:00.000Z",
+      "timestamp": 1782316800,
+      "venue": {
+        "name": "Lumen Field",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 3",
+      "group": "C",
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": 81919,
+        "name": "Scotland",
+        "code": "SCO",
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": 66033,
+        "name": "Brazil",
+        "code": "BRA",
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730017,
+      "utcDate": "2026-06-24T19:00:00.000Z",
+      "timestamp": 1782327600,
+      "venue": {
+        "name": "Estadio BBVA",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 3",
+      "group": "C",
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": 76094,
+        "name": "Morocco",
+        "code": "MAR",
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": 71280,
+        "name": "Haiti",
+        "code": "HAI",
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730018,
+      "utcDate": "2026-06-12T16:00:00.000Z",
+      "timestamp": 1781280000,
+      "venue": {
+        "name": "Lincoln Financial Field",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 1",
+      "group": "D",
+      "status": {
+        "short": "FT",
+        "long": "Match Finished",
+        "elapsed": 90
+      },
+      "finished": true,
+      "home": {
+        "id": 84323,
+        "name": "United States",
+        "code": "USA",
+        "logo": null,
+        "goals": 2
+      },
+      "away": {
+        "id": 78977,
+        "name": "Paraguay",
+        "code": "PAR",
+        "logo": null,
+        "goals": 2
+      }
+    },
+    {
+      "id": 730019,
+      "utcDate": "2026-06-12T19:00:00.000Z",
+      "timestamp": 1781290800,
+      "venue": {
+        "name": "Hard Rock Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 1",
+      "group": "D",
+      "status": {
+        "short": "FT",
+        "long": "Match Finished",
+        "elapsed": 90
+      },
+      "finished": true,
+      "home": {
+        "id": 65183,
+        "name": "Australia",
+        "code": "AUS",
+        "logo": null,
+        "goals": 2
+      },
+      "away": {
+        "id": 83441,
+        "name": "Turkey",
+        "code": "TUR",
+        "logo": null,
+        "goals": 1
+      }
+    },
+    {
+      "id": 730020,
+      "utcDate": "2026-06-18T16:00:00.000Z",
+      "timestamp": 1781798400,
+      "venue": {
+        "name": "MetLife Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 2",
+      "group": "D",
+      "status": {
+        "short": "FT",
+        "long": "Match Finished",
+        "elapsed": 90
+      },
+      "finished": true,
+      "home": {
+        "id": 84323,
+        "name": "United States",
+        "code": "USA",
+        "logo": null,
+        "goals": 2
+      },
+      "away": {
+        "id": 65183,
+        "name": "Australia",
+        "code": "AUS",
+        "logo": null,
+        "goals": 1
+      }
+    },
+    {
+      "id": 730021,
+      "utcDate": "2026-06-18T19:00:00.000Z",
+      "timestamp": 1781809200,
+      "venue": {
+        "name": "NRG Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 2",
+      "group": "D",
+      "status": {
+        "short": "1H",
+        "long": "In Play",
+        "elapsed": 30
+      },
+      "finished": false,
+      "home": {
+        "id": 83441,
+        "name": "Turkey",
+        "code": "TUR",
+        "logo": null,
+        "goals": 0
+      },
+      "away": {
+        "id": 78977,
+        "name": "Paraguay",
+        "code": "PAR",
+        "logo": null,
+        "goals": 3
+      }
+    },
+    {
+      "id": 730022,
+      "utcDate": "2026-06-25T16:00:00.000Z",
+      "timestamp": 1782403200,
+      "venue": {
+        "name": "BMO Field",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 3",
+      "group": "D",
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": 83441,
+        "name": "Turkey",
+        "code": "TUR",
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": 84323,
+        "name": "United States",
+        "code": "USA",
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730023,
+      "utcDate": "2026-06-25T19:00:00.000Z",
+      "timestamp": 1782414000,
+      "venue": {
+        "name": "NRG Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 3",
+      "group": "D",
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": 78977,
+        "name": "Paraguay",
+        "code": "PAR",
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": 65183,
+        "name": "Australia",
+        "code": "AUS",
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730024,
+      "utcDate": "2026-06-12T16:00:00.000Z",
+      "timestamp": 1781280000,
+      "venue": {
+        "name": "AT&T Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 1",
+      "group": "E",
+      "status": {
+        "short": "FT",
+        "long": "Match Finished",
+        "elapsed": 90
+      },
+      "finished": true,
+      "home": {
+        "id": 70452,
+        "name": "Germany",
+        "code": "GER",
+        "logo": null,
+        "goals": 0
+      },
+      "away": {
+        "id": 67109,
+        "name": "Curacao",
+        "code": "CUW",
+        "logo": null,
+        "goals": 3
+      }
+    },
+    {
+      "id": 730025,
+      "utcDate": "2026-06-12T19:00:00.000Z",
+      "timestamp": 1781290800,
+      "venue": {
+        "name": "MetLife Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 1",
+      "group": "E",
+      "status": {
+        "short": "FT",
+        "long": "Match Finished",
+        "elapsed": 90
+      },
+      "finished": true,
+      "home": {
+        "id": 66736,
+        "name": "Ivory Coast",
+        "code": "CIV",
+        "logo": null,
+        "goals": 1
+      },
+      "away": {
+        "id": 68471,
+        "name": "Ecuador",
+        "code": "ECU",
+        "logo": null,
+        "goals": 1
+      }
+    },
+    {
+      "id": 730026,
+      "utcDate": "2026-06-18T16:00:00.000Z",
+      "timestamp": 1781798400,
+      "venue": {
+        "name": "Estadio BBVA",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 2",
+      "group": "E",
+      "status": {
+        "short": "FT",
+        "long": "Match Finished",
+        "elapsed": 90
+      },
+      "finished": true,
+      "home": {
+        "id": 70452,
+        "name": "Germany",
+        "code": "GER",
+        "logo": null,
+        "goals": 1
+      },
+      "away": {
+        "id": 66736,
+        "name": "Ivory Coast",
+        "code": "CIV",
+        "logo": null,
+        "goals": 1
+      }
+    },
+    {
+      "id": 730027,
+      "utcDate": "2026-06-18T19:00:00.000Z",
+      "timestamp": 1781809200,
+      "venue": {
+        "name": "BMO Field",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 2",
+      "group": "E",
+      "status": {
+        "short": "1H",
+        "long": "In Play",
+        "elapsed": 30
+      },
+      "finished": false,
+      "home": {
+        "id": 68471,
+        "name": "Ecuador",
+        "code": "ECU",
+        "logo": null,
+        "goals": 0
+      },
+      "away": {
+        "id": 67109,
+        "name": "Curacao",
+        "code": "CUW",
+        "logo": null,
+        "goals": 0
+      }
+    },
+    {
+      "id": 730028,
+      "utcDate": "2026-06-25T16:00:00.000Z",
+      "timestamp": 1782403200,
+      "venue": {
+        "name": "SoFi Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 3",
+      "group": "E",
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": 68471,
+        "name": "Ecuador",
+        "code": "ECU",
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": 70452,
+        "name": "Germany",
+        "code": "GER",
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730029,
+      "utcDate": "2026-06-25T19:00:00.000Z",
+      "timestamp": 1782414000,
+      "venue": {
+        "name": "BMO Field",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 3",
+      "group": "E",
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": 67109,
+        "name": "Curacao",
+        "code": "CUW",
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": 66736,
+        "name": "Ivory Coast",
+        "code": "CIV",
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730030,
+      "utcDate": "2026-06-12T16:00:00.000Z",
+      "timestamp": 1781280000,
+      "venue": {
+        "name": "AT&T Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 1",
+      "group": "F",
+      "status": {
+        "short": "FT",
+        "long": "Match Finished",
+        "elapsed": 90
+      },
+      "finished": true,
+      "home": {
+        "id": 77165,
+        "name": "Netherlands",
+        "code": "NED",
+        "logo": null,
+        "goals": 2
+      },
+      "away": {
+        "id": 73672,
+        "name": "Japan",
+        "code": "JPN",
+        "logo": null,
+        "goals": 1
+      }
+    },
+    {
+      "id": 730031,
+      "utcDate": "2026-06-12T19:00:00.000Z",
+      "timestamp": 1781290800,
+      "venue": {
+        "name": "MetLife Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 1",
+      "group": "F",
+      "status": {
+        "short": "FT",
+        "long": "Match Finished",
+        "elapsed": 90
+      },
+      "finished": true,
+      "home": {
+        "id": 82529,
+        "name": "Sweden",
+        "code": "SWE",
+        "logo": null,
+        "goals": 1
+      },
+      "away": {
+        "id": 83437,
+        "name": "Tunisia",
+        "code": "TUN",
+        "logo": null,
+        "goals": 2
+      }
+    },
+    {
+      "id": 730032,
+      "utcDate": "2026-06-18T16:00:00.000Z",
+      "timestamp": 1781798400,
+      "venue": {
+        "name": "Levi’s Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 2",
+      "group": "F",
+      "status": {
+        "short": "FT",
+        "long": "Match Finished",
+        "elapsed": 90
+      },
+      "finished": true,
+      "home": {
+        "id": 77165,
+        "name": "Netherlands",
+        "code": "NED",
+        "logo": null,
+        "goals": 1
+      },
+      "away": {
+        "id": 82529,
+        "name": "Sweden",
+        "code": "SWE",
+        "logo": null,
+        "goals": 1
+      }
+    },
+    {
+      "id": 730033,
+      "utcDate": "2026-06-18T19:00:00.000Z",
+      "timestamp": 1781809200,
+      "venue": {
+        "name": "SoFi Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 2",
+      "group": "F",
+      "status": {
+        "short": "1H",
+        "long": "In Play",
+        "elapsed": 30
+      },
+      "finished": false,
+      "home": {
+        "id": 83437,
+        "name": "Tunisia",
+        "code": "TUN",
+        "logo": null,
+        "goals": 2
+      },
+      "away": {
+        "id": 73672,
+        "name": "Japan",
+        "code": "JPN",
+        "logo": null,
+        "goals": 0
+      }
+    },
+    {
+      "id": 730034,
+      "utcDate": "2026-06-25T16:00:00.000Z",
+      "timestamp": 1782403200,
+      "venue": {
+        "name": "Lumen Field",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 3",
+      "group": "F",
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": 83437,
+        "name": "Tunisia",
+        "code": "TUN",
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": 77165,
+        "name": "Netherlands",
+        "code": "NED",
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730035,
+      "utcDate": "2026-06-25T19:00:00.000Z",
+      "timestamp": 1782414000,
+      "venue": {
+        "name": "Arrowhead Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 3",
+      "group": "F",
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": 73672,
+        "name": "Japan",
+        "code": "JPN",
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": 82529,
+        "name": "Sweden",
+        "code": "SWE",
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730036,
+      "utcDate": "2026-06-13T16:00:00.000Z",
+      "timestamp": 1781366400,
+      "venue": {
+        "name": "Estadio BBVA",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 1",
+      "group": "G",
+      "status": {
+        "short": "FT",
+        "long": "Match Finished",
+        "elapsed": 90
+      },
+      "finished": true,
+      "home": {
+        "id": 65641,
+        "name": "Belgium",
+        "code": "BEL",
+        "logo": null,
+        "goals": 1
+      },
+      "away": {
+        "id": 68599,
+        "name": "Egypt",
+        "code": "EGY",
+        "logo": null,
+        "goals": 1
+      }
+    },
+    {
+      "id": 730037,
+      "utcDate": "2026-06-13T19:00:00.000Z",
+      "timestamp": 1781377200,
+      "venue": {
+        "name": "AT&T Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 1",
+      "group": "G",
+      "status": {
+        "short": "FT",
+        "long": "Match Finished",
+        "elapsed": 90
+      },
+      "finished": true,
+      "home": {
+        "id": 72773,
+        "name": "Iran",
+        "code": "IRN",
+        "logo": null,
+        "goals": 0
+      },
+      "away": {
+        "id": 77824,
+        "name": "New Zealand",
+        "code": "NZL",
+        "logo": null,
+        "goals": 3
+      }
+    },
+    {
+      "id": 730038,
+      "utcDate": "2026-06-19T16:00:00.000Z",
+      "timestamp": 1781884800,
+      "venue": {
+        "name": "Estadio Akron",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 2",
+      "group": "G",
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": 65641,
+        "name": "Belgium",
+        "code": "BEL",
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": 72773,
+        "name": "Iran",
+        "code": "IRN",
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730039,
+      "utcDate": "2026-06-19T19:00:00.000Z",
+      "timestamp": 1781895600,
+      "venue": {
+        "name": "Lumen Field",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 2",
+      "group": "G",
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": 77824,
+        "name": "New Zealand",
+        "code": "NZL",
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": 68599,
+        "name": "Egypt",
+        "code": "EGY",
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730040,
+      "utcDate": "2026-06-26T16:00:00.000Z",
+      "timestamp": 1782489600,
+      "venue": {
+        "name": "Levi’s Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 3",
+      "group": "G",
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": 77824,
+        "name": "New Zealand",
+        "code": "NZL",
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": 65641,
+        "name": "Belgium",
+        "code": "BEL",
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730041,
+      "utcDate": "2026-06-26T19:00:00.000Z",
+      "timestamp": 1782500400,
+      "venue": {
+        "name": "Estadio BBVA",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 3",
+      "group": "G",
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": 68599,
+        "name": "Egypt",
+        "code": "EGY",
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": 72773,
+        "name": "Iran",
+        "code": "IRN",
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730042,
+      "utcDate": "2026-06-13T16:00:00.000Z",
+      "timestamp": 1781366400,
+      "venue": {
+        "name": "Hard Rock Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 1",
+      "group": "H",
+      "status": {
+        "short": "FT",
+        "long": "Match Finished",
+        "elapsed": 90
+      },
+      "finished": true,
+      "home": {
+        "id": 68962,
+        "name": "Spain",
+        "code": "ESP",
+        "logo": null,
+        "goals": 1
+      },
+      "away": {
+        "id": 66953,
+        "name": "Cape Verde",
+        "code": "CPV",
+        "logo": null,
+        "goals": 1
+      }
+    },
+    {
+      "id": 730043,
+      "utcDate": "2026-06-13T19:00:00.000Z",
+      "timestamp": 1781377200,
+      "venue": {
+        "name": "MetLife Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 1",
+      "group": "H",
+      "status": {
+        "short": "FT",
+        "long": "Match Finished",
+        "elapsed": 90
+      },
+      "finished": true,
+      "home": {
+        "id": 74713,
+        "name": "Saudi Arabia",
+        "code": "KSA",
+        "logo": null,
+        "goals": 2
+      },
+      "away": {
+        "id": 84312,
+        "name": "Uruguay",
+        "code": "URU",
+        "logo": null,
+        "goals": 4
+      }
+    },
+    {
+      "id": 730044,
+      "utcDate": "2026-06-19T16:00:00.000Z",
+      "timestamp": 1781884800,
+      "venue": {
+        "name": "Lumen Field",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 2",
+      "group": "H",
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": 68962,
+        "name": "Spain",
+        "code": "ESP",
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": 74713,
+        "name": "Saudi Arabia",
+        "code": "KSA",
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730045,
+      "utcDate": "2026-06-19T19:00:00.000Z",
+      "timestamp": 1781895600,
+      "venue": {
+        "name": "Hard Rock Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 2",
+      "group": "H",
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": 84312,
+        "name": "Uruguay",
+        "code": "URU",
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": 66953,
+        "name": "Cape Verde",
+        "code": "CPV",
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730046,
+      "utcDate": "2026-06-26T16:00:00.000Z",
+      "timestamp": 1782489600,
+      "venue": {
+        "name": "BC Place",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 3",
+      "group": "H",
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": 84312,
+        "name": "Uruguay",
+        "code": "URU",
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": 68962,
+        "name": "Spain",
+        "code": "ESP",
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730047,
+      "utcDate": "2026-06-26T19:00:00.000Z",
+      "timestamp": 1782500400,
+      "venue": {
+        "name": "Gillette Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 3",
+      "group": "H",
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": 66953,
+        "name": "Cape Verde",
+        "code": "CPV",
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": 74713,
+        "name": "Saudi Arabia",
+        "code": "KSA",
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730048,
+      "utcDate": "2026-06-13T16:00:00.000Z",
+      "timestamp": 1781366400,
+      "venue": {
+        "name": "BC Place",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 1",
+      "group": "I",
+      "status": {
+        "short": "FT",
+        "long": "Match Finished",
+        "elapsed": 90
+      },
+      "finished": true,
+      "home": {
+        "id": 69877,
+        "name": "France",
+        "code": "FRA",
+        "logo": null,
+        "goals": 0
+      },
+      "away": {
+        "id": 81980,
+        "name": "Senegal",
+        "code": "SEN",
+        "logo": null,
+        "goals": 3
+      }
+    },
+    {
+      "id": 730049,
+      "utcDate": "2026-06-13T19:00:00.000Z",
+      "timestamp": 1781377200,
+      "venue": {
+        "name": "NRG Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 1",
+      "group": "I",
+      "status": {
+        "short": "FT",
+        "long": "Match Finished",
+        "elapsed": 90
+      },
+      "finished": true,
+      "home": {
+        "id": 72776,
+        "name": "Iraq",
+        "code": "IRQ",
+        "logo": null,
+        "goals": 2
+      },
+      "away": {
+        "id": 77489,
+        "name": "Norway",
+        "code": "NOR",
+        "logo": null,
+        "goals": 2
+      }
+    },
+    {
+      "id": 730050,
+      "utcDate": "2026-06-19T16:00:00.000Z",
+      "timestamp": 1781884800,
+      "venue": {
+        "name": "Estadio BBVA",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 2",
+      "group": "I",
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": 69877,
+        "name": "France",
+        "code": "FRA",
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": 72776,
+        "name": "Iraq",
+        "code": "IRQ",
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730051,
+      "utcDate": "2026-06-19T19:00:00.000Z",
+      "timestamp": 1781895600,
+      "venue": {
+        "name": "Gillette Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 2",
+      "group": "I",
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": 77489,
+        "name": "Norway",
+        "code": "NOR",
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": 81980,
+        "name": "Senegal",
+        "code": "SEN",
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730052,
+      "utcDate": "2026-06-26T16:00:00.000Z",
+      "timestamp": 1782489600,
+      "venue": {
+        "name": "Estadio Akron",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 3",
+      "group": "I",
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": 77489,
+        "name": "Norway",
+        "code": "NOR",
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": 69877,
+        "name": "France",
+        "code": "FRA",
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730053,
+      "utcDate": "2026-06-26T19:00:00.000Z",
+      "timestamp": 1782500400,
+      "venue": {
+        "name": "Levi’s Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 3",
+      "group": "I",
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": 81980,
+        "name": "Senegal",
+        "code": "SEN",
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": 72776,
+        "name": "Iraq",
+        "code": "IRQ",
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730054,
+      "utcDate": "2026-06-14T16:00:00.000Z",
+      "timestamp": 1781452800,
+      "venue": {
+        "name": "Levi’s Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 1",
+      "group": "J",
+      "status": {
+        "short": "FT",
+        "long": "Match Finished",
+        "elapsed": 90
+      },
+      "finished": true,
+      "home": {
+        "id": 65078,
+        "name": "Argentina",
+        "code": "ARG",
+        "logo": null,
+        "goals": 1
+      },
+      "away": {
+        "id": 64892,
+        "name": "Algeria",
+        "code": "ALG",
+        "logo": null,
+        "goals": 2
+      }
+    },
+    {
+      "id": 730055,
+      "utcDate": "2026-06-14T19:00:00.000Z",
+      "timestamp": 1781463600,
+      "venue": {
+        "name": "Hard Rock Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 1",
+      "group": "J",
+      "status": {
+        "short": "FT",
+        "long": "Match Finished",
+        "elapsed": 90
+      },
+      "finished": true,
+      "home": {
+        "id": 65184,
+        "name": "Austria",
+        "code": "AUT",
+        "logo": null,
+        "goals": 4
+      },
+      "away": {
+        "id": 73645,
+        "name": "Jordan",
+        "code": "JOR",
+        "logo": null,
+        "goals": 4
+      }
+    },
+    {
+      "id": 730056,
+      "utcDate": "2026-06-20T16:00:00.000Z",
+      "timestamp": 1781971200,
+      "venue": {
+        "name": "Hard Rock Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 2",
+      "group": "J",
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": 65078,
+        "name": "Argentina",
+        "code": "ARG",
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": 65184,
+        "name": "Austria",
+        "code": "AUT",
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730057,
+      "utcDate": "2026-06-20T19:00:00.000Z",
+      "timestamp": 1781982000,
+      "venue": {
+        "name": "NRG Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 2",
+      "group": "J",
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": 73645,
+        "name": "Jordan",
+        "code": "JOR",
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": 64892,
+        "name": "Algeria",
+        "code": "ALG",
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730058,
+      "utcDate": "2026-06-27T16:00:00.000Z",
+      "timestamp": 1782576000,
+      "venue": {
+        "name": "NRG Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 3",
+      "group": "J",
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": 73645,
+        "name": "Jordan",
+        "code": "JOR",
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": 65078,
+        "name": "Argentina",
+        "code": "ARG",
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730059,
+      "utcDate": "2026-06-27T19:00:00.000Z",
+      "timestamp": 1782586800,
+      "venue": {
+        "name": "SoFi Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 3",
+      "group": "J",
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": 64892,
+        "name": "Algeria",
+        "code": "ALG",
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": 65184,
+        "name": "Austria",
+        "code": "AUT",
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730060,
+      "utcDate": "2026-06-14T16:00:00.000Z",
+      "timestamp": 1781452800,
+      "venue": {
+        "name": "SoFi Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 1",
+      "group": "K",
+      "status": {
+        "short": "FT",
+        "long": "Match Finished",
+        "elapsed": 90
+      },
+      "finished": true,
+      "home": {
+        "id": 79411,
+        "name": "Portugal",
+        "code": "POR",
+        "logo": null,
+        "goals": 0
+      },
+      "away": {
+        "id": 66904,
+        "name": "DR Congo",
+        "code": "COD",
+        "logo": null,
+        "goals": 1
+      }
+    },
+    {
+      "id": 730061,
+      "utcDate": "2026-06-14T19:00:00.000Z",
+      "timestamp": 1781463600,
+      "venue": {
+        "name": "MetLife Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 1",
+      "group": "K",
+      "status": {
+        "short": "FT",
+        "long": "Match Finished",
+        "elapsed": 90
+      },
+      "finished": true,
+      "home": {
+        "id": 84541,
+        "name": "Uzbekistan",
+        "code": "UZB",
+        "logo": null,
+        "goals": 2
+      },
+      "away": {
+        "id": 66912,
+        "name": "Colombia",
+        "code": "COL",
+        "logo": null,
+        "goals": 1
+      }
+    },
+    {
+      "id": 730062,
+      "utcDate": "2026-06-20T16:00:00.000Z",
+      "timestamp": 1781971200,
+      "venue": {
+        "name": "Arrowhead Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 2",
+      "group": "K",
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": 79411,
+        "name": "Portugal",
+        "code": "POR",
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": 84541,
+        "name": "Uzbekistan",
+        "code": "UZB",
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730063,
+      "utcDate": "2026-06-20T19:00:00.000Z",
+      "timestamp": 1781982000,
+      "venue": {
+        "name": "Gillette Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 2",
+      "group": "K",
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": 66912,
+        "name": "Colombia",
+        "code": "COL",
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": 66904,
+        "name": "DR Congo",
+        "code": "COD",
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730064,
+      "utcDate": "2026-06-27T16:00:00.000Z",
+      "timestamp": 1782576000,
+      "venue": {
+        "name": "Gillette Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 3",
+      "group": "K",
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": 66912,
+        "name": "Colombia",
+        "code": "COL",
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": 79411,
+        "name": "Portugal",
+        "code": "POR",
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730065,
+      "utcDate": "2026-06-27T19:00:00.000Z",
+      "timestamp": 1782586800,
+      "venue": {
+        "name": "MetLife Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 3",
+      "group": "K",
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": 66904,
+        "name": "DR Congo",
+        "code": "COD",
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": 84541,
+        "name": "Uzbekistan",
+        "code": "UZB",
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730066,
+      "utcDate": "2026-06-14T16:00:00.000Z",
+      "timestamp": 1781452800,
+      "venue": {
+        "name": "Lumen Field",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 1",
+      "group": "L",
+      "status": {
+        "short": "FT",
+        "long": "Match Finished",
+        "elapsed": 90
+      },
+      "finished": true,
+      "home": {
+        "id": 68798,
+        "name": "England",
+        "code": "ENG",
+        "logo": null,
+        "goals": 2
+      },
+      "away": {
+        "id": 67008,
+        "name": "Croatia",
+        "code": "CRO",
+        "logo": null,
+        "goals": 1
+      }
+    },
+    {
+      "id": 730067,
+      "utcDate": "2026-06-14T19:00:00.000Z",
+      "timestamp": 1781463600,
+      "venue": {
+        "name": "BC Place",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 1",
+      "group": "L",
+      "status": {
+        "short": "FT",
+        "long": "Match Finished",
+        "elapsed": 90
+      },
+      "finished": true,
+      "home": {
+        "id": 70528,
+        "name": "Ghana",
+        "code": "GHA",
+        "logo": null,
+        "goals": 0
+      },
+      "away": {
+        "id": 78973,
+        "name": "Panama",
+        "code": "PAN",
+        "logo": null,
+        "goals": 3
+      }
+    },
+    {
+      "id": 730068,
+      "utcDate": "2026-06-20T16:00:00.000Z",
+      "timestamp": 1781971200,
+      "venue": {
+        "name": "MetLife Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 2",
+      "group": "L",
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": 68798,
+        "name": "England",
+        "code": "ENG",
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": 70528,
+        "name": "Ghana",
+        "code": "GHA",
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730069,
+      "utcDate": "2026-06-20T19:00:00.000Z",
+      "timestamp": 1781982000,
+      "venue": {
+        "name": "Arrowhead Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 2",
+      "group": "L",
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": 78973,
+        "name": "Panama",
+        "code": "PAN",
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": 67008,
+        "name": "Croatia",
+        "code": "CRO",
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730070,
+      "utcDate": "2026-06-27T16:00:00.000Z",
+      "timestamp": 1782576000,
+      "venue": {
+        "name": "Lumen Field",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 3",
+      "group": "L",
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": 78973,
+        "name": "Panama",
+        "code": "PAN",
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": 68798,
+        "name": "England",
+        "code": "ENG",
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730071,
+      "utcDate": "2026-06-27T19:00:00.000Z",
+      "timestamp": 1782586800,
+      "venue": {
+        "name": "Mercedes-Benz Stadium",
+        "city": null
+      },
+      "round": "Group Stage",
+      "rawRound": "Group Stage - 3",
+      "group": "L",
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": 67008,
+        "name": "Croatia",
+        "code": "CRO",
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": 70528,
+        "name": "Ghana",
+        "code": "GHA",
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730072,
+      "utcDate": "2026-06-28T16:00:00.000Z",
+      "timestamp": 1782662400,
+      "venue": {
+        "name": "Levi’s Stadium",
+        "city": null
+      },
+      "round": "Round of 32",
+      "rawRound": "Round of 32",
+      "group": null,
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730073,
+      "utcDate": "2026-06-29T19:00:00.000Z",
+      "timestamp": 1782759600,
+      "venue": {
+        "name": "BC Place",
+        "city": null
+      },
+      "round": "Round of 32",
+      "rawRound": "Round of 32",
+      "group": null,
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730074,
+      "utcDate": "2026-06-30T16:00:00.000Z",
+      "timestamp": 1782835200,
+      "venue": {
+        "name": "Hard Rock Stadium",
+        "city": null
+      },
+      "round": "Round of 32",
+      "rawRound": "Round of 32",
+      "group": null,
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730075,
+      "utcDate": "2026-06-28T19:00:00.000Z",
+      "timestamp": 1782673200,
+      "venue": {
+        "name": "Lumen Field",
+        "city": null
+      },
+      "round": "Round of 32",
+      "rawRound": "Round of 32",
+      "group": null,
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730076,
+      "utcDate": "2026-06-29T16:00:00.000Z",
+      "timestamp": 1782748800,
+      "venue": {
+        "name": "BMO Field",
+        "city": null
+      },
+      "round": "Round of 32",
+      "rawRound": "Round of 32",
+      "group": null,
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730077,
+      "utcDate": "2026-06-30T19:00:00.000Z",
+      "timestamp": 1782846000,
+      "venue": {
+        "name": "Estadio Azteca",
+        "city": null
+      },
+      "round": "Round of 32",
+      "rawRound": "Round of 32",
+      "group": null,
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730078,
+      "utcDate": "2026-06-28T16:00:00.000Z",
+      "timestamp": 1782662400,
+      "venue": {
+        "name": "Hard Rock Stadium",
+        "city": null
+      },
+      "round": "Round of 32",
+      "rawRound": "Round of 32",
+      "group": null,
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730079,
+      "utcDate": "2026-06-29T19:00:00.000Z",
+      "timestamp": 1782759600,
+      "venue": {
+        "name": "SoFi Stadium",
+        "city": null
+      },
+      "round": "Round of 32",
+      "rawRound": "Round of 32",
+      "group": null,
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730080,
+      "utcDate": "2026-06-30T16:00:00.000Z",
+      "timestamp": 1782835200,
+      "venue": {
+        "name": "MetLife Stadium",
+        "city": null
+      },
+      "round": "Round of 32",
+      "rawRound": "Round of 32",
+      "group": null,
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730081,
+      "utcDate": "2026-06-28T19:00:00.000Z",
+      "timestamp": 1782673200,
+      "venue": {
+        "name": "MetLife Stadium",
+        "city": null
+      },
+      "round": "Round of 32",
+      "rawRound": "Round of 32",
+      "group": null,
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730082,
+      "utcDate": "2026-06-29T16:00:00.000Z",
+      "timestamp": 1782748800,
+      "venue": {
+        "name": "Arrowhead Stadium",
+        "city": null
+      },
+      "round": "Round of 32",
+      "rawRound": "Round of 32",
+      "group": null,
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730083,
+      "utcDate": "2026-06-30T19:00:00.000Z",
+      "timestamp": 1782846000,
+      "venue": {
+        "name": "Hard Rock Stadium",
+        "city": null
+      },
+      "round": "Round of 32",
+      "rawRound": "Round of 32",
+      "group": null,
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730084,
+      "utcDate": "2026-06-28T16:00:00.000Z",
+      "timestamp": 1782662400,
+      "venue": {
+        "name": "Mercedes-Benz Stadium",
+        "city": null
+      },
+      "round": "Round of 32",
+      "rawRound": "Round of 32",
+      "group": null,
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730085,
+      "utcDate": "2026-06-29T19:00:00.000Z",
+      "timestamp": 1782759600,
+      "venue": {
+        "name": "SoFi Stadium",
+        "city": null
+      },
+      "round": "Round of 32",
+      "rawRound": "Round of 32",
+      "group": null,
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730086,
+      "utcDate": "2026-06-30T16:00:00.000Z",
+      "timestamp": 1782835200,
+      "venue": {
+        "name": "MetLife Stadium",
+        "city": null
+      },
+      "round": "Round of 32",
+      "rawRound": "Round of 32",
+      "group": null,
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730087,
+      "utcDate": "2026-06-28T19:00:00.000Z",
+      "timestamp": 1782673200,
+      "venue": {
+        "name": "Estadio Akron",
+        "city": null
+      },
+      "round": "Round of 32",
+      "rawRound": "Round of 32",
+      "group": null,
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730088,
+      "utcDate": "2026-07-04T16:00:00.000Z",
+      "timestamp": 1783180800,
+      "venue": {
+        "name": "Arrowhead Stadium",
+        "city": null
+      },
+      "round": "Round of 16",
+      "rawRound": "Round of 16",
+      "group": null,
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730089,
+      "utcDate": "2026-07-05T19:00:00.000Z",
+      "timestamp": 1783278000,
+      "venue": {
+        "name": "MetLife Stadium",
+        "city": null
+      },
+      "round": "Round of 16",
+      "rawRound": "Round of 16",
+      "group": null,
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730090,
+      "utcDate": "2026-07-06T16:00:00.000Z",
+      "timestamp": 1783353600,
+      "venue": {
+        "name": "Lumen Field",
+        "city": null
+      },
+      "round": "Round of 16",
+      "rawRound": "Round of 16",
+      "group": null,
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730091,
+      "utcDate": "2026-07-07T19:00:00.000Z",
+      "timestamp": 1783450800,
+      "venue": {
+        "name": "Arrowhead Stadium",
+        "city": null
+      },
+      "round": "Round of 16",
+      "rawRound": "Round of 16",
+      "group": null,
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730092,
+      "utcDate": "2026-07-04T16:00:00.000Z",
+      "timestamp": 1783180800,
+      "venue": {
+        "name": "Estadio Akron",
+        "city": null
+      },
+      "round": "Round of 16",
+      "rawRound": "Round of 16",
+      "group": null,
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730093,
+      "utcDate": "2026-07-05T19:00:00.000Z",
+      "timestamp": 1783278000,
+      "venue": {
+        "name": "Estadio Akron",
+        "city": null
+      },
+      "round": "Round of 16",
+      "rawRound": "Round of 16",
+      "group": null,
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730094,
+      "utcDate": "2026-07-06T16:00:00.000Z",
+      "timestamp": 1783353600,
+      "venue": {
+        "name": "Lumen Field",
+        "city": null
+      },
+      "round": "Round of 16",
+      "rawRound": "Round of 16",
+      "group": null,
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730095,
+      "utcDate": "2026-07-07T19:00:00.000Z",
+      "timestamp": 1783450800,
+      "venue": {
+        "name": "Gillette Stadium",
+        "city": null
+      },
+      "round": "Round of 16",
+      "rawRound": "Round of 16",
+      "group": null,
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730096,
+      "utcDate": "2026-07-09T16:00:00.000Z",
+      "timestamp": 1783612800,
+      "venue": {
+        "name": "Arrowhead Stadium",
+        "city": null
+      },
+      "round": "Quarter-finals",
+      "rawRound": "Quarter-finals",
+      "group": null,
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730097,
+      "utcDate": "2026-07-10T19:00:00.000Z",
+      "timestamp": 1783710000,
+      "venue": {
+        "name": "Arrowhead Stadium",
+        "city": null
+      },
+      "round": "Quarter-finals",
+      "rawRound": "Quarter-finals",
+      "group": null,
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730098,
+      "utcDate": "2026-07-11T16:00:00.000Z",
+      "timestamp": 1783785600,
+      "venue": {
+        "name": "Mercedes-Benz Stadium",
+        "city": null
+      },
+      "round": "Quarter-finals",
+      "rawRound": "Quarter-finals",
+      "group": null,
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730099,
+      "utcDate": "2026-07-09T19:00:00.000Z",
+      "timestamp": 1783623600,
+      "venue": {
+        "name": "Lumen Field",
+        "city": null
+      },
+      "round": "Quarter-finals",
+      "rawRound": "Quarter-finals",
+      "group": null,
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730100,
+      "utcDate": "2026-07-14T16:00:00.000Z",
+      "timestamp": 1784044800,
+      "venue": {
+        "name": "NRG Stadium",
+        "city": null
+      },
+      "round": "Semi-finals",
+      "rawRound": "Semi-finals",
+      "group": null,
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730101,
+      "utcDate": "2026-07-15T19:00:00.000Z",
+      "timestamp": 1784142000,
+      "venue": {
+        "name": "NRG Stadium",
+        "city": null
+      },
+      "round": "Semi-finals",
+      "rawRound": "Semi-finals",
+      "group": null,
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730102,
+      "utcDate": "2026-07-18T16:00:00.000Z",
+      "timestamp": 1784390400,
+      "venue": {
+        "name": "Estadio BBVA",
+        "city": null
+      },
+      "round": "3rd Place Final",
+      "rawRound": "3rd Place Final",
+      "group": null,
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      }
+    },
+    {
+      "id": 730103,
+      "utcDate": "2026-07-19T16:00:00.000Z",
+      "timestamp": 1784476800,
+      "venue": {
+        "name": "Mercedes-Benz Stadium",
+        "city": null
+      },
+      "round": "Final",
+      "rawRound": "Final",
+      "group": null,
+      "status": {
+        "short": "NS",
+        "long": "Not Started",
+        "elapsed": null
+      },
+      "finished": false,
+      "home": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      },
+      "away": {
+        "id": null,
+        "name": "TBD",
+        "code": null,
+        "logo": null,
+        "goals": null
+      }
+    }
+  ]
+}

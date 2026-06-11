@@ -1,0 +1,207 @@
+---
+import { fixtures as allFixtures, isFinished } from '../lib/data';
+import { matchIds } from '../lib/matches';
+import { teamTheme, readableAccent } from '../lib/teams';
+import { links } from '../lib/url';
+import type { Fixture } from '../lib/types';
+
+interface Props {
+  fixtures?: Fixture[];
+}
+const { fixtures = allFixtures } = Astro.props;
+
+// Columns left→right. 3rd-place final is shown alongside the Final.
+const ORDER = ['Round of 32', 'Round of 16', 'Quarter-finals', 'Semi-finals', 'Final'];
+
+function slot(f: Fixture, side: 'home' | 'away') {
+  const t = f[side];
+  const known = t.id != null && t.name !== 'TBD';
+  return {
+    name: t.name,
+    code: t.code,
+    goals: t.goals,
+    known,
+    accent: known ? readableAccent(teamTheme(t.name)) : 'var(--faint)',
+    winner: isFinished(f) && (t.goals ?? 0) > (f[side === 'home' ? 'away' : 'home'].goals ?? 0),
+  };
+}
+
+const cardOf = (f: Fixture) => ({
+  id: f.id,
+  played: isFinished(f),
+  linkable: isFinished(f) && matchIds.has(f.id),
+  home: slot(f, 'home'),
+  away: slot(f, 'away'),
+});
+
+const columns = ORDER.map((round) => ({
+  round,
+  short: round.replace('Round of ', 'R').replace('Quarter-finals', 'QF').replace('Semi-finals', 'SF'),
+  matches: fixtures
+    .filter((f) => f.round === round)
+    .sort((a, b) => (a.timestamp ?? 0) - (b.timestamp ?? 0))
+    .map(cardOf),
+})).filter((c) => c.matches.length > 0);
+
+const thirdPlace = fixtures.filter((f) => f.round === '3rd Place Final').map(cardOf);
+---
+
+<div class="bracket-wrap">
+  <div class="bracket">
+    {
+      columns.map((col) => (
+        <div class="bcol" data-round={col.round}>
+          <h3 class="bcol-title">{col.round}</h3>
+          <div class="bcol-matches">
+            {col.matches.map((m) => {
+              const Tag = m.linkable ? 'a' : 'div';
+              return (
+                <Tag class:list={['bmatch', { played: m.played, link: m.linkable }]} href={m.linkable ? links.match(m.id) : undefined}>
+                  {[m.home, m.away].map((s) => (
+                    <span class:list={['bteam', { win: s.winner, tbd: !s.known }]} style={`--c:${s.accent}`}>
+                      <span class="bdot" aria-hidden="true" />
+                      <span class="bname">{s.known ? s.name : 'TBD'}</span>
+                      {m.played && <span class="bscore">{s.goals ?? 0}</span>}
+                    </span>
+                  ))}
+                </Tag>
+              );
+            })}
+          </div>
+        </div>
+      ))
+    }
+  </div>
+
+  {
+    thirdPlace.length > 0 && (
+      <div class="third">
+        <h3 class="bcol-title">3rd Place Final</h3>
+        {thirdPlace.map((m) => {
+          const Tag = m.linkable ? 'a' : 'div';
+          return (
+            <Tag class:list={['bmatch', { played: m.played, link: m.linkable }]} href={m.linkable ? links.match(m.id) : undefined}>
+              {[m.home, m.away].map((s) => (
+                <span class:list={['bteam', { win: s.winner, tbd: !s.known }]} style={`--c:${s.accent}`}>
+                  <span class="bdot" aria-hidden="true" />
+                  <span class="bname">{s.known ? s.name : 'TBD'}</span>
+                  {m.played && <span class="bscore">{s.goals ?? 0}</span>}
+                </span>
+              ))}
+            </Tag>
+          );
+        })}
+      </div>
+    )
+  }
+</div>
+
+<style>
+  .bracket-wrap {
+    display: grid;
+    gap: 20px;
+  }
+  .bracket {
+    display: flex;
+    gap: 18px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scrollbar-width: thin;
+  }
+  .bcol {
+    flex: 0 0 auto;
+    width: 210px;
+    display: flex;
+    flex-direction: column;
+  }
+  .bcol-title {
+    font-family: var(--font-head);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--turf-bright);
+    margin: 0 0 12px;
+  }
+  /* even vertical spacing per round so later rounds centre against earlier pairs */
+  .bcol-matches {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 1;
+    gap: 12px;
+  }
+
+  .bmatch {
+    display: grid;
+    gap: 3px;
+    background: linear-gradient(180deg, var(--surface), var(--bg-2));
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    padding: 8px;
+    color: inherit;
+  }
+  .bmatch.link {
+    cursor: pointer;
+    transition: border-color 0.15s, transform 0.15s;
+  }
+  .bmatch.link:hover {
+    border-color: var(--line-2);
+    transform: translateY(-1px);
+  }
+
+  .bteam {
+    display: grid;
+    grid-template-columns: 12px 1fr auto;
+    align-items: center;
+    gap: 8px;
+    padding: 3px 2px;
+  }
+  .bdot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--c);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.15) inset;
+  }
+  .bteam.tbd .bdot {
+    background: var(--surface-3);
+    box-shadow: 0 0 0 1px var(--line-2) inset;
+  }
+  .bname {
+    font-family: var(--font-head);
+    font-weight: 600;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .bteam.tbd .bname {
+    color: var(--faint);
+  }
+  .bteam.win .bname {
+    color: var(--text);
+  }
+  .bmatch.played .bteam:not(.win) .bname {
+    color: var(--muted);
+  }
+  .bscore {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+  }
+  .bteam.win .bscore {
+    color: var(--turf-bright);
+  }
+
+  .third {
+    max-width: 240px;
+  }
+
+  @media (max-width: 720px) {
+    .bcol {
+      width: 180px;
+    }
+  }
+</style>

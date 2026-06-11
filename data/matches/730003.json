@@ -1,0 +1,726 @@
+{
+  "fixtureId": 730003,
+  "fetchedAt": "2026-06-18T19:30:00.000Z",
+  "teams": {
+    "home": {
+      "id": 67246,
+      "name": "Czechia",
+      "code": "CZE",
+      "logo": null,
+      "goals": 4
+    },
+    "away": {
+      "id": 81440,
+      "name": "South Africa",
+      "code": "RSA",
+      "logo": null,
+      "goals": 1
+    }
+  },
+  "statsByTeam": [
+    {
+      "teamId": 67246,
+      "name": "Czechia",
+      "stats": {
+        "shotsOnTarget": 4,
+        "totalShots": 14,
+        "possession": 43,
+        "corners": 2,
+        "fouls": 6,
+        "offsides": 3,
+        "yellow": 2,
+        "red": 0,
+        "saves": 1,
+        "passes": 537,
+        "passesAccurate": 435,
+        "passAccuracy": 81
+      }
+    },
+    {
+      "teamId": 81440,
+      "name": "South Africa",
+      "stats": {
+        "shotsOnTarget": 2,
+        "totalShots": 15,
+        "possession": 57,
+        "corners": 2,
+        "fouls": 8,
+        "offsides": 3,
+        "yellow": 2,
+        "red": 0,
+        "saves": 0,
+        "passes": 568,
+        "passesAccurate": 459,
+        "passAccuracy": 81
+      }
+    }
+  ],
+  "events": [
+    {
+      "minute": 38,
+      "extra": null,
+      "teamId": 67246,
+      "teamName": "Czechia",
+      "player": "L. Sørensen",
+      "playerId": 52374,
+      "assist": "G. Abara",
+      "assistId": 14532,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    },
+    {
+      "minute": 43,
+      "extra": null,
+      "teamId": 67246,
+      "teamName": "Czechia",
+      "player": "R. Greco",
+      "playerId": 87088,
+      "assist": null,
+      "assistId": null,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    },
+    {
+      "minute": 63,
+      "extra": null,
+      "teamId": 67246,
+      "teamName": "Czechia",
+      "player": "K. Horvat",
+      "playerId": 47213,
+      "assist": "V. Bauer",
+      "assistId": 78345,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    },
+    {
+      "minute": 73,
+      "extra": null,
+      "teamId": 81440,
+      "teamName": "South Africa",
+      "player": "K. Park",
+      "playerId": 75417,
+      "assist": null,
+      "assistId": null,
+      "type": "Goal",
+      "detail": "Penalty"
+    },
+    {
+      "minute": 89,
+      "extra": null,
+      "teamId": 67246,
+      "teamName": "Czechia",
+      "player": "G. Abara",
+      "playerId": 14532,
+      "assist": null,
+      "assistId": null,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    }
+  ],
+  "lineups": [
+    {
+      "teamId": 67246,
+      "name": "Czechia",
+      "formation": "4-3-3",
+      "coach": "CZE Manager",
+      "startXI": [
+        {
+          "id": 43458,
+          "name": "T. Hassan",
+          "number": 1,
+          "pos": "G",
+          "grid": "1:1"
+        },
+        {
+          "id": 8319,
+          "name": "A. Haddad",
+          "number": 2,
+          "pos": "D",
+          "grid": "2:1"
+        },
+        {
+          "id": 64373,
+          "name": "G. Khan",
+          "number": 3,
+          "pos": "D",
+          "grid": "2:2"
+        },
+        {
+          "id": 44807,
+          "name": "E. Wagner",
+          "number": 4,
+          "pos": "D",
+          "grid": "2:3"
+        },
+        {
+          "id": 56147,
+          "name": "V. Diallo",
+          "number": 5,
+          "pos": "D",
+          "grid": "2:4"
+        },
+        {
+          "id": 87088,
+          "name": "R. Greco",
+          "number": 6,
+          "pos": "M",
+          "grid": "3:1"
+        },
+        {
+          "id": 52374,
+          "name": "L. Sørensen",
+          "number": 7,
+          "pos": "M",
+          "grid": "3:2"
+        },
+        {
+          "id": 78345,
+          "name": "V. Bauer",
+          "number": 8,
+          "pos": "M",
+          "grid": "3:3"
+        },
+        {
+          "id": 14532,
+          "name": "G. Abara",
+          "number": 9,
+          "pos": "F",
+          "grid": "4:1"
+        },
+        {
+          "id": 47213,
+          "name": "K. Horvat",
+          "number": 10,
+          "pos": "F",
+          "grid": "4:2"
+        },
+        {
+          "id": 79948,
+          "name": "E. Traoré",
+          "number": 11,
+          "pos": "F",
+          "grid": "4:3"
+        }
+      ],
+      "subs": [
+        {
+          "id": 77038,
+          "name": "J. Okafor",
+          "number": 12,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 75625,
+          "name": "G. Fischer",
+          "number": 13,
+          "pos": "F",
+          "grid": null
+        },
+        {
+          "id": 8391,
+          "name": "V. Silva",
+          "number": 14,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 67025,
+          "name": "O. Haddad",
+          "number": 15,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 94888,
+          "name": "B. Ferreira",
+          "number": 16,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 80936,
+          "name": "N. Moreno",
+          "number": 17,
+          "pos": "G",
+          "grid": null
+        },
+        {
+          "id": 91711,
+          "name": "A. Greco",
+          "number": 18,
+          "pos": "F",
+          "grid": null
+        }
+      ]
+    },
+    {
+      "teamId": 81440,
+      "name": "South Africa",
+      "formation": "4-3-3",
+      "coach": "RSA Manager",
+      "startXI": [
+        {
+          "id": 21525,
+          "name": "K. Andersen",
+          "number": 1,
+          "pos": "G",
+          "grid": "1:1"
+        },
+        {
+          "id": 59087,
+          "name": "K. Romero",
+          "number": 2,
+          "pos": "D",
+          "grid": "2:1"
+        },
+        {
+          "id": 34458,
+          "name": "R. Tanaka",
+          "number": 3,
+          "pos": "D",
+          "grid": "2:2"
+        },
+        {
+          "id": 10987,
+          "name": "O. Rossi",
+          "number": 4,
+          "pos": "D",
+          "grid": "2:3"
+        },
+        {
+          "id": 23593,
+          "name": "T. Abara",
+          "number": 5,
+          "pos": "D",
+          "grid": "2:4"
+        },
+        {
+          "id": 19315,
+          "name": "O. Ferreira",
+          "number": 6,
+          "pos": "M",
+          "grid": "3:1"
+        },
+        {
+          "id": 84880,
+          "name": "F. Petrović",
+          "number": 7,
+          "pos": "M",
+          "grid": "3:2"
+        },
+        {
+          "id": 45275,
+          "name": "C. Nguyen",
+          "number": 8,
+          "pos": "M",
+          "grid": "3:3"
+        },
+        {
+          "id": 75417,
+          "name": "K. Park",
+          "number": 9,
+          "pos": "F",
+          "grid": "4:1"
+        },
+        {
+          "id": 75902,
+          "name": "R. Greco",
+          "number": 10,
+          "pos": "F",
+          "grid": "4:2"
+        },
+        {
+          "id": 40530,
+          "name": "H. Rossi",
+          "number": 11,
+          "pos": "F",
+          "grid": "4:3"
+        }
+      ],
+      "subs": [
+        {
+          "id": 96375,
+          "name": "A. Okafor",
+          "number": 12,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 66203,
+          "name": "T. Silva",
+          "number": 13,
+          "pos": "F",
+          "grid": null
+        },
+        {
+          "id": 50954,
+          "name": "B. Kovač",
+          "number": 14,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 27173,
+          "name": "G. Ali",
+          "number": 15,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 37287,
+          "name": "L. Lindholm",
+          "number": 16,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 90322,
+          "name": "L. Bianchi",
+          "number": 17,
+          "pos": "G",
+          "grid": null
+        },
+        {
+          "id": 70166,
+          "name": "L. Andersen",
+          "number": 18,
+          "pos": "F",
+          "grid": null
+        }
+      ]
+    }
+  ],
+  "players": [
+    {
+      "id": 43458,
+      "name": "T. Hassan",
+      "teamId": 67246,
+      "number": 1,
+      "pos": "G",
+      "minutes": 90,
+      "rating": 6.4,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 8319,
+      "name": "A. Haddad",
+      "teamId": 67246,
+      "number": 2,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 64373,
+      "name": "G. Khan",
+      "teamId": 67246,
+      "number": 3,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.8,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "id": 44807,
+      "name": "E. Wagner",
+      "teamId": 67246,
+      "number": 4,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.6,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 56147,
+      "name": "V. Diallo",
+      "teamId": 67246,
+      "number": 5,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.4,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 87088,
+      "name": "R. Greco",
+      "teamId": 67246,
+      "number": 6,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.4,
+      "goals": 1,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 52374,
+      "name": "L. Sørensen",
+      "teamId": 67246,
+      "number": 7,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.9,
+      "goals": 1,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 78345,
+      "name": "V. Bauer",
+      "teamId": 67246,
+      "number": 8,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.6,
+      "goals": 0,
+      "assists": 1,
+      "shots": 1,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 14532,
+      "name": "G. Abara",
+      "teamId": 67246,
+      "number": 9,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.9,
+      "goals": 1,
+      "assists": 1,
+      "shots": 3,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 47213,
+      "name": "K. Horvat",
+      "teamId": 67246,
+      "number": 10,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 6.9,
+      "goals": 1,
+      "assists": 0,
+      "shots": 3,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 79948,
+      "name": "E. Traoré",
+      "teamId": 67246,
+      "number": 11,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 3,
+      "shotsOnTarget": 0,
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "id": 21525,
+      "name": "K. Andersen",
+      "teamId": 81440,
+      "number": 1,
+      "pos": "G",
+      "minutes": 90,
+      "rating": 6.8,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 59087,
+      "name": "K. Romero",
+      "teamId": 81440,
+      "number": 2,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.4,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 34458,
+      "name": "R. Tanaka",
+      "teamId": 81440,
+      "number": 3,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.4,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 10987,
+      "name": "O. Rossi",
+      "teamId": 81440,
+      "number": 4,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.1,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "id": 23593,
+      "name": "T. Abara",
+      "teamId": 81440,
+      "number": 5,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.5,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 19315,
+      "name": "O. Ferreira",
+      "teamId": 81440,
+      "number": 6,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.6,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 84880,
+      "name": "F. Petrović",
+      "teamId": 81440,
+      "number": 7,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.2,
+      "goals": 0,
+      "assists": 0,
+      "shots": 1,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 45275,
+      "name": "C. Nguyen",
+      "teamId": 81440,
+      "number": 8,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "id": 75417,
+      "name": "K. Park",
+      "teamId": 81440,
+      "number": 9,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.7,
+      "goals": 1,
+      "assists": 0,
+      "shots": 5,
+      "shotsOnTarget": 2,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 75902,
+      "name": "R. Greco",
+      "teamId": 81440,
+      "number": 10,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 6.9,
+      "goals": 0,
+      "assists": 0,
+      "shots": 3,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 40530,
+      "name": "H. Rossi",
+      "teamId": 81440,
+      "number": 11,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 6.5,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    }
+  ]
+}

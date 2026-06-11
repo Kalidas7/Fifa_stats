@@ -1,0 +1,692 @@
+{
+  "fixtureId": 730026,
+  "fetchedAt": "2026-06-18T19:30:00.000Z",
+  "teams": {
+    "home": {
+      "id": 70452,
+      "name": "Germany",
+      "code": "GER",
+      "logo": null,
+      "goals": 1
+    },
+    "away": {
+      "id": 66736,
+      "name": "Ivory Coast",
+      "code": "CIV",
+      "logo": null,
+      "goals": 1
+    }
+  },
+  "statsByTeam": [
+    {
+      "teamId": 70452,
+      "name": "Germany",
+      "stats": {
+        "shotsOnTarget": 3,
+        "totalShots": 14,
+        "possession": 48,
+        "corners": 8,
+        "fouls": 11,
+        "offsides": 4,
+        "yellow": 0,
+        "red": 0,
+        "saves": 5,
+        "passes": 669,
+        "passesAccurate": 575,
+        "passAccuracy": 86,
+        "xg": 1.5
+      }
+    },
+    {
+      "teamId": 66736,
+      "name": "Ivory Coast",
+      "stats": {
+        "shotsOnTarget": 6,
+        "totalShots": 17,
+        "possession": 52,
+        "corners": 8,
+        "fouls": 7,
+        "offsides": 3,
+        "yellow": 0,
+        "red": 0,
+        "saves": 2,
+        "passes": 641,
+        "passesAccurate": 571,
+        "passAccuracy": 89,
+        "xg": 2.4
+      }
+    }
+  ],
+  "events": [
+    {
+      "minute": 35,
+      "extra": null,
+      "teamId": 66736,
+      "teamName": "Ivory Coast",
+      "player": "P. Walsh",
+      "playerId": 55867,
+      "assist": "L. Marković",
+      "assistId": 19424,
+      "type": "Goal",
+      "detail": "Penalty"
+    },
+    {
+      "minute": 58,
+      "extra": null,
+      "teamId": 70452,
+      "teamName": "Germany",
+      "player": "P. Petrović",
+      "playerId": 29318,
+      "assist": null,
+      "assistId": null,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    }
+  ],
+  "lineups": [
+    {
+      "teamId": 70452,
+      "name": "Germany",
+      "formation": "4-3-3",
+      "coach": "GER Manager",
+      "startXI": [
+        {
+          "id": 36026,
+          "name": "P. Costa",
+          "number": 1,
+          "pos": "G",
+          "grid": "1:1"
+        },
+        {
+          "id": 56594,
+          "name": "H. Reyes",
+          "number": 2,
+          "pos": "D",
+          "grid": "2:1"
+        },
+        {
+          "id": 77563,
+          "name": "T. Schneider",
+          "number": 3,
+          "pos": "D",
+          "grid": "2:2"
+        },
+        {
+          "id": 60669,
+          "name": "A. Mensah",
+          "number": 4,
+          "pos": "D",
+          "grid": "2:3"
+        },
+        {
+          "id": 67174,
+          "name": "J. Ferreira",
+          "number": 5,
+          "pos": "D",
+          "grid": "2:4"
+        },
+        {
+          "id": 6487,
+          "name": "S. Hassan",
+          "number": 6,
+          "pos": "M",
+          "grid": "3:1"
+        },
+        {
+          "id": 95202,
+          "name": "E. García",
+          "number": 7,
+          "pos": "M",
+          "grid": "3:2"
+        },
+        {
+          "id": 55939,
+          "name": "H. Bauer",
+          "number": 8,
+          "pos": "M",
+          "grid": "3:3"
+        },
+        {
+          "id": 84607,
+          "name": "Florian Wirtz",
+          "number": 9,
+          "pos": "F",
+          "grid": "4:1"
+        },
+        {
+          "id": 29318,
+          "name": "P. Petrović",
+          "number": 10,
+          "pos": "F",
+          "grid": "4:2"
+        },
+        {
+          "id": 17020,
+          "name": "B. Castro",
+          "number": 11,
+          "pos": "F",
+          "grid": "4:3"
+        }
+      ],
+      "subs": [
+        {
+          "id": 18879,
+          "name": "O. Romero",
+          "number": 12,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 23549,
+          "name": "A. Wagner",
+          "number": 13,
+          "pos": "F",
+          "grid": null
+        },
+        {
+          "id": 68623,
+          "name": "M. Hassan",
+          "number": 14,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 18444,
+          "name": "J. Okafor",
+          "number": 15,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 52186,
+          "name": "R. Khan",
+          "number": 16,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 12896,
+          "name": "F. Müller",
+          "number": 17,
+          "pos": "G",
+          "grid": null
+        },
+        {
+          "id": 53955,
+          "name": "M. Ferreira",
+          "number": 18,
+          "pos": "F",
+          "grid": null
+        }
+      ]
+    },
+    {
+      "teamId": 66736,
+      "name": "Ivory Coast",
+      "formation": "4-3-3",
+      "coach": "CIV Manager",
+      "startXI": [
+        {
+          "id": 39974,
+          "name": "T. Bianchi",
+          "number": 1,
+          "pos": "G",
+          "grid": "1:1"
+        },
+        {
+          "id": 5123,
+          "name": "R. Schneider",
+          "number": 2,
+          "pos": "D",
+          "grid": "2:1"
+        },
+        {
+          "id": 36585,
+          "name": "T. Novák",
+          "number": 3,
+          "pos": "D",
+          "grid": "2:2"
+        },
+        {
+          "id": 2151,
+          "name": "M. Petrović",
+          "number": 4,
+          "pos": "D",
+          "grid": "2:3"
+        },
+        {
+          "id": 21260,
+          "name": "M. Jovanović",
+          "number": 5,
+          "pos": "D",
+          "grid": "2:4"
+        },
+        {
+          "id": 51158,
+          "name": "K. Oliveira",
+          "number": 6,
+          "pos": "M",
+          "grid": "3:1"
+        },
+        {
+          "id": 91190,
+          "name": "D. Bianchi",
+          "number": 7,
+          "pos": "M",
+          "grid": "3:2"
+        },
+        {
+          "id": 19424,
+          "name": "L. Marković",
+          "number": 8,
+          "pos": "M",
+          "grid": "3:3"
+        },
+        {
+          "id": 11298,
+          "name": "E. Suzuki",
+          "number": 9,
+          "pos": "F",
+          "grid": "4:1"
+        },
+        {
+          "id": 55867,
+          "name": "P. Walsh",
+          "number": 10,
+          "pos": "F",
+          "grid": "4:2"
+        },
+        {
+          "id": 59905,
+          "name": "B. Suzuki",
+          "number": 11,
+          "pos": "F",
+          "grid": "4:3"
+        }
+      ],
+      "subs": [
+        {
+          "id": 6359,
+          "name": "K. Müller",
+          "number": 12,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 84630,
+          "name": "P. Petrović",
+          "number": 13,
+          "pos": "F",
+          "grid": null
+        },
+        {
+          "id": 47511,
+          "name": "T. Eriksen",
+          "number": 14,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 39462,
+          "name": "E. García",
+          "number": 15,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 72496,
+          "name": "K. Traoré",
+          "number": 16,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 42492,
+          "name": "H. Romero",
+          "number": 17,
+          "pos": "G",
+          "grid": null
+        },
+        {
+          "id": 79400,
+          "name": "N. Andersen",
+          "number": 18,
+          "pos": "F",
+          "grid": null
+        }
+      ]
+    }
+  ],
+  "players": [
+    {
+      "id": 36026,
+      "name": "P. Costa",
+      "teamId": 70452,
+      "number": 1,
+      "pos": "G",
+      "minutes": 90,
+      "rating": 6.4,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 56594,
+      "name": "H. Reyes",
+      "teamId": 70452,
+      "number": 2,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 77563,
+      "name": "T. Schneider",
+      "teamId": 70452,
+      "number": 3,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.9,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 60669,
+      "name": "A. Mensah",
+      "teamId": 70452,
+      "number": 4,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 67174,
+      "name": "J. Ferreira",
+      "teamId": 70452,
+      "number": 5,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.9,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 6487,
+      "name": "S. Hassan",
+      "teamId": 70452,
+      "number": 6,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 1,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 95202,
+      "name": "E. García",
+      "teamId": 70452,
+      "number": 7,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.2,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 55939,
+      "name": "H. Bauer",
+      "teamId": 70452,
+      "number": 8,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.5,
+      "goals": 0,
+      "assists": 0,
+      "shots": 1,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 84607,
+      "name": "Florian Wirtz",
+      "teamId": 70452,
+      "number": 9,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 29318,
+      "name": "P. Petrović",
+      "teamId": 70452,
+      "number": 10,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7,
+      "goals": 1,
+      "assists": 0,
+      "shots": 5,
+      "shotsOnTarget": 2,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 17020,
+      "name": "B. Castro",
+      "teamId": 70452,
+      "number": 11,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 3,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 39974,
+      "name": "T. Bianchi",
+      "teamId": 66736,
+      "number": 1,
+      "pos": "G",
+      "minutes": 90,
+      "rating": 6.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 5123,
+      "name": "R. Schneider",
+      "teamId": 66736,
+      "number": 2,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.8,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 36585,
+      "name": "T. Novák",
+      "teamId": 66736,
+      "number": 3,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.1,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 2151,
+      "name": "M. Petrović",
+      "teamId": 66736,
+      "number": 4,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.2,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 21260,
+      "name": "M. Jovanović",
+      "teamId": 66736,
+      "number": 5,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.2,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 51158,
+      "name": "K. Oliveira",
+      "teamId": 66736,
+      "number": 6,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 1,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 91190,
+      "name": "D. Bianchi",
+      "teamId": 66736,
+      "number": 7,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 1,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 19424,
+      "name": "L. Marković",
+      "teamId": 66736,
+      "number": 8,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7,
+      "goals": 0,
+      "assists": 1,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 11298,
+      "name": "E. Suzuki",
+      "teamId": 66736,
+      "number": 9,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 4,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 55867,
+      "name": "P. Walsh",
+      "teamId": 66736,
+      "number": 10,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.5,
+      "goals": 1,
+      "assists": 0,
+      "shots": 5,
+      "shotsOnTarget": 3,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 59905,
+      "name": "B. Suzuki",
+      "teamId": 66736,
+      "number": 11,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 6.7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 4,
+      "shotsOnTarget": 2,
+      "yellow": 0,
+      "red": 0
+    }
+  ]
+}

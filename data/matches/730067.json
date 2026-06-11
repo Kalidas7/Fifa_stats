@@ -1,0 +1,702 @@
+{
+  "fixtureId": 730067,
+  "fetchedAt": "2026-06-18T19:30:00.000Z",
+  "teams": {
+    "home": {
+      "id": 70528,
+      "name": "Ghana",
+      "code": "GHA",
+      "logo": null,
+      "goals": 0
+    },
+    "away": {
+      "id": 78973,
+      "name": "Panama",
+      "code": "PAN",
+      "logo": null,
+      "goals": 3
+    }
+  },
+  "statsByTeam": [
+    {
+      "teamId": 70528,
+      "name": "Ghana",
+      "stats": {
+        "shotsOnTarget": 2,
+        "totalShots": 14,
+        "possession": 50,
+        "corners": 5,
+        "fouls": 9,
+        "offsides": 1,
+        "yellow": 2,
+        "red": 0,
+        "saves": 1,
+        "passes": 579,
+        "passesAccurate": 476,
+        "passAccuracy": 82
+      }
+    },
+    {
+      "teamId": 78973,
+      "name": "Panama",
+      "stats": {
+        "shotsOnTarget": 4,
+        "totalShots": 14,
+        "possession": 50,
+        "corners": 6,
+        "fouls": 14,
+        "offsides": 4,
+        "yellow": 0,
+        "red": 0,
+        "saves": 2,
+        "passes": 399,
+        "passesAccurate": 330,
+        "passAccuracy": 83
+      }
+    }
+  ],
+  "events": [
+    {
+      "minute": 2,
+      "extra": null,
+      "teamId": 78973,
+      "teamName": "Panama",
+      "player": "H. Horvat",
+      "playerId": 40827,
+      "assist": "G. Dubois",
+      "assistId": 30620,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    },
+    {
+      "minute": 41,
+      "extra": null,
+      "teamId": 78973,
+      "teamName": "Panama",
+      "player": "T. Dubois",
+      "playerId": 65137,
+      "assist": "H. Horvat",
+      "assistId": 40827,
+      "type": "Goal",
+      "detail": "Penalty"
+    },
+    {
+      "minute": 50,
+      "extra": null,
+      "teamId": 78973,
+      "teamName": "Panama",
+      "player": "T. Dubois",
+      "playerId": 65137,
+      "assist": "G. Khan",
+      "assistId": 98746,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    }
+  ],
+  "lineups": [
+    {
+      "teamId": 70528,
+      "name": "Ghana",
+      "formation": "4-3-3",
+      "coach": "GHA Manager",
+      "startXI": [
+        {
+          "id": 59407,
+          "name": "B. Oliveira",
+          "number": 1,
+          "pos": "G",
+          "grid": "1:1"
+        },
+        {
+          "id": 66825,
+          "name": "C. Rossi",
+          "number": 2,
+          "pos": "D",
+          "grid": "2:1"
+        },
+        {
+          "id": 86033,
+          "name": "K. Rossi",
+          "number": 3,
+          "pos": "D",
+          "grid": "2:2"
+        },
+        {
+          "id": 54462,
+          "name": "P. Müller",
+          "number": 4,
+          "pos": "D",
+          "grid": "2:3"
+        },
+        {
+          "id": 58468,
+          "name": "V. Rossi",
+          "number": 5,
+          "pos": "D",
+          "grid": "2:4"
+        },
+        {
+          "id": 6834,
+          "name": "B. Greco",
+          "number": 6,
+          "pos": "M",
+          "grid": "3:1"
+        },
+        {
+          "id": 75504,
+          "name": "B. Haddad",
+          "number": 7,
+          "pos": "M",
+          "grid": "3:2"
+        },
+        {
+          "id": 49846,
+          "name": "V. Ali",
+          "number": 8,
+          "pos": "M",
+          "grid": "3:3"
+        },
+        {
+          "id": 42126,
+          "name": "Mohammed Kudus",
+          "number": 9,
+          "pos": "F",
+          "grid": "4:1"
+        },
+        {
+          "id": 78088,
+          "name": "P. Hassan",
+          "number": 10,
+          "pos": "F",
+          "grid": "4:2"
+        },
+        {
+          "id": 91978,
+          "name": "E. Silva",
+          "number": 11,
+          "pos": "F",
+          "grid": "4:3"
+        }
+      ],
+      "subs": [
+        {
+          "id": 36501,
+          "name": "S. Nguyen",
+          "number": 12,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 11641,
+          "name": "B. Kaur",
+          "number": 13,
+          "pos": "F",
+          "grid": null
+        },
+        {
+          "id": 94828,
+          "name": "T. Hassan",
+          "number": 14,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 3574,
+          "name": "N. Tanaka",
+          "number": 15,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 53403,
+          "name": "A. Marković",
+          "number": 16,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 68368,
+          "name": "R. Costa",
+          "number": 17,
+          "pos": "G",
+          "grid": null
+        },
+        {
+          "id": 37390,
+          "name": "F. Tanaka",
+          "number": 18,
+          "pos": "F",
+          "grid": null
+        }
+      ]
+    },
+    {
+      "teamId": 78973,
+      "name": "Panama",
+      "formation": "4-3-3",
+      "coach": "PAN Manager",
+      "startXI": [
+        {
+          "id": 43873,
+          "name": "K. Novák",
+          "number": 1,
+          "pos": "G",
+          "grid": "1:1"
+        },
+        {
+          "id": 55958,
+          "name": "B. Kaur",
+          "number": 2,
+          "pos": "D",
+          "grid": "2:1"
+        },
+        {
+          "id": 32296,
+          "name": "B. Novák",
+          "number": 3,
+          "pos": "D",
+          "grid": "2:2"
+        },
+        {
+          "id": 56084,
+          "name": "K. Rossi",
+          "number": 4,
+          "pos": "D",
+          "grid": "2:3"
+        },
+        {
+          "id": 67376,
+          "name": "H. Diallo",
+          "number": 5,
+          "pos": "D",
+          "grid": "2:4"
+        },
+        {
+          "id": 40827,
+          "name": "H. Horvat",
+          "number": 6,
+          "pos": "M",
+          "grid": "3:1"
+        },
+        {
+          "id": 30620,
+          "name": "G. Dubois",
+          "number": 7,
+          "pos": "M",
+          "grid": "3:2"
+        },
+        {
+          "id": 60956,
+          "name": "F. Novák",
+          "number": 8,
+          "pos": "M",
+          "grid": "3:3"
+        },
+        {
+          "id": 65137,
+          "name": "T. Dubois",
+          "number": 9,
+          "pos": "F",
+          "grid": "4:1"
+        },
+        {
+          "id": 98746,
+          "name": "G. Khan",
+          "number": 10,
+          "pos": "F",
+          "grid": "4:2"
+        },
+        {
+          "id": 55049,
+          "name": "J. Park",
+          "number": 11,
+          "pos": "F",
+          "grid": "4:3"
+        }
+      ],
+      "subs": [
+        {
+          "id": 7625,
+          "name": "N. Rossi",
+          "number": 12,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 52946,
+          "name": "B. Murphy",
+          "number": 13,
+          "pos": "F",
+          "grid": null
+        },
+        {
+          "id": 4834,
+          "name": "K. Fischer",
+          "number": 14,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 26703,
+          "name": "B. Andersen",
+          "number": 15,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 34528,
+          "name": "E. Hassan",
+          "number": 16,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 36353,
+          "name": "H. Larsson",
+          "number": 17,
+          "pos": "G",
+          "grid": null
+        },
+        {
+          "id": 19836,
+          "name": "N. Novák",
+          "number": 18,
+          "pos": "F",
+          "grid": null
+        }
+      ]
+    }
+  ],
+  "players": [
+    {
+      "id": 59407,
+      "name": "B. Oliveira",
+      "teamId": 70528,
+      "number": 1,
+      "pos": "G",
+      "minutes": 90,
+      "rating": 6.7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 66825,
+      "name": "C. Rossi",
+      "teamId": 70528,
+      "number": 2,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.4,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 86033,
+      "name": "K. Rossi",
+      "teamId": 70528,
+      "number": 3,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.1,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "id": 54462,
+      "name": "P. Müller",
+      "teamId": 70528,
+      "number": 4,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.6,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 58468,
+      "name": "V. Rossi",
+      "teamId": 70528,
+      "number": 5,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.1,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 6834,
+      "name": "B. Greco",
+      "teamId": 70528,
+      "number": 6,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.8,
+      "goals": 0,
+      "assists": 0,
+      "shots": 1,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 75504,
+      "name": "B. Haddad",
+      "teamId": 70528,
+      "number": 7,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.5,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 49846,
+      "name": "V. Ali",
+      "teamId": 70528,
+      "number": 8,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.4,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "id": 42126,
+      "name": "Mohammed Kudus",
+      "teamId": 70528,
+      "number": 9,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.2,
+      "goals": 0,
+      "assists": 0,
+      "shots": 3,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 78088,
+      "name": "P. Hassan",
+      "teamId": 70528,
+      "number": 10,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 6.6,
+      "goals": 0,
+      "assists": 0,
+      "shots": 4,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 91978,
+      "name": "E. Silva",
+      "teamId": 70528,
+      "number": 11,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 6.6,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 43873,
+      "name": "K. Novák",
+      "teamId": 78973,
+      "number": 1,
+      "pos": "G",
+      "minutes": 90,
+      "rating": 6.9,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 55958,
+      "name": "B. Kaur",
+      "teamId": 78973,
+      "number": 2,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 32296,
+      "name": "B. Novák",
+      "teamId": 78973,
+      "number": 3,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 56084,
+      "name": "K. Rossi",
+      "teamId": 78973,
+      "number": 4,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.2,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 67376,
+      "name": "H. Diallo",
+      "teamId": 78973,
+      "number": 5,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.5,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 40827,
+      "name": "H. Horvat",
+      "teamId": 78973,
+      "number": 6,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 8.3,
+      "goals": 1,
+      "assists": 1,
+      "shots": 3,
+      "shotsOnTarget": 2,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 30620,
+      "name": "G. Dubois",
+      "teamId": 78973,
+      "number": 7,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.1,
+      "goals": 0,
+      "assists": 1,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 60956,
+      "name": "F. Novák",
+      "teamId": 78973,
+      "number": 8,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.4,
+      "goals": 0,
+      "assists": 0,
+      "shots": 1,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 65137,
+      "name": "T. Dubois",
+      "teamId": 78973,
+      "number": 9,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.6,
+      "goals": 2,
+      "assists": 0,
+      "shots": 4,
+      "shotsOnTarget": 2,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 98746,
+      "name": "G. Khan",
+      "teamId": 78973,
+      "number": 10,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 6.6,
+      "goals": 0,
+      "assists": 1,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 55049,
+      "name": "J. Park",
+      "teamId": 78973,
+      "number": 11,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 6.2,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    }
+  ]
+}

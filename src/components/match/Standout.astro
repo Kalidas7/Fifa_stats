@@ -1,0 +1,175 @@
+---
+import { links } from '../../lib/url';
+import { playerIds } from '../../lib/data';
+import { teamTheme, readableAccent } from '../../lib/teams';
+import type { MatchPlayerStat, TeamRef } from '../../lib/types';
+
+interface Props {
+  player: MatchPlayerStat;
+  team: TeamRef;
+}
+const { player, team } = Astro.props;
+const accent = readableAccent(teamTheme(team.name));
+const linkable = player.id != null && playerIds.has(player.id);
+
+const line: { label: string; value: number }[] = [
+  { label: 'Goals', value: player.goals },
+  { label: 'Assists', value: player.assists },
+  { label: 'Shots', value: player.shots },
+  { label: 'On Target', value: player.shotsOnTarget },
+  { label: 'Mins', value: player.minutes ?? 0 },
+];
+---
+
+<div class="standout" style={`--c:${accent}`}>
+  <div class="so-badge">
+    <span class="so-star">★</span>
+    <span class="so-rating">{player.rating?.toFixed(1) ?? '–'}</span>
+    <span class="so-rlabel">Rating</span>
+  </div>
+  <div class="so-main">
+    <span class="so-kicker">Standout Performer</span>
+    <h3 class="so-name">
+      {linkable ? <a href={links.player(player.id!)}>{player.name}</a> : player.name}
+    </h3>
+    <span class="so-team">
+      <span class="so-dot" aria-hidden="true" />
+      {team.name}
+    </span>
+    <ul class="so-stats">
+      {line.map((s) => (
+        <li>
+          <b>{s.value}</b>
+          <span>{s.label}</span>
+        </li>
+      ))}
+    </ul>
+  </div>
+</div>
+
+<style>
+  .standout {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    background:
+      radial-gradient(80% 140% at 0% 0%, color-mix(in srgb, var(--c) 18%, transparent), transparent 60%),
+      linear-gradient(180deg, var(--surface), var(--bg-2));
+    border: 1px solid var(--line-2);
+    border-radius: var(--radius);
+    padding: 18px 20px;
+  }
+
+  .so-badge {
+    display: grid;
+    place-items: center;
+    width: 92px;
+    height: 92px;
+    flex: none;
+    border-radius: 16px;
+    background: var(--surface-3);
+    border: 1px solid var(--c);
+    position: relative;
+  }
+
+  .so-star {
+    color: var(--gold);
+    font-size: 0.9rem;
+    position: absolute;
+    top: 8px;
+  }
+
+  .so-rating {
+    font-family: var(--font-display);
+    font-size: 2.2rem;
+    color: var(--c);
+    line-height: 1;
+  }
+
+  .so-rlabel {
+    font-family: var(--font-head);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.6rem;
+    color: var(--faint);
+  }
+
+  .so-main {
+    min-width: 0;
+  }
+
+  .so-kicker {
+    font-family: var(--font-head);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 0.72rem;
+    color: var(--gold);
+    font-weight: 700;
+  }
+
+  .so-name {
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin: 2px 0 4px;
+  }
+
+  .so-name a:hover {
+    color: var(--turf-bright);
+    text-decoration: underline;
+  }
+
+  .so-team {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  .so-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--c);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.16) inset;
+  }
+
+  .so-stats {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 12px 0 0;
+    padding: 0;
+  }
+
+  .so-stats li {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .so-stats b {
+    font-family: var(--font-display);
+    font-size: 1.3rem;
+    color: var(--text);
+    line-height: 1;
+  }
+
+  .so-stats span {
+    font-family: var(--font-head);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-size: 0.66rem;
+    color: var(--faint);
+    margin-top: 2px;
+  }
+
+  @media (max-width: 480px) {
+    .standout {
+      flex-direction: column;
+      align-items: flex-start;
+      text-align: left;
+    }
+  }
+</style>

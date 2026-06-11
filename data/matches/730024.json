@@ -1,0 +1,704 @@
+{
+  "fixtureId": 730024,
+  "fetchedAt": "2026-06-18T19:30:00.000Z",
+  "teams": {
+    "home": {
+      "id": 70452,
+      "name": "Germany",
+      "code": "GER",
+      "logo": null,
+      "goals": 0
+    },
+    "away": {
+      "id": 67109,
+      "name": "Curacao",
+      "code": "CUW",
+      "logo": null,
+      "goals": 3
+    }
+  },
+  "statsByTeam": [
+    {
+      "teamId": 70452,
+      "name": "Germany",
+      "stats": {
+        "shotsOnTarget": 2,
+        "totalShots": 13,
+        "possession": 44,
+        "corners": 9,
+        "fouls": 6,
+        "offsides": 0,
+        "yellow": 0,
+        "red": 0,
+        "saves": 3,
+        "passes": 521,
+        "passesAccurate": 455,
+        "passAccuracy": 87,
+        "xg": 0.8
+      }
+    },
+    {
+      "teamId": 67109,
+      "name": "Curacao",
+      "stats": {
+        "shotsOnTarget": 6,
+        "totalShots": 17,
+        "possession": 56,
+        "corners": 9,
+        "fouls": 13,
+        "offsides": 1,
+        "yellow": 2,
+        "red": 0,
+        "saves": 2,
+        "passes": 419,
+        "passesAccurate": 313,
+        "passAccuracy": 75,
+        "xg": 3.4
+      }
+    }
+  ],
+  "events": [
+    {
+      "minute": 23,
+      "extra": null,
+      "teamId": 67109,
+      "teamName": "Curacao",
+      "player": "L. Hassan",
+      "playerId": 36767,
+      "assist": null,
+      "assistId": null,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    },
+    {
+      "minute": 54,
+      "extra": null,
+      "teamId": 67109,
+      "teamName": "Curacao",
+      "player": "N. Eriksen",
+      "playerId": 97486,
+      "assist": "A. Oliveira",
+      "assistId": 7179,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    },
+    {
+      "minute": 82,
+      "extra": null,
+      "teamId": 67109,
+      "teamName": "Curacao",
+      "player": "L. Hassan",
+      "playerId": 36767,
+      "assist": null,
+      "assistId": null,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    }
+  ],
+  "lineups": [
+    {
+      "teamId": 70452,
+      "name": "Germany",
+      "formation": "4-3-3",
+      "coach": "GER Manager",
+      "startXI": [
+        {
+          "id": 36026,
+          "name": "P. Costa",
+          "number": 1,
+          "pos": "G",
+          "grid": "1:1"
+        },
+        {
+          "id": 56594,
+          "name": "H. Reyes",
+          "number": 2,
+          "pos": "D",
+          "grid": "2:1"
+        },
+        {
+          "id": 77563,
+          "name": "T. Schneider",
+          "number": 3,
+          "pos": "D",
+          "grid": "2:2"
+        },
+        {
+          "id": 60669,
+          "name": "A. Mensah",
+          "number": 4,
+          "pos": "D",
+          "grid": "2:3"
+        },
+        {
+          "id": 67174,
+          "name": "J. Ferreira",
+          "number": 5,
+          "pos": "D",
+          "grid": "2:4"
+        },
+        {
+          "id": 6487,
+          "name": "S. Hassan",
+          "number": 6,
+          "pos": "M",
+          "grid": "3:1"
+        },
+        {
+          "id": 95202,
+          "name": "E. García",
+          "number": 7,
+          "pos": "M",
+          "grid": "3:2"
+        },
+        {
+          "id": 55939,
+          "name": "H. Bauer",
+          "number": 8,
+          "pos": "M",
+          "grid": "3:3"
+        },
+        {
+          "id": 84607,
+          "name": "Florian Wirtz",
+          "number": 9,
+          "pos": "F",
+          "grid": "4:1"
+        },
+        {
+          "id": 29318,
+          "name": "P. Petrović",
+          "number": 10,
+          "pos": "F",
+          "grid": "4:2"
+        },
+        {
+          "id": 17020,
+          "name": "B. Castro",
+          "number": 11,
+          "pos": "F",
+          "grid": "4:3"
+        }
+      ],
+      "subs": [
+        {
+          "id": 18879,
+          "name": "O. Romero",
+          "number": 12,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 23549,
+          "name": "A. Wagner",
+          "number": 13,
+          "pos": "F",
+          "grid": null
+        },
+        {
+          "id": 68623,
+          "name": "M. Hassan",
+          "number": 14,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 18444,
+          "name": "J. Okafor",
+          "number": 15,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 52186,
+          "name": "R. Khan",
+          "number": 16,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 12896,
+          "name": "F. Müller",
+          "number": 17,
+          "pos": "G",
+          "grid": null
+        },
+        {
+          "id": 53955,
+          "name": "M. Ferreira",
+          "number": 18,
+          "pos": "F",
+          "grid": null
+        }
+      ]
+    },
+    {
+      "teamId": 67109,
+      "name": "Curacao",
+      "formation": "4-3-3",
+      "coach": "CUW Manager",
+      "startXI": [
+        {
+          "id": 56125,
+          "name": "F. Park",
+          "number": 1,
+          "pos": "G",
+          "grid": "1:1"
+        },
+        {
+          "id": 24106,
+          "name": "L. Jovanović",
+          "number": 2,
+          "pos": "D",
+          "grid": "2:1"
+        },
+        {
+          "id": 27645,
+          "name": "L. Mensah",
+          "number": 3,
+          "pos": "D",
+          "grid": "2:2"
+        },
+        {
+          "id": 16764,
+          "name": "A. Tanaka",
+          "number": 4,
+          "pos": "D",
+          "grid": "2:3"
+        },
+        {
+          "id": 79602,
+          "name": "D. Oliveira",
+          "number": 5,
+          "pos": "D",
+          "grid": "2:4"
+        },
+        {
+          "id": 20339,
+          "name": "D. Müller",
+          "number": 6,
+          "pos": "M",
+          "grid": "3:1"
+        },
+        {
+          "id": 22815,
+          "name": "P. Okafor",
+          "number": 7,
+          "pos": "M",
+          "grid": "3:2"
+        },
+        {
+          "id": 7179,
+          "name": "A. Oliveira",
+          "number": 8,
+          "pos": "M",
+          "grid": "3:3"
+        },
+        {
+          "id": 97486,
+          "name": "N. Eriksen",
+          "number": 9,
+          "pos": "F",
+          "grid": "4:1"
+        },
+        {
+          "id": 36767,
+          "name": "L. Hassan",
+          "number": 10,
+          "pos": "F",
+          "grid": "4:2"
+        },
+        {
+          "id": 40580,
+          "name": "F. Schneider",
+          "number": 11,
+          "pos": "F",
+          "grid": "4:3"
+        }
+      ],
+      "subs": [
+        {
+          "id": 87687,
+          "name": "M. García",
+          "number": 12,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 71106,
+          "name": "E. Costa",
+          "number": 13,
+          "pos": "F",
+          "grid": null
+        },
+        {
+          "id": 31430,
+          "name": "S. Sørensen",
+          "number": 14,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 97063,
+          "name": "N. Wagner",
+          "number": 15,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 17054,
+          "name": "G. Khan",
+          "number": 16,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 15576,
+          "name": "R. Walsh",
+          "number": 17,
+          "pos": "G",
+          "grid": null
+        },
+        {
+          "id": 78823,
+          "name": "J. Kovač",
+          "number": 18,
+          "pos": "F",
+          "grid": null
+        }
+      ]
+    }
+  ],
+  "players": [
+    {
+      "id": 36026,
+      "name": "P. Costa",
+      "teamId": 70452,
+      "number": 1,
+      "pos": "G",
+      "minutes": 90,
+      "rating": 7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 56594,
+      "name": "H. Reyes",
+      "teamId": 70452,
+      "number": 2,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.5,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 77563,
+      "name": "T. Schneider",
+      "teamId": 70452,
+      "number": 3,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.9,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 60669,
+      "name": "A. Mensah",
+      "teamId": 70452,
+      "number": 4,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 67174,
+      "name": "J. Ferreira",
+      "teamId": 70452,
+      "number": 5,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 6487,
+      "name": "S. Hassan",
+      "teamId": 70452,
+      "number": 6,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.2,
+      "goals": 0,
+      "assists": 0,
+      "shots": 1,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 95202,
+      "name": "E. García",
+      "teamId": 70452,
+      "number": 7,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.4,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 55939,
+      "name": "H. Bauer",
+      "teamId": 70452,
+      "number": 8,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.9,
+      "goals": 0,
+      "assists": 0,
+      "shots": 1,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 84607,
+      "name": "Florian Wirtz",
+      "teamId": 70452,
+      "number": 9,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 6.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 3,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 29318,
+      "name": "P. Petrović",
+      "teamId": 70452,
+      "number": 10,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.1,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 17020,
+      "name": "B. Castro",
+      "teamId": 70452,
+      "number": 11,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 4,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 56125,
+      "name": "F. Park",
+      "teamId": 67109,
+      "number": 1,
+      "pos": "G",
+      "minutes": 90,
+      "rating": 7.1,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 24106,
+      "name": "L. Jovanović",
+      "teamId": 67109,
+      "number": 2,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.1,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 27645,
+      "name": "L. Mensah",
+      "teamId": 67109,
+      "number": 3,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.5,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 16764,
+      "name": "A. Tanaka",
+      "teamId": 67109,
+      "number": 4,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 79602,
+      "name": "D. Oliveira",
+      "teamId": 67109,
+      "number": 5,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.8,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "id": 20339,
+      "name": "D. Müller",
+      "teamId": 67109,
+      "number": 6,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.4,
+      "goals": 0,
+      "assists": 0,
+      "shots": 1,
+      "shotsOnTarget": 0,
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "id": 22815,
+      "name": "P. Okafor",
+      "teamId": 67109,
+      "number": 7,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.6,
+      "goals": 0,
+      "assists": 0,
+      "shots": 1,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 7179,
+      "name": "A. Oliveira",
+      "teamId": 67109,
+      "number": 8,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.4,
+      "goals": 0,
+      "assists": 1,
+      "shots": 1,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 97486,
+      "name": "N. Eriksen",
+      "teamId": 67109,
+      "number": 9,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 6.9,
+      "goals": 1,
+      "assists": 0,
+      "shots": 5,
+      "shotsOnTarget": 2,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 36767,
+      "name": "L. Hassan",
+      "teamId": 67109,
+      "number": 10,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.5,
+      "goals": 2,
+      "assists": 0,
+      "shots": 6,
+      "shotsOnTarget": 3,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 40580,
+      "name": "F. Schneider",
+      "teamId": 67109,
+      "number": 11,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 6.9,
+      "goals": 0,
+      "assists": 0,
+      "shots": 3,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    }
+  ]
+}

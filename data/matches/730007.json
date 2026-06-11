@@ -1,0 +1,690 @@
+{
+  "fixtureId": 730007,
+  "fetchedAt": "2026-06-18T19:30:00.000Z",
+  "teams": {
+    "home": {
+      "id": 79940,
+      "name": "Qatar",
+      "code": "QAT",
+      "logo": null,
+      "goals": 2
+    },
+    "away": {
+      "id": 82471,
+      "name": "Switzerland",
+      "code": "SUI",
+      "logo": null,
+      "goals": 0
+    }
+  },
+  "statsByTeam": [
+    {
+      "teamId": 79940,
+      "name": "Qatar",
+      "stats": {
+        "shotsOnTarget": 3,
+        "totalShots": 14,
+        "possession": 50,
+        "corners": 8,
+        "fouls": 11,
+        "offsides": 1,
+        "yellow": 1,
+        "red": 0,
+        "saves": 2,
+        "passes": 500,
+        "passesAccurate": 420,
+        "passAccuracy": 84
+      }
+    },
+    {
+      "teamId": 82471,
+      "name": "Switzerland",
+      "stats": {
+        "shotsOnTarget": 2,
+        "totalShots": 13,
+        "possession": 50,
+        "corners": 9,
+        "fouls": 14,
+        "offsides": 3,
+        "yellow": 0,
+        "red": 0,
+        "saves": 1,
+        "passes": 574,
+        "passesAccurate": 476,
+        "passAccuracy": 83
+      }
+    }
+  ],
+  "events": [
+    {
+      "minute": 8,
+      "extra": null,
+      "teamId": 79940,
+      "teamName": "Qatar",
+      "player": "C. Tanaka",
+      "playerId": 61703,
+      "assist": "G. Ali",
+      "assistId": 67433,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    },
+    {
+      "minute": 82,
+      "extra": null,
+      "teamId": 79940,
+      "teamName": "Qatar",
+      "player": "F. Ferreira",
+      "playerId": 37818,
+      "assist": "L. Marković",
+      "assistId": 24588,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    }
+  ],
+  "lineups": [
+    {
+      "teamId": 79940,
+      "name": "Qatar",
+      "formation": "4-3-3",
+      "coach": "QAT Manager",
+      "startXI": [
+        {
+          "id": 96116,
+          "name": "T. Park",
+          "number": 1,
+          "pos": "G",
+          "grid": "1:1"
+        },
+        {
+          "id": 12543,
+          "name": "E. Costa",
+          "number": 2,
+          "pos": "D",
+          "grid": "2:1"
+        },
+        {
+          "id": 98552,
+          "name": "P. Greco",
+          "number": 3,
+          "pos": "D",
+          "grid": "2:2"
+        },
+        {
+          "id": 91804,
+          "name": "T. Greco",
+          "number": 4,
+          "pos": "D",
+          "grid": "2:3"
+        },
+        {
+          "id": 13743,
+          "name": "M. Tanaka",
+          "number": 5,
+          "pos": "D",
+          "grid": "2:4"
+        },
+        {
+          "id": 44348,
+          "name": "R. Okafor",
+          "number": 6,
+          "pos": "M",
+          "grid": "3:1"
+        },
+        {
+          "id": 37818,
+          "name": "F. Ferreira",
+          "number": 7,
+          "pos": "M",
+          "grid": "3:2"
+        },
+        {
+          "id": 41329,
+          "name": "F. Bauer",
+          "number": 8,
+          "pos": "M",
+          "grid": "3:3"
+        },
+        {
+          "id": 24588,
+          "name": "L. Marković",
+          "number": 9,
+          "pos": "F",
+          "grid": "4:1"
+        },
+        {
+          "id": 61703,
+          "name": "C. Tanaka",
+          "number": 10,
+          "pos": "F",
+          "grid": "4:2"
+        },
+        {
+          "id": 67433,
+          "name": "G. Ali",
+          "number": 11,
+          "pos": "F",
+          "grid": "4:3"
+        }
+      ],
+      "subs": [
+        {
+          "id": 23188,
+          "name": "B. Mensah",
+          "number": 12,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 24694,
+          "name": "B. Sørensen",
+          "number": 13,
+          "pos": "F",
+          "grid": null
+        },
+        {
+          "id": 73660,
+          "name": "E. Schneider",
+          "number": 14,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 92399,
+          "name": "P. Kaur",
+          "number": 15,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 80676,
+          "name": "R. Larsson",
+          "number": 16,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 89114,
+          "name": "F. Romero",
+          "number": 17,
+          "pos": "G",
+          "grid": null
+        },
+        {
+          "id": 47225,
+          "name": "O. Park",
+          "number": 18,
+          "pos": "F",
+          "grid": null
+        }
+      ]
+    },
+    {
+      "teamId": 82471,
+      "name": "Switzerland",
+      "formation": "4-3-3",
+      "coach": "SUI Manager",
+      "startXI": [
+        {
+          "id": 26067,
+          "name": "J. Horvat",
+          "number": 1,
+          "pos": "G",
+          "grid": "1:1"
+        },
+        {
+          "id": 25744,
+          "name": "A. Larsson",
+          "number": 2,
+          "pos": "D",
+          "grid": "2:1"
+        },
+        {
+          "id": 37819,
+          "name": "M. Traoré",
+          "number": 3,
+          "pos": "D",
+          "grid": "2:2"
+        },
+        {
+          "id": 51223,
+          "name": "T. Park",
+          "number": 4,
+          "pos": "D",
+          "grid": "2:3"
+        },
+        {
+          "id": 63142,
+          "name": "M. Ali",
+          "number": 5,
+          "pos": "D",
+          "grid": "2:4"
+        },
+        {
+          "id": 4840,
+          "name": "K. Ali",
+          "number": 6,
+          "pos": "M",
+          "grid": "3:1"
+        },
+        {
+          "id": 15431,
+          "name": "B. Costa",
+          "number": 7,
+          "pos": "M",
+          "grid": "3:2"
+        },
+        {
+          "id": 56447,
+          "name": "J. Reyes",
+          "number": 8,
+          "pos": "M",
+          "grid": "3:3"
+        },
+        {
+          "id": 61708,
+          "name": "Dušan Vlahović",
+          "number": 9,
+          "pos": "F",
+          "grid": "4:1"
+        },
+        {
+          "id": 54295,
+          "name": "A. Oliveira",
+          "number": 10,
+          "pos": "F",
+          "grid": "4:2"
+        },
+        {
+          "id": 90525,
+          "name": "F. Ferreira",
+          "number": 11,
+          "pos": "F",
+          "grid": "4:3"
+        }
+      ],
+      "subs": [
+        {
+          "id": 95801,
+          "name": "J. Larsson",
+          "number": 12,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 28301,
+          "name": "B. Nguyen",
+          "number": 13,
+          "pos": "F",
+          "grid": null
+        },
+        {
+          "id": 992,
+          "name": "B. Eriksen",
+          "number": 14,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 50605,
+          "name": "C. Silva",
+          "number": 15,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 11438,
+          "name": "M. Tanaka",
+          "number": 16,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 67740,
+          "name": "P. Schneider",
+          "number": 17,
+          "pos": "G",
+          "grid": null
+        },
+        {
+          "id": 63672,
+          "name": "G. Tanaka",
+          "number": 18,
+          "pos": "F",
+          "grid": null
+        }
+      ]
+    }
+  ],
+  "players": [
+    {
+      "id": 96116,
+      "name": "T. Park",
+      "teamId": 79940,
+      "number": 1,
+      "pos": "G",
+      "minutes": 90,
+      "rating": 7.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "id": 12543,
+      "name": "E. Costa",
+      "teamId": 79940,
+      "number": 2,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.5,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 98552,
+      "name": "P. Greco",
+      "teamId": 79940,
+      "number": 3,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 91804,
+      "name": "T. Greco",
+      "teamId": 79940,
+      "number": 4,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.8,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 13743,
+      "name": "M. Tanaka",
+      "teamId": 79940,
+      "number": 5,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 44348,
+      "name": "R. Okafor",
+      "teamId": 79940,
+      "number": 6,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.4,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 37818,
+      "name": "F. Ferreira",
+      "teamId": 79940,
+      "number": 7,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.1,
+      "goals": 1,
+      "assists": 0,
+      "shots": 3,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 41329,
+      "name": "F. Bauer",
+      "teamId": 79940,
+      "number": 8,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.9,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 24588,
+      "name": "L. Marković",
+      "teamId": 79940,
+      "number": 9,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.7,
+      "goals": 0,
+      "assists": 1,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 61703,
+      "name": "C. Tanaka",
+      "teamId": 79940,
+      "number": 10,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.9,
+      "goals": 1,
+      "assists": 0,
+      "shots": 3,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 67433,
+      "name": "G. Ali",
+      "teamId": 79940,
+      "number": 11,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.4,
+      "goals": 0,
+      "assists": 1,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 26067,
+      "name": "J. Horvat",
+      "teamId": 82471,
+      "number": 1,
+      "pos": "G",
+      "minutes": 90,
+      "rating": 7.4,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 25744,
+      "name": "A. Larsson",
+      "teamId": 82471,
+      "number": 2,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 37819,
+      "name": "M. Traoré",
+      "teamId": 82471,
+      "number": 3,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 51223,
+      "name": "T. Park",
+      "teamId": 82471,
+      "number": 4,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 63142,
+      "name": "M. Ali",
+      "teamId": 82471,
+      "number": 5,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 4840,
+      "name": "K. Ali",
+      "teamId": 82471,
+      "number": 6,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.6,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 15431,
+      "name": "B. Costa",
+      "teamId": 82471,
+      "number": 7,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.9,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 56447,
+      "name": "J. Reyes",
+      "teamId": 82471,
+      "number": 8,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 61708,
+      "name": "Dušan Vlahović",
+      "teamId": 82471,
+      "number": 9,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 6.4,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 54295,
+      "name": "A. Oliveira",
+      "teamId": 82471,
+      "number": 10,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 6.6,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 90525,
+      "name": "F. Ferreira",
+      "teamId": 82471,
+      "number": 11,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.4,
+      "goals": 0,
+      "assists": 0,
+      "shots": 3,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    }
+  ]
+}

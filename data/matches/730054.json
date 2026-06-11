@@ -1,0 +1,704 @@
+{
+  "fixtureId": 730054,
+  "fetchedAt": "2026-06-18T19:30:00.000Z",
+  "teams": {
+    "home": {
+      "id": 65078,
+      "name": "Argentina",
+      "code": "ARG",
+      "logo": null,
+      "goals": 1
+    },
+    "away": {
+      "id": 64892,
+      "name": "Algeria",
+      "code": "ALG",
+      "logo": null,
+      "goals": 2
+    }
+  },
+  "statsByTeam": [
+    {
+      "teamId": 65078,
+      "name": "Argentina",
+      "stats": {
+        "shotsOnTarget": 4,
+        "totalShots": 15,
+        "possession": 53,
+        "corners": 4,
+        "fouls": 13,
+        "offsides": 2,
+        "yellow": 2,
+        "red": 0,
+        "saves": 2,
+        "passes": 654,
+        "passesAccurate": 499,
+        "passAccuracy": 76,
+        "xg": 1.8
+      }
+    },
+    {
+      "teamId": 64892,
+      "name": "Algeria",
+      "stats": {
+        "shotsOnTarget": 4,
+        "totalShots": 14,
+        "possession": 47,
+        "corners": 2,
+        "fouls": 15,
+        "offsides": 0,
+        "yellow": 2,
+        "red": 0,
+        "saves": 3,
+        "passes": 340,
+        "passesAccurate": 302,
+        "passAccuracy": 89,
+        "xg": 2.3
+      }
+    }
+  ],
+  "events": [
+    {
+      "minute": 50,
+      "extra": null,
+      "teamId": 65078,
+      "teamName": "Argentina",
+      "player": "Julián Álvarez",
+      "playerId": 77436,
+      "assist": "B. Jovanović",
+      "assistId": 50011,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    },
+    {
+      "minute": 68,
+      "extra": null,
+      "teamId": 64892,
+      "teamName": "Algeria",
+      "player": "L. Bianchi",
+      "playerId": 78450,
+      "assist": "T. Romero",
+      "assistId": 75772,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    },
+    {
+      "minute": 69,
+      "extra": null,
+      "teamId": 64892,
+      "teamName": "Algeria",
+      "player": "G. Andersen",
+      "playerId": 95531,
+      "assist": "N. Schneider",
+      "assistId": 39859,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    }
+  ],
+  "lineups": [
+    {
+      "teamId": 65078,
+      "name": "Argentina",
+      "formation": "4-3-3",
+      "coach": "ARG Manager",
+      "startXI": [
+        {
+          "id": 98321,
+          "name": "O. Mensah",
+          "number": 1,
+          "pos": "G",
+          "grid": "1:1"
+        },
+        {
+          "id": 48348,
+          "name": "F. Kovač",
+          "number": 2,
+          "pos": "D",
+          "grid": "2:1"
+        },
+        {
+          "id": 38156,
+          "name": "N. Kovač",
+          "number": 3,
+          "pos": "D",
+          "grid": "2:2"
+        },
+        {
+          "id": 38294,
+          "name": "H. Ferreira",
+          "number": 4,
+          "pos": "D",
+          "grid": "2:3"
+        },
+        {
+          "id": 88092,
+          "name": "E. Suzuki",
+          "number": 5,
+          "pos": "D",
+          "grid": "2:4"
+        },
+        {
+          "id": 19839,
+          "name": "M. Andersen",
+          "number": 6,
+          "pos": "M",
+          "grid": "3:1"
+        },
+        {
+          "id": 29682,
+          "name": "L. Khan",
+          "number": 7,
+          "pos": "M",
+          "grid": "3:2"
+        },
+        {
+          "id": 50011,
+          "name": "B. Jovanović",
+          "number": 8,
+          "pos": "M",
+          "grid": "3:3"
+        },
+        {
+          "id": 51080,
+          "name": "Lautaro Martínez",
+          "number": 9,
+          "pos": "F",
+          "grid": "4:1"
+        },
+        {
+          "id": 77436,
+          "name": "Julián Álvarez",
+          "number": 10,
+          "pos": "F",
+          "grid": "4:2"
+        },
+        {
+          "id": 14965,
+          "name": "K. Okafor",
+          "number": 11,
+          "pos": "F",
+          "grid": "4:3"
+        }
+      ],
+      "subs": [
+        {
+          "id": 17560,
+          "name": "M. García",
+          "number": 12,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 82379,
+          "name": "T. Lindholm",
+          "number": 13,
+          "pos": "F",
+          "grid": null
+        },
+        {
+          "id": 77643,
+          "name": "G. Ferreira",
+          "number": 14,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 19096,
+          "name": "M. Silva",
+          "number": 15,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 39023,
+          "name": "G. Reyes",
+          "number": 16,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 55126,
+          "name": "J. Bianchi",
+          "number": 17,
+          "pos": "G",
+          "grid": null
+        },
+        {
+          "id": 87226,
+          "name": "A. Walsh",
+          "number": 18,
+          "pos": "F",
+          "grid": null
+        }
+      ]
+    },
+    {
+      "teamId": 64892,
+      "name": "Algeria",
+      "formation": "4-3-3",
+      "coach": "ALG Manager",
+      "startXI": [
+        {
+          "id": 22540,
+          "name": "K. Eriksen",
+          "number": 1,
+          "pos": "G",
+          "grid": "1:1"
+        },
+        {
+          "id": 36184,
+          "name": "S. García",
+          "number": 2,
+          "pos": "D",
+          "grid": "2:1"
+        },
+        {
+          "id": 37252,
+          "name": "S. Diallo",
+          "number": 3,
+          "pos": "D",
+          "grid": "2:2"
+        },
+        {
+          "id": 97632,
+          "name": "K. García",
+          "number": 4,
+          "pos": "D",
+          "grid": "2:3"
+        },
+        {
+          "id": 31448,
+          "name": "C. García",
+          "number": 5,
+          "pos": "D",
+          "grid": "2:4"
+        },
+        {
+          "id": 75772,
+          "name": "T. Romero",
+          "number": 6,
+          "pos": "M",
+          "grid": "3:1"
+        },
+        {
+          "id": 77531,
+          "name": "J. Lindholm",
+          "number": 7,
+          "pos": "M",
+          "grid": "3:2"
+        },
+        {
+          "id": 55648,
+          "name": "M. Jovanović",
+          "number": 8,
+          "pos": "M",
+          "grid": "3:3"
+        },
+        {
+          "id": 78450,
+          "name": "L. Bianchi",
+          "number": 9,
+          "pos": "F",
+          "grid": "4:1"
+        },
+        {
+          "id": 95531,
+          "name": "G. Andersen",
+          "number": 10,
+          "pos": "F",
+          "grid": "4:2"
+        },
+        {
+          "id": 39859,
+          "name": "N. Schneider",
+          "number": 11,
+          "pos": "F",
+          "grid": "4:3"
+        }
+      ],
+      "subs": [
+        {
+          "id": 36725,
+          "name": "C. Romero",
+          "number": 12,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 81385,
+          "name": "B. García",
+          "number": 13,
+          "pos": "F",
+          "grid": null
+        },
+        {
+          "id": 47572,
+          "name": "H. Tanaka",
+          "number": 14,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 82362,
+          "name": "S. Abara",
+          "number": 15,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 15057,
+          "name": "S. Sørensen",
+          "number": 16,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 61608,
+          "name": "H. Greco",
+          "number": 17,
+          "pos": "G",
+          "grid": null
+        },
+        {
+          "id": 19043,
+          "name": "E. Kovač",
+          "number": 18,
+          "pos": "F",
+          "grid": null
+        }
+      ]
+    }
+  ],
+  "players": [
+    {
+      "id": 98321,
+      "name": "O. Mensah",
+      "teamId": 65078,
+      "number": 1,
+      "pos": "G",
+      "minutes": 90,
+      "rating": 6.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 48348,
+      "name": "F. Kovač",
+      "teamId": 65078,
+      "number": 2,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.1,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 38156,
+      "name": "N. Kovač",
+      "teamId": 65078,
+      "number": 3,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 38294,
+      "name": "H. Ferreira",
+      "teamId": 65078,
+      "number": 4,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.1,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "id": 88092,
+      "name": "E. Suzuki",
+      "teamId": 65078,
+      "number": 5,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.4,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "id": 19839,
+      "name": "M. Andersen",
+      "teamId": 65078,
+      "number": 6,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.6,
+      "goals": 0,
+      "assists": 0,
+      "shots": 1,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 29682,
+      "name": "L. Khan",
+      "teamId": 65078,
+      "number": 7,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 50011,
+      "name": "B. Jovanović",
+      "teamId": 65078,
+      "number": 8,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.6,
+      "goals": 0,
+      "assists": 1,
+      "shots": 2,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 51080,
+      "name": "Lautaro Martínez",
+      "teamId": 65078,
+      "number": 9,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 6.5,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 77436,
+      "name": "Julián Álvarez",
+      "teamId": 65078,
+      "number": 10,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.7,
+      "goals": 1,
+      "assists": 0,
+      "shots": 4,
+      "shotsOnTarget": 2,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 14965,
+      "name": "K. Okafor",
+      "teamId": 65078,
+      "number": 11,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 6.5,
+      "goals": 0,
+      "assists": 0,
+      "shots": 4,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 22540,
+      "name": "K. Eriksen",
+      "teamId": 64892,
+      "number": 1,
+      "pos": "G",
+      "minutes": 90,
+      "rating": 6.6,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 36184,
+      "name": "S. García",
+      "teamId": 64892,
+      "number": 2,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.2,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 37252,
+      "name": "S. Diallo",
+      "teamId": 64892,
+      "number": 3,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.6,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "id": 97632,
+      "name": "K. García",
+      "teamId": 64892,
+      "number": 4,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 31448,
+      "name": "C. García",
+      "teamId": 64892,
+      "number": 5,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 75772,
+      "name": "T. Romero",
+      "teamId": 64892,
+      "number": 6,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.6,
+      "goals": 0,
+      "assists": 1,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 77531,
+      "name": "J. Lindholm",
+      "teamId": 64892,
+      "number": 7,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.8,
+      "goals": 0,
+      "assists": 0,
+      "shots": 1,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 55648,
+      "name": "M. Jovanović",
+      "teamId": 64892,
+      "number": 8,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 78450,
+      "name": "L. Bianchi",
+      "teamId": 64892,
+      "number": 9,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.9,
+      "goals": 1,
+      "assists": 0,
+      "shots": 3,
+      "shotsOnTarget": 1,
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "id": 95531,
+      "name": "G. Andersen",
+      "teamId": 64892,
+      "number": 10,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.3,
+      "goals": 1,
+      "assists": 0,
+      "shots": 4,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 39859,
+      "name": "N. Schneider",
+      "teamId": 64892,
+      "number": 11,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 6.7,
+      "goals": 0,
+      "assists": 1,
+      "shots": 2,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    }
+  ]
+}

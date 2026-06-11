@@ -1,0 +1,153 @@
+---
+import type { TeamStatLine } from '../../lib/types';
+
+interface Props {
+  home: TeamStatLine;
+  away: TeamStatLine;
+  homeAccent: string;
+  awayAccent: string;
+}
+const { home, away, homeAccent, awayAccent } = Astro.props;
+
+// xG is rendered ONLY when present (it can be absent for the World Cup); same defensive
+// handling for any sparse stat — a row appears only if at least one side has a value.
+const CONFIG: { key: string; label: string; suffix?: string; decimals?: number }[] = [
+  { key: 'possession', label: 'Possession', suffix: '%' },
+  { key: 'totalShots', label: 'Total Shots' },
+  { key: 'shotsOnTarget', label: 'Shots on Target' },
+  { key: 'corners', label: 'Corners' },
+  { key: 'fouls', label: 'Fouls' },
+  { key: 'offsides', label: 'Offsides' },
+  { key: 'yellow', label: 'Yellow Cards' },
+  { key: 'saves', label: 'Saves' },
+  { key: 'passes', label: 'Passes' },
+  { key: 'passAccuracy', label: 'Pass Accuracy', suffix: '%' },
+  { key: 'xg', label: 'Expected Goals (xG)', decimals: 1 },
+];
+
+function val(stats: Record<string, number | string | null>, key: string): number | null {
+  const v = stats?.[key];
+  if (typeof v === 'number') return v;
+  if (v == null) return null;
+  const n = Number(String(v).replace('%', ''));
+  return Number.isNaN(n) ? null : n;
+}
+
+const rows = CONFIG.flatMap((c) => {
+  const h = val(home.stats, c.key);
+  const a = val(away.stats, c.key);
+  if (h == null && a == null) return [];
+  const hv = h ?? 0;
+  const av = a ?? 0;
+  const total = hv + av;
+  const fmt = (x: number | null) =>
+    x == null ? '–' : `${c.decimals ? x.toFixed(c.decimals) : x}${c.suffix ?? ''}`;
+  return [
+    {
+      label: c.label,
+      hText: fmt(h),
+      aText: fmt(a),
+      hShare: total ? Math.round((hv / total) * 100) : 50,
+      aShare: total ? Math.round((av / total) * 100) : 50,
+      hWin: hv > av,
+      aWin: av > hv,
+    },
+  ];
+});
+---
+
+<div class="statbars" style={`--home:${homeAccent};--away:${awayAccent}`}>
+  {
+    rows.map((r) => (
+      <div class="sb-row">
+        <span class:list={['sb-val', 'h', { win: r.hWin }]}>{r.hText}</span>
+        <span class="sb-label">{r.label}</span>
+        <span class:list={['sb-val', 'a', { win: r.aWin }]}>{r.aText}</span>
+        <div class="sb-bar">
+          <div class="sb-h">
+            <span style={`width:${r.hShare}%`} />
+          </div>
+          <div class="sb-a">
+            <span style={`width:${r.aShare}%`} />
+          </div>
+        </div>
+      </div>
+    ))
+  }
+</div>
+
+<style>
+  .statbars {
+    display: grid;
+    gap: 14px;
+  }
+
+  .sb-row {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 8px 12px;
+  }
+
+  .sb-val {
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--muted);
+    font-variant-numeric: tabular-nums;
+    min-width: 44px;
+  }
+
+  .sb-val.h {
+    text-align: right;
+  }
+  .sb-val.a {
+    text-align: left;
+  }
+  .sb-val.h.win {
+    color: var(--home);
+  }
+  .sb-val.a.win {
+    color: var(--away);
+  }
+
+  .sb-label {
+    text-align: center;
+    font-family: var(--font-head);
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    font-size: 0.78rem;
+    color: var(--faint);
+  }
+
+  .sb-bar {
+    grid-column: 1 / -1;
+    display: flex;
+    height: 7px;
+    gap: 3px;
+  }
+
+  .sb-h,
+  .sb-a {
+    flex: 1;
+    display: flex;
+  }
+
+  .sb-h {
+    justify-content: flex-end;
+  }
+
+  .sb-h span,
+  .sb-a span {
+    height: 100%;
+    border-radius: 4px;
+    background: var(--surface-3);
+  }
+
+  .sb-h span {
+    background: linear-gradient(90deg, color-mix(in srgb, var(--home) 40%, var(--surface-3)), var(--home));
+  }
+  .sb-a span {
+    background: linear-gradient(90deg, var(--away), color-mix(in srgb, var(--away) 40%, var(--surface-3)));
+  }
+</style>

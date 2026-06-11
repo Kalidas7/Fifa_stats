@@ -1,0 +1,714 @@
+{
+  "fixtureId": 730049,
+  "fetchedAt": "2026-06-18T19:30:00.000Z",
+  "teams": {
+    "home": {
+      "id": 72776,
+      "name": "Iraq",
+      "code": "IRQ",
+      "logo": null,
+      "goals": 2
+    },
+    "away": {
+      "id": 77489,
+      "name": "Norway",
+      "code": "NOR",
+      "logo": null,
+      "goals": 2
+    }
+  },
+  "statsByTeam": [
+    {
+      "teamId": 72776,
+      "name": "Iraq",
+      "stats": {
+        "shotsOnTarget": 5,
+        "totalShots": 17,
+        "possession": 50,
+        "corners": 2,
+        "fouls": 8,
+        "offsides": 2,
+        "yellow": 2,
+        "red": 0,
+        "saves": 2,
+        "passes": 359,
+        "passesAccurate": 296,
+        "passAccuracy": 82
+      }
+    },
+    {
+      "teamId": 77489,
+      "name": "Norway",
+      "stats": {
+        "shotsOnTarget": 4,
+        "totalShots": 15,
+        "possession": 50,
+        "corners": 5,
+        "fouls": 6,
+        "offsides": 3,
+        "yellow": 2,
+        "red": 0,
+        "saves": 3,
+        "passes": 501,
+        "passesAccurate": 377,
+        "passAccuracy": 75
+      }
+    }
+  ],
+  "events": [
+    {
+      "minute": 13,
+      "extra": null,
+      "teamId": 72776,
+      "teamName": "Iraq",
+      "player": "M. Larsson",
+      "playerId": 36613,
+      "assist": null,
+      "assistId": null,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    },
+    {
+      "minute": 19,
+      "extra": null,
+      "teamId": 72776,
+      "teamName": "Iraq",
+      "player": "O. Eriksen",
+      "playerId": 3628,
+      "assist": "D. Greco",
+      "assistId": 10600,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    },
+    {
+      "minute": 29,
+      "extra": null,
+      "teamId": 77489,
+      "teamName": "Norway",
+      "player": "C. Diallo",
+      "playerId": 70391,
+      "assist": "V. Kovač",
+      "assistId": 10649,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    },
+    {
+      "minute": 37,
+      "extra": null,
+      "teamId": 77489,
+      "teamName": "Norway",
+      "player": "V. Suzuki",
+      "playerId": 46866,
+      "assist": null,
+      "assistId": null,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    }
+  ],
+  "lineups": [
+    {
+      "teamId": 72776,
+      "name": "Iraq",
+      "formation": "4-3-3",
+      "coach": "IRQ Manager",
+      "startXI": [
+        {
+          "id": 96805,
+          "name": "E. Tanaka",
+          "number": 1,
+          "pos": "G",
+          "grid": "1:1"
+        },
+        {
+          "id": 39366,
+          "name": "H. Dubois",
+          "number": 2,
+          "pos": "D",
+          "grid": "2:1"
+        },
+        {
+          "id": 9093,
+          "name": "H. Eriksen",
+          "number": 3,
+          "pos": "D",
+          "grid": "2:2"
+        },
+        {
+          "id": 31613,
+          "name": "V. Traoré",
+          "number": 4,
+          "pos": "D",
+          "grid": "2:3"
+        },
+        {
+          "id": 16506,
+          "name": "R. Fischer",
+          "number": 5,
+          "pos": "D",
+          "grid": "2:4"
+        },
+        {
+          "id": 67906,
+          "name": "V. Ali",
+          "number": 6,
+          "pos": "M",
+          "grid": "3:1"
+        },
+        {
+          "id": 3628,
+          "name": "O. Eriksen",
+          "number": 7,
+          "pos": "M",
+          "grid": "3:2"
+        },
+        {
+          "id": 36613,
+          "name": "M. Larsson",
+          "number": 8,
+          "pos": "M",
+          "grid": "3:3"
+        },
+        {
+          "id": 10600,
+          "name": "D. Greco",
+          "number": 9,
+          "pos": "F",
+          "grid": "4:1"
+        },
+        {
+          "id": 29868,
+          "name": "A. Schneider",
+          "number": 10,
+          "pos": "F",
+          "grid": "4:2"
+        },
+        {
+          "id": 220,
+          "name": "T. Hassan",
+          "number": 11,
+          "pos": "F",
+          "grid": "4:3"
+        }
+      ],
+      "subs": [
+        {
+          "id": 17754,
+          "name": "S. Walsh",
+          "number": 12,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 35747,
+          "name": "S. Nguyen",
+          "number": 13,
+          "pos": "F",
+          "grid": null
+        },
+        {
+          "id": 60105,
+          "name": "O. Horvat",
+          "number": 14,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 14300,
+          "name": "N. Reyes",
+          "number": 15,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 81516,
+          "name": "F. Castro",
+          "number": 16,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 91735,
+          "name": "M. Romero",
+          "number": 17,
+          "pos": "G",
+          "grid": null
+        },
+        {
+          "id": 99584,
+          "name": "R. Mensah",
+          "number": 18,
+          "pos": "F",
+          "grid": null
+        }
+      ]
+    },
+    {
+      "teamId": 77489,
+      "name": "Norway",
+      "formation": "4-3-3",
+      "coach": "NOR Manager",
+      "startXI": [
+        {
+          "id": 68904,
+          "name": "M. Khan",
+          "number": 1,
+          "pos": "G",
+          "grid": "1:1"
+        },
+        {
+          "id": 77828,
+          "name": "A. Ali",
+          "number": 2,
+          "pos": "D",
+          "grid": "2:1"
+        },
+        {
+          "id": 71123,
+          "name": "S. García",
+          "number": 3,
+          "pos": "D",
+          "grid": "2:2"
+        },
+        {
+          "id": 23873,
+          "name": "M. Eriksen",
+          "number": 4,
+          "pos": "D",
+          "grid": "2:3"
+        },
+        {
+          "id": 55258,
+          "name": "V. Traoré",
+          "number": 5,
+          "pos": "D",
+          "grid": "2:4"
+        },
+        {
+          "id": 70391,
+          "name": "C. Diallo",
+          "number": 6,
+          "pos": "M",
+          "grid": "3:1"
+        },
+        {
+          "id": 46866,
+          "name": "V. Suzuki",
+          "number": 7,
+          "pos": "M",
+          "grid": "3:2"
+        },
+        {
+          "id": 42139,
+          "name": "P. Khan",
+          "number": 8,
+          "pos": "M",
+          "grid": "3:3"
+        },
+        {
+          "id": 64921,
+          "name": "Erling Haaland",
+          "number": 9,
+          "pos": "F",
+          "grid": "4:1"
+        },
+        {
+          "id": 10649,
+          "name": "V. Kovač",
+          "number": 10,
+          "pos": "F",
+          "grid": "4:2"
+        },
+        {
+          "id": 78262,
+          "name": "M. Castro",
+          "number": 11,
+          "pos": "F",
+          "grid": "4:3"
+        }
+      ],
+      "subs": [
+        {
+          "id": 7029,
+          "name": "M. Jovanović",
+          "number": 12,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 68152,
+          "name": "O. Dubois",
+          "number": 13,
+          "pos": "F",
+          "grid": null
+        },
+        {
+          "id": 43118,
+          "name": "M. Mensah",
+          "number": 14,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 48588,
+          "name": "K. Dubois",
+          "number": 15,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 79974,
+          "name": "G. Romero",
+          "number": 16,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 11345,
+          "name": "L. Mensah",
+          "number": 17,
+          "pos": "G",
+          "grid": null
+        },
+        {
+          "id": 30774,
+          "name": "K. Fischer",
+          "number": 18,
+          "pos": "F",
+          "grid": null
+        }
+      ]
+    }
+  ],
+  "players": [
+    {
+      "id": 96805,
+      "name": "E. Tanaka",
+      "teamId": 72776,
+      "number": 1,
+      "pos": "G",
+      "minutes": 90,
+      "rating": 6.7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 39366,
+      "name": "H. Dubois",
+      "teamId": 72776,
+      "number": 2,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.9,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 9093,
+      "name": "H. Eriksen",
+      "teamId": 72776,
+      "number": 3,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.1,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 31613,
+      "name": "V. Traoré",
+      "teamId": 72776,
+      "number": 4,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "id": 16506,
+      "name": "R. Fischer",
+      "teamId": 72776,
+      "number": 5,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 67906,
+      "name": "V. Ali",
+      "teamId": 72776,
+      "number": 6,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.5,
+      "goals": 0,
+      "assists": 0,
+      "shots": 1,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 3628,
+      "name": "O. Eriksen",
+      "teamId": 72776,
+      "number": 7,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.8,
+      "goals": 1,
+      "assists": 0,
+      "shots": 3,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 36613,
+      "name": "M. Larsson",
+      "teamId": 72776,
+      "number": 8,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.9,
+      "goals": 1,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 10600,
+      "name": "D. Greco",
+      "teamId": 72776,
+      "number": 9,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.2,
+      "goals": 0,
+      "assists": 1,
+      "shots": 4,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 29868,
+      "name": "A. Schneider",
+      "teamId": 72776,
+      "number": 10,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.1,
+      "goals": 0,
+      "assists": 0,
+      "shots": 4,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 220,
+      "name": "T. Hassan",
+      "teamId": 72776,
+      "number": 11,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 6.2,
+      "goals": 0,
+      "assists": 0,
+      "shots": 3,
+      "shotsOnTarget": 1,
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "id": 68904,
+      "name": "M. Khan",
+      "teamId": 77489,
+      "number": 1,
+      "pos": "G",
+      "minutes": 90,
+      "rating": 6.8,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 77828,
+      "name": "A. Ali",
+      "teamId": 77489,
+      "number": 2,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.9,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 71123,
+      "name": "S. García",
+      "teamId": 77489,
+      "number": 3,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.1,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "id": 23873,
+      "name": "M. Eriksen",
+      "teamId": 77489,
+      "number": 4,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.6,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 55258,
+      "name": "V. Traoré",
+      "teamId": 77489,
+      "number": 5,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.1,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 70391,
+      "name": "C. Diallo",
+      "teamId": 77489,
+      "number": 6,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.4,
+      "goals": 1,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 46866,
+      "name": "V. Suzuki",
+      "teamId": 77489,
+      "number": 7,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.3,
+      "goals": 1,
+      "assists": 0,
+      "shots": 3,
+      "shotsOnTarget": 1,
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "id": 42139,
+      "name": "P. Khan",
+      "teamId": 77489,
+      "number": 8,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 1,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 64921,
+      "name": "Erling Haaland",
+      "teamId": 77489,
+      "number": 9,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 6.4,
+      "goals": 0,
+      "assists": 0,
+      "shots": 4,
+      "shotsOnTarget": 2,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 10649,
+      "name": "V. Kovač",
+      "teamId": 77489,
+      "number": 10,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.5,
+      "goals": 0,
+      "assists": 1,
+      "shots": 3,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 78262,
+      "name": "M. Castro",
+      "teamId": 77489,
+      "number": 11,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 6.8,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    }
+  ]
+}

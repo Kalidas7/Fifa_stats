@@ -1,0 +1,139 @@
+---
+// The 12-group draw rendered from teams.json (verified final draw). Used on Home and
+// /standings as the group-stage view. Phase 1 enriches each row with P/W/D/L/Pts from
+// standings.json; this component already accepts an optional standings map for that.
+import { allThemes } from '../lib/teams';
+import type { TeamTheme } from '../lib/types';
+
+type GroupTeam = TeamTheme & { name: string };
+const groups: Record<string, GroupTeam[]> = {};
+for (const [name, theme] of Object.entries(allThemes)) {
+  (groups[theme.group] ??= []).push({ name, ...theme });
+}
+const groupLetters = Object.keys(groups).sort();
+---
+
+<div class="groups-grid">
+  {
+    groupLetters.map((letter) => (
+      <article class="group-card">
+        <header class="group-card-head">
+          <span class="group-letter">{letter}</span>
+          <span class="group-tag">Group</span>
+        </header>
+        <ul class="gt-list">
+          {groups[letter].map((t) => (
+            <li class="gt-row">
+              <span
+                class="gt-dot"
+                style={`background:linear-gradient(135deg, ${t.primary} 0 50%, ${t.secondary} 50% 100%)`}
+                aria-hidden="true"
+              />
+              <span class="gt-name">{t.name}</span>
+              <span class="gt-code">{t.code}</span>
+            </li>
+          ))}
+        </ul>
+      </article>
+    ))
+  }
+</div>
+
+<style>
+  .groups-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(248px, 1fr));
+    gap: 16px;
+  }
+
+  .group-card {
+    background: linear-gradient(180deg, var(--surface), var(--bg-2));
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 16px 16px 14px;
+    box-shadow: var(--shadow);
+    transition: border-color 0.18s, transform 0.18s;
+  }
+
+  .group-card:hover {
+    border-color: var(--line-2);
+    transform: translateY(-2px);
+  }
+
+  .group-card-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .group-letter {
+    font-family: var(--font-display);
+    font-size: 2rem;
+    line-height: 0.8;
+    color: var(--turf-bright);
+    width: 44px;
+    height: 44px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background: radial-gradient(120% 120% at 30% 20%, rgba(39, 194, 103, 0.18), transparent 70%), var(--surface-3);
+    border: 1px solid var(--line-2);
+  }
+
+  .group-tag {
+    font-family: var(--font-head);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 0.74rem;
+    color: var(--faint);
+  }
+
+  .gt-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 2px;
+  }
+
+  .gt-row {
+    display: grid;
+    grid-template-columns: 16px 1fr auto;
+    align-items: center;
+    gap: 10px;
+    padding: 7px 4px;
+    border-radius: 8px;
+  }
+
+  .gt-row:hover {
+    background: var(--surface-2);
+  }
+
+  .gt-dot {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.14) inset;
+  }
+
+  .gt-name {
+    font-family: var(--font-head);
+    font-weight: 600;
+    font-size: 0.98rem;
+    letter-spacing: 0.2px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .gt-code {
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 0.78rem;
+    letter-spacing: 0.6px;
+    color: var(--faint);
+  }
+</style>

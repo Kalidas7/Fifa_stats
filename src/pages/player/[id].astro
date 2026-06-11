@@ -1,0 +1,372 @@
+---
+import Base from '../../layouts/Base.astro';
+import { players as allPlayers, lastUpdated } from '../../lib/data';
+import { matchIds } from '../../lib/matches';
+import { teamTheme, readableAccent } from '../../lib/teams';
+import { links } from '../../lib/url';
+import type { PlayerAggregate } from '../../lib/types';
+
+export function getStaticPaths() {
+  return allPlayers.map((p) => ({
+    params: { id: String(p.id) },
+    props: { player: p },
+  }));
+}
+
+interface Props {
+  player: PlayerAggregate;
+}
+const { player } = Astro.props;
+const accent = readableAccent(teamTheme(player.team?.name));
+
+const initials = player.name
+  .split(/\s+/)
+  .map((w) => w[0])
+  .join('')
+  .slice(0, 2)
+  .toUpperCase();
+
+const tiles = [
+  { label: 'Goals', value: player.goals, big: true },
+  { label: 'Assists', value: player.assists },
+  { label: 'Shots', value: player.shots },
+  { label: 'On Target', value: player.shotsOnTarget },
+  { label: 'Minutes', value: player.minutes },
+  { label: 'Apps', value: player.appearances },
+];
+
+function ratingClass(r: number | null): string {
+  if (r == null) return '';
+  if (r >= 7.5) return 'great';
+  if (r >= 6.5) return 'ok';
+  return 'low';
+}
+
+const log = [...player.log]
+  .sort((a, b) => String(b.date).localeCompare(String(a.date)))
+  .map((l) => ({
+    ...l,
+    dateLabel: l.date
+      ? new Date(l.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'short', timeZone: 'UTC' })
+      : '—',
+    ratingCls: ratingClass(l.rating),
+    linkable: matchIds.has(l.fixtureId),
+  }));
+---
+
+<Base title={`${player.name} — FootStats`} accent={accent} updatedAt={lastUpdated()}>
+  <div class="container player" style={`--c:${accent}`}>
+    <a class="back" href={links.home()}>← Home</a>
+
+    <header class="ph">
+      <div class="ph-avatar">
+        {player.photo ? <img src={player.photo} alt={player.name} /> : <span>{initials}</span>}
+      </div>
+      <div class="ph-id">
+        <span class="ph-team">
+          <span class="ph-dot" aria-hidden="true" />
+          {player.team?.name}
+          {player.team?.code && <em>· {player.team.code}</em>}
+        </span>
+        <h1 class="ph-name">{player.name}</h1>
+        {
+          player.avgRating != null && (
+            <span class:list={['ph-rating', ratingClass(player.avgRating)]}>
+              {player.avgRating.toFixed(1)} <small>avg rating</small>
+            </span>
+          )
+        }
+      </div>
+    </header>
+
+    <section class="tiles">
+      {
+        tiles.map((t) => (
+          <div class:list={['tile', { big: t.big }]}>
+            <b>{t.value}</b>
+            <span>{t.label}</span>
+          </div>
+        ))
+      }
+      {
+        (player.yellow > 0 || player.red > 0) && (
+          <div class="tile cards">
+            <b>
+              {player.yellow > 0 && <i class="yc">{player.yellow}</i>}
+              {player.red > 0 && <i class="rc">{player.red}</i>}
+            </b>
+            <span>Cards</span>
+          </div>
+        )
+      }
+    </section>
+
+    <section class="section">
+      <div class="section-head">
+        <h2 class="section-title">Match Log</h2>
+        <span class="section-note">Tournament so far</span>
+      </div>
+
+      <div class="log-wrap">
+        <table class="log">
+          <thead>
+            <tr>
+              <th class="l">Date</th>
+              <th class="l">Opponent</th>
+              <th>Min</th>
+              <th>G</th>
+              <th>A</th>
+              <th>Sh</th>
+              <th>SoT</th>
+              <th>Rating</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              log.map((l) => (
+                <tr>
+                  <td class="l">{l.dateLabel}</td>
+                  <td class="l opp">
+                    {l.linkable ? (
+                      <a href={links.match(l.fixtureId)}>{l.opponent ?? '—'}</a>
+                    ) : (
+                      (l.opponent ?? '—')
+                    )}
+                  </td>
+                  <td>{l.minutes ?? '—'}</td>
+                  <td class={l.goals > 0 ? 'hot' : ''}>{l.goals}</td>
+                  <td class={l.assists > 0 ? 'hot' : ''}>{l.assists}</td>
+                  <td>{l.shots}</td>
+                  <td>{l.shotsOnTarget}</td>
+                  <td>
+                    <span class:list={['rpill', l.ratingCls]}>{l.rating?.toFixed(1) ?? '–'}</span>
+                  </td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+</Base>
+
+<style>
+  .player {
+    padding-top: 18px;
+  }
+  .back {
+    display: inline-block;
+    font-family: var(--font-head);
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    font-size: 0.82rem;
+    color: var(--muted);
+    margin-bottom: 16px;
+  }
+  .back:hover {
+    color: var(--turf-bright);
+  }
+
+  .ph {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    padding: 18px 0 22px;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .ph-avatar {
+    width: 88px;
+    height: 88px;
+    flex: none;
+    border-radius: 18px;
+    display: grid;
+    place-items: center;
+    background: radial-gradient(120% 120% at 30% 20%, color-mix(in srgb, var(--c) 30%, transparent), var(--surface-3));
+    border: 1px solid var(--c);
+    font-family: var(--font-display);
+    font-size: 2rem;
+    color: var(--c);
+    overflow: hidden;
+  }
+  .ph-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .ph-team {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--muted);
+    font-family: var(--font-head);
+    font-weight: 600;
+    font-size: 0.92rem;
+  }
+  .ph-team em {
+    font-style: normal;
+    color: var(--faint);
+    font-weight: 700;
+  }
+  .ph-dot {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: var(--c);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.16) inset;
+  }
+
+  .ph-name {
+    font-family: var(--font-display);
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: clamp(2rem, 6vw, 3.2rem);
+    line-height: 0.95;
+    margin: 4px 0 8px;
+  }
+
+  .ph-rating {
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 1.1rem;
+    padding: 3px 12px;
+    border-radius: 999px;
+    border: 1px solid var(--line-2);
+  }
+  .ph-rating small {
+    color: var(--faint);
+    font-weight: 600;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .ph-rating.great {
+    color: var(--turf-glow);
+    border-color: color-mix(in srgb, var(--turf-glow) 40%, var(--line));
+  }
+  .ph-rating.ok {
+    color: var(--text);
+  }
+  .ph-rating.low {
+    color: var(--muted);
+  }
+
+  .tiles {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(108px, 1fr));
+    gap: 12px;
+    margin-top: 24px;
+  }
+
+  .tile {
+    background: linear-gradient(180deg, var(--surface), var(--bg-2));
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    padding: 16px;
+    text-align: center;
+  }
+  .tile.big {
+    border-color: color-mix(in srgb, var(--c) 40%, var(--line));
+  }
+  .tile b {
+    display: block;
+    font-family: var(--font-display);
+    font-size: 2.1rem;
+    line-height: 1;
+    color: var(--text);
+  }
+  .tile.big b {
+    color: var(--c);
+  }
+  .tile span {
+    font-family: var(--font-head);
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    font-size: 0.68rem;
+    color: var(--faint);
+    margin-top: 6px;
+    display: block;
+  }
+  .tile.cards .yc,
+  .tile.cards .rc {
+    font-style: normal;
+    display: inline-block;
+    width: 16px;
+    height: 22px;
+    border-radius: 3px;
+    font-size: 1rem;
+    line-height: 22px;
+    margin: 0 2px;
+    color: #08120d;
+  }
+  .tile.cards .yc {
+    background: var(--card-yellow);
+  }
+  .tile.cards .rc {
+    background: var(--card-red);
+    color: #fff;
+  }
+
+  .log-wrap {
+    overflow-x: auto;
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+  }
+  .log {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 460px;
+  }
+  .log th,
+  .log td {
+    padding: 11px 12px;
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+    border-bottom: 1px solid var(--line);
+  }
+  .log th {
+    font-family: var(--font-head);
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    font-size: 0.7rem;
+    color: var(--faint);
+    background: var(--surface-2);
+  }
+  .log .l {
+    text-align: left;
+  }
+  .log tbody tr:last-child td {
+    border-bottom: none;
+  }
+  .log tbody tr:hover {
+    background: var(--surface-2);
+  }
+  .log .opp a:hover {
+    color: var(--turf-bright);
+    text-decoration: underline;
+  }
+  .log td.hot {
+    color: var(--turf-glow);
+    font-weight: 700;
+  }
+  .rpill {
+    display: inline-block;
+    min-width: 34px;
+    padding: 2px 6px;
+    border-radius: 6px;
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 0.82rem;
+    background: var(--surface-3);
+    color: var(--muted);
+  }
+  .rpill.great {
+    background: color-mix(in srgb, var(--turf-bright) 22%, var(--surface-3));
+    color: var(--turf-glow);
+  }
+  .rpill.ok {
+    color: var(--text);
+  }
+</style>

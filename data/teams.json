@@ -1,0 +1,61 @@
+{
+  "Mexico":                 { "primary": "#006847", "secondary": "#FFFFFF", "code": "MEX", "group": "A" },
+  "South Africa":           { "primary": "#FCB514", "secondary": "#007749", "code": "RSA", "group": "A" },
+  "South Korea":            { "primary": "#CD2E3A", "secondary": "#0047A0", "code": "KOR", "group": "A" },
+  "Czechia":                { "primary": "#D7141A", "secondary": "#11457E", "code": "CZE", "group": "A" },
+
+  "Canada":                 { "primary": "#D52B1E", "secondary": "#FFFFFF", "code": "CAN", "group": "B" },
+  "Bosnia and Herzegovina": { "primary": "#1D3D8F", "secondary": "#FFD100", "code": "BIH", "group": "B" },
+  "Qatar":                  { "primary": "#8A1538", "secondary": "#FFFFFF", "code": "QAT", "group": "B" },
+  "Switzerland":            { "primary": "#DA291C", "secondary": "#FFFFFF", "code": "SUI", "group": "B" },
+
+  "Brazil":                 { "primary": "#FCDD09", "secondary": "#009739", "code": "BRA", "group": "C" },
+  "Morocco":                { "primary": "#C1272D", "secondary": "#006233", "code": "MAR", "group": "C" },
+  "Haiti":                  { "primary": "#00209F", "secondary": "#D21034", "code": "HAI", "group": "C" },
+  "Scotland":               { "primary": "#0C2340", "secondary": "#FFFFFF", "code": "SCO", "group": "C" },
+
+  "United States":          { "primary": "#0A3161", "secondary": "#B31942", "code": "USA", "group": "D" },
+  "Paraguay":               { "primary": "#D52B1E", "secondary": "#0038A8", "code": "PAR", "group": "D" },
+  "Australia":              { "primary": "#FFCD00", "secondary": "#00843D", "code": "AUS", "group": "D" },
+  "Turkey":                 { "primary": "#E30A17", "secondary": "#FFFFFF", "code": "TUR", "group": "D" },
+
+  "Germany":                { "primary": "#FFFFFF", "secondary": "#1A1A1A", "code": "GER", "group": "E" },
+  "Curacao":                { "primary": "#0033A0", "secondary": "#F9E300", "code": "CUW", "group": "E" },
+  "Ivory Coast":            { "primary": "#FF8200", "secondary": "#009E60", "code": "CIV", "group": "E" },
+  "Ecuador":                { "primary": "#FFD100", "secondary": "#0038A8", "code": "ECU", "group": "E" },
+
+  "Netherlands":            { "primary": "#F36C21", "secondary": "#FFFFFF", "code": "NED", "group": "F" },
+  "Japan":                  { "primary": "#003DA5", "secondary": "#FFFFFF", "code": "JPN", "group": "F" },
+  "Sweden":                 { "primary": "#FECC02", "secondary": "#006AA7", "code": "SWE", "group": "F" },
+  "Tunisia":                { "primary": "#E70013", "secondary": "#FFFFFF", "code": "TUN", "group": "F" },
+
+  "Belgium":                { "primary": "#E30613", "secondary": "#FDDA24", "code": "BEL", "group": "G" },
+  "Egypt":                  { "primary": "#CE1126", "secondary": "#000000", "code": "EGY", "group": "G" },
+  "Iran":                   { "primary": "#239F40", "secondary": "#FFFFFF", "code": "IRN", "group": "G" },
+  "New Zealand":            { "primary": "#FFFFFF", "secondary": "#000000", "code": "NZL", "group": "G" },
+
+  "Spain":                  { "primary": "#C60B1E", "secondary": "#FFC400", "code": "ESP", "group": "H" },
+  "Cape Verde":             { "primary": "#003893", "secondary": "#CF2027", "code": "CPV", "group": "H" },
+  "Saudi Arabia":           { "primary": "#006C35", "secondary": "#FFFFFF", "code": "KSA", "group": "H" },
+  "Uruguay":                { "primary": "#5BAEE3", "secondary": "#001E96", "code": "URU", "group": "H" },
+
+  "France":                 { "primary": "#002395", "secondary": "#FFFFFF", "code": "FRA", "group": "I" },
+  "Senegal":                { "primary": "#00853F", "secondary": "#FDEF42", "code": "SEN", "group": "I" },
+  "Iraq":                   { "primary": "#007A3D", "secondary": "#FFFFFF", "code": "IRQ", "group": "I" },
+  "Norway":                 { "primary": "#BA0C2F", "secondary": "#00205B", "code": "NOR", "group": "I" },
+
+  "Argentina":              { "primary": "#75AADB", "secondary": "#FFFFFF", "code": "ARG", "group": "J" },
+  "Algeria":                { "primary": "#007749", "secondary": "#FFFFFF", "code": "ALG", "group": "J" },
+  "Austria":                { "primary": "#ED2939", "secondary": "#FFFFFF", "code": "AUT", "group": "J" },
+  "Jordan":                 { "primary": "#CE1126", "secondary": "#FFFFFF", "code": "JOR", "group": "J" },
+
+  "Portugal":               { "primary": "#DA020E", "secondary": "#006600", "code": "POR", "group": "K" },
+  "DR Congo":               { "primary": "#007FFF", "secondary": "#F7D618", "code": "COD", "group": "K" },
+  "Uzbekistan":             { "primary": "#1C9CD8", "secondary": "#FFFFFF", "code": "UZB", "group": "K" },
+  "Colombia":               { "primary": "#FCD116", "secondary": "#003893", "code": "COL", "group": "K" },
+
+  "England":                { "primary": "#FFFFFF", "secondary": "#001489", "code": "ENG", "group": "L" },
+  "Croatia":                { "primary": "#FF0000", "secondary": "#FFFFFF", "code": "CRO", "group": "L" },
+  "Ghana":                  { "primary": "#006B3F", "secondary": "#FCD116", "code": "GHA", "group": "L" },
+  "Panama":                 { "primary": "#D21034", "secondary": "#005293", "code": "PAN", "group": "L" }
+}

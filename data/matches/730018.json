@@ -1,0 +1,716 @@
+{
+  "fixtureId": 730018,
+  "fetchedAt": "2026-06-18T19:30:00.000Z",
+  "teams": {
+    "home": {
+      "id": 84323,
+      "name": "United States",
+      "code": "USA",
+      "logo": null,
+      "goals": 2
+    },
+    "away": {
+      "id": 78977,
+      "name": "Paraguay",
+      "code": "PAR",
+      "logo": null,
+      "goals": 2
+    }
+  },
+  "statsByTeam": [
+    {
+      "teamId": 84323,
+      "name": "United States",
+      "stats": {
+        "shotsOnTarget": 3,
+        "totalShots": 15,
+        "possession": 42,
+        "corners": 10,
+        "fouls": 7,
+        "offsides": 0,
+        "yellow": 1,
+        "red": 0,
+        "saves": 0,
+        "passes": 423,
+        "passesAccurate": 337,
+        "passAccuracy": 80,
+        "xg": 1.8
+      }
+    },
+    {
+      "teamId": 78977,
+      "name": "Paraguay",
+      "stats": {
+        "shotsOnTarget": 2,
+        "totalShots": 14,
+        "possession": 58,
+        "corners": 9,
+        "fouls": 8,
+        "offsides": 0,
+        "yellow": 1,
+        "red": 0,
+        "saves": 1,
+        "passes": 601,
+        "passesAccurate": 461,
+        "passAccuracy": 77,
+        "xg": 2
+      }
+    }
+  ],
+  "events": [
+    {
+      "minute": 16,
+      "extra": null,
+      "teamId": 84323,
+      "teamName": "United States",
+      "player": "O. Tanaka",
+      "playerId": 78708,
+      "assist": null,
+      "assistId": null,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    },
+    {
+      "minute": 59,
+      "extra": null,
+      "teamId": 78977,
+      "teamName": "Paraguay",
+      "player": "J. Sørensen",
+      "playerId": 91103,
+      "assist": null,
+      "assistId": null,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    },
+    {
+      "minute": 66,
+      "extra": null,
+      "teamId": 84323,
+      "teamName": "United States",
+      "player": "O. Tanaka",
+      "playerId": 78708,
+      "assist": null,
+      "assistId": null,
+      "type": "Goal",
+      "detail": "Normal Goal"
+    },
+    {
+      "minute": 71,
+      "extra": null,
+      "teamId": 78977,
+      "teamName": "Paraguay",
+      "player": "R. Abara",
+      "playerId": 26636,
+      "assist": "G. Sørensen",
+      "assistId": 95678,
+      "type": "Goal",
+      "detail": "Penalty"
+    }
+  ],
+  "lineups": [
+    {
+      "teamId": 84323,
+      "name": "United States",
+      "formation": "4-3-3",
+      "coach": "USA Manager",
+      "startXI": [
+        {
+          "id": 47719,
+          "name": "E. Kaur",
+          "number": 1,
+          "pos": "G",
+          "grid": "1:1"
+        },
+        {
+          "id": 47750,
+          "name": "G. Mensah",
+          "number": 2,
+          "pos": "D",
+          "grid": "2:1"
+        },
+        {
+          "id": 59643,
+          "name": "C. Kaur",
+          "number": 3,
+          "pos": "D",
+          "grid": "2:2"
+        },
+        {
+          "id": 89673,
+          "name": "D. Moreno",
+          "number": 4,
+          "pos": "D",
+          "grid": "2:3"
+        },
+        {
+          "id": 45650,
+          "name": "K. Andersen",
+          "number": 5,
+          "pos": "D",
+          "grid": "2:4"
+        },
+        {
+          "id": 94806,
+          "name": "K. Bianchi",
+          "number": 6,
+          "pos": "M",
+          "grid": "3:1"
+        },
+        {
+          "id": 12856,
+          "name": "M. Müller",
+          "number": 7,
+          "pos": "M",
+          "grid": "3:2"
+        },
+        {
+          "id": 15210,
+          "name": "J. Bauer",
+          "number": 8,
+          "pos": "M",
+          "grid": "3:3"
+        },
+        {
+          "id": 37889,
+          "name": "Christian Pulisic",
+          "number": 9,
+          "pos": "F",
+          "grid": "4:1"
+        },
+        {
+          "id": 78708,
+          "name": "O. Tanaka",
+          "number": 10,
+          "pos": "F",
+          "grid": "4:2"
+        },
+        {
+          "id": 71964,
+          "name": "B. Diallo",
+          "number": 11,
+          "pos": "F",
+          "grid": "4:3"
+        }
+      ],
+      "subs": [
+        {
+          "id": 12208,
+          "name": "D. Bauer",
+          "number": 12,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 6738,
+          "name": "E. Greco",
+          "number": 13,
+          "pos": "F",
+          "grid": null
+        },
+        {
+          "id": 45256,
+          "name": "J. Silva",
+          "number": 14,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 33839,
+          "name": "D. Müller",
+          "number": 15,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 98757,
+          "name": "D. Dubois",
+          "number": 16,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 2902,
+          "name": "C. Okafor",
+          "number": 17,
+          "pos": "G",
+          "grid": null
+        },
+        {
+          "id": 2251,
+          "name": "E. Novák",
+          "number": 18,
+          "pos": "F",
+          "grid": null
+        }
+      ]
+    },
+    {
+      "teamId": 78977,
+      "name": "Paraguay",
+      "formation": "4-3-3",
+      "coach": "PAR Manager",
+      "startXI": [
+        {
+          "id": 57229,
+          "name": "D. Wagner",
+          "number": 1,
+          "pos": "G",
+          "grid": "1:1"
+        },
+        {
+          "id": 86260,
+          "name": "H. Suzuki",
+          "number": 2,
+          "pos": "D",
+          "grid": "2:1"
+        },
+        {
+          "id": 51905,
+          "name": "S. Lindholm",
+          "number": 3,
+          "pos": "D",
+          "grid": "2:2"
+        },
+        {
+          "id": 22088,
+          "name": "D. Traoré",
+          "number": 4,
+          "pos": "D",
+          "grid": "2:3"
+        },
+        {
+          "id": 20304,
+          "name": "L. Kaur",
+          "number": 5,
+          "pos": "D",
+          "grid": "2:4"
+        },
+        {
+          "id": 91103,
+          "name": "J. Sørensen",
+          "number": 6,
+          "pos": "M",
+          "grid": "3:1"
+        },
+        {
+          "id": 3384,
+          "name": "D. Diallo",
+          "number": 7,
+          "pos": "M",
+          "grid": "3:2"
+        },
+        {
+          "id": 95678,
+          "name": "G. Sørensen",
+          "number": 8,
+          "pos": "M",
+          "grid": "3:3"
+        },
+        {
+          "id": 3438,
+          "name": "C. Greco",
+          "number": 9,
+          "pos": "F",
+          "grid": "4:1"
+        },
+        {
+          "id": 41351,
+          "name": "D. Okafor",
+          "number": 10,
+          "pos": "F",
+          "grid": "4:2"
+        },
+        {
+          "id": 26636,
+          "name": "R. Abara",
+          "number": 11,
+          "pos": "F",
+          "grid": "4:3"
+        }
+      ],
+      "subs": [
+        {
+          "id": 54551,
+          "name": "E. Novák",
+          "number": 12,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 35080,
+          "name": "H. Silva",
+          "number": 13,
+          "pos": "F",
+          "grid": null
+        },
+        {
+          "id": 9449,
+          "name": "E. Diallo",
+          "number": 14,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 43685,
+          "name": "H. Ali",
+          "number": 15,
+          "pos": "M",
+          "grid": null
+        },
+        {
+          "id": 69579,
+          "name": "M. Murphy",
+          "number": 16,
+          "pos": "D",
+          "grid": null
+        },
+        {
+          "id": 22138,
+          "name": "C. Hassan",
+          "number": 17,
+          "pos": "G",
+          "grid": null
+        },
+        {
+          "id": 42921,
+          "name": "K. Lindholm",
+          "number": 18,
+          "pos": "F",
+          "grid": null
+        }
+      ]
+    }
+  ],
+  "players": [
+    {
+      "id": 47719,
+      "name": "E. Kaur",
+      "teamId": 84323,
+      "number": 1,
+      "pos": "G",
+      "minutes": 90,
+      "rating": 7.4,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 47750,
+      "name": "G. Mensah",
+      "teamId": 84323,
+      "number": 2,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.8,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 59643,
+      "name": "C. Kaur",
+      "teamId": 84323,
+      "number": 3,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 89673,
+      "name": "D. Moreno",
+      "teamId": 84323,
+      "number": 4,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.9,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 45650,
+      "name": "K. Andersen",
+      "teamId": 84323,
+      "number": 5,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.8,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 94806,
+      "name": "K. Bianchi",
+      "teamId": 84323,
+      "number": 6,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 1,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 12856,
+      "name": "M. Müller",
+      "teamId": 84323,
+      "number": 7,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.2,
+      "goals": 0,
+      "assists": 0,
+      "shots": 1,
+      "shotsOnTarget": 0,
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "id": 15210,
+      "name": "J. Bauer",
+      "teamId": 84323,
+      "number": 8,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 37889,
+      "name": "Christian Pulisic",
+      "teamId": 84323,
+      "number": 9,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 6.5,
+      "goals": 0,
+      "assists": 0,
+      "shots": 3,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 78708,
+      "name": "O. Tanaka",
+      "teamId": 84323,
+      "number": 10,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 8,
+      "goals": 2,
+      "assists": 0,
+      "shots": 6,
+      "shotsOnTarget": 3,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 71964,
+      "name": "B. Diallo",
+      "teamId": 84323,
+      "number": 11,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.2,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 57229,
+      "name": "D. Wagner",
+      "teamId": 78977,
+      "number": 1,
+      "pos": "G",
+      "minutes": 90,
+      "rating": 6.4,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 86260,
+      "name": "H. Suzuki",
+      "teamId": 78977,
+      "number": 2,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 51905,
+      "name": "S. Lindholm",
+      "teamId": 78977,
+      "number": 3,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.1,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 22088,
+      "name": "D. Traoré",
+      "teamId": 78977,
+      "number": 4,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 7.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 20304,
+      "name": "L. Kaur",
+      "teamId": 78977,
+      "number": 5,
+      "pos": "D",
+      "minutes": 90,
+      "rating": 6.7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 0,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 91103,
+      "name": "J. Sørensen",
+      "teamId": 78977,
+      "number": 6,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.9,
+      "goals": 1,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 3384,
+      "name": "D. Diallo",
+      "teamId": 78977,
+      "number": 7,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 7.3,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 95678,
+      "name": "G. Sørensen",
+      "teamId": 78977,
+      "number": 8,
+      "pos": "M",
+      "minutes": 90,
+      "rating": 6.8,
+      "goals": 0,
+      "assists": 1,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 1,
+      "red": 0
+    },
+    {
+      "id": 3438,
+      "name": "C. Greco",
+      "teamId": 78977,
+      "number": 9,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 6.7,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 41351,
+      "name": "D. Okafor",
+      "teamId": 78977,
+      "number": 10,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 6.4,
+      "goals": 0,
+      "assists": 0,
+      "shots": 2,
+      "shotsOnTarget": 0,
+      "yellow": 0,
+      "red": 0
+    },
+    {
+      "id": 26636,
+      "name": "R. Abara",
+      "teamId": 78977,
+      "number": 11,
+      "pos": "F",
+      "minutes": 90,
+      "rating": 7.1,
+      "goals": 1,
+      "assists": 0,
+      "shots": 4,
+      "shotsOnTarget": 1,
+      "yellow": 0,
+      "red": 0
+    }
+  ]
+}

@@ -1,0 +1,275 @@
+{
+  "updatedAt": "2026-06-18T19:30:00.000Z",
+  "players": [
+    {
+      "player": {
+        "id": 900000,
+        "name": "Kylian Mbappé",
+        "photo": null
+      },
+      "team": {
+        "id": 69877,
+        "name": "France",
+        "code": "FRA",
+        "logo": null
+      },
+      "goals": 5,
+      "assists": 1,
+      "minutes": 213,
+      "appearances": 2,
+      "penalties": 0
+    },
+    {
+      "player": {
+        "id": 900001,
+        "name": "Harry Kane",
+        "photo": null
+      },
+      "team": {
+        "id": 68798,
+        "name": "England",
+        "code": "ENG",
+        "logo": null
+      },
+      "goals": 4,
+      "assists": 2,
+      "minutes": 221,
+      "appearances": 2,
+      "penalties": 1
+    },
+    {
+      "player": {
+        "id": 900002,
+        "name": "Erling Haaland",
+        "photo": null
+      },
+      "team": {
+        "id": 77489,
+        "name": "Norway",
+        "code": "NOR",
+        "logo": null
+      },
+      "goals": 4,
+      "assists": 0,
+      "minutes": 238,
+      "appearances": 2,
+      "penalties": 0
+    },
+    {
+      "player": {
+        "id": 900003,
+        "name": "Vinícius Júnior",
+        "photo": null
+      },
+      "team": {
+        "id": 66033,
+        "name": "Brazil",
+        "code": "BRA",
+        "logo": null
+      },
+      "goals": 3,
+      "assists": 3,
+      "minutes": 266,
+      "appearances": 2,
+      "penalties": 0
+    },
+    {
+      "player": {
+        "id": 900004,
+        "name": "Lautaro Martínez",
+        "photo": null
+      },
+      "team": {
+        "id": 65078,
+        "name": "Argentina",
+        "code": "ARG",
+        "logo": null
+      },
+      "goals": 3,
+      "assists": 1,
+      "minutes": 201,
+      "appearances": 2,
+      "penalties": 0
+    },
+    {
+      "player": {
+        "id": 900005,
+        "name": "Mohamed Salah",
+        "photo": null
+      },
+      "team": {
+        "id": 68599,
+        "name": "Egypt",
+        "code": "EGY",
+        "logo": null
+      },
+      "goals": 3,
+      "assists": 1,
+      "minutes": 204,
+      "appearances": 2,
+      "penalties": 0
+    },
+    {
+      "player": {
+        "id": 900006,
+        "name": "Cristiano Ronaldo",
+        "photo": null
+      },
+      "team": {
+        "id": 79411,
+        "name": "Portugal",
+        "code": "POR",
+        "logo": null
+      },
+      "goals": 3,
+      "assists": 0,
+      "minutes": 262,
+      "appearances": 2,
+      "penalties": 1
+    },
+    {
+      "player": {
+        "id": 900007,
+        "name": "Cody Gakpo",
+        "photo": null
+      },
+      "team": {
+        "id": 77165,
+        "name": "Netherlands",
+        "code": "NED",
+        "logo": null
+      },
+      "goals": 2,
+      "assists": 2,
+      "minutes": 217,
+      "appearances": 2,
+      "penalties": 0
+    },
+    {
+      "player": {
+        "id": 900008,
+        "name": "Florian Wirtz",
+        "photo": null
+      },
+      "team": {
+        "id": 70452,
+        "name": "Germany",
+        "code": "GER",
+        "logo": null
+      },
+      "goals": 2,
+      "assists": 3,
+      "minutes": 259,
+      "appearances": 2,
+      "penalties": 0
+    },
+    {
+      "player": {
+        "id": 900009,
+        "name": "Romelu Lukaku",
+        "photo": null
+      },
+      "team": {
+        "id": 65641,
+        "name": "Belgium",
+        "code": "BEL",
+        "logo": null
+      },
+      "goals": 2,
+      "assists": 1,
+      "minutes": 181,
+      "appearances": 2,
+      "penalties": 0
+    },
+    {
+      "player": {
+        "id": 900010,
+        "name": "Christian Pulisic",
+        "photo": null
+      },
+      "team": {
+        "id": 84323,
+        "name": "United States",
+        "code": "USA",
+        "logo": null
+      },
+      "goals": 2,
+      "assists": 2,
+      "minutes": 182,
+      "appearances": 2,
+      "penalties": 0
+    },
+    {
+      "player": {
+        "id": 900011,
+        "name": "Son Heung-min",
+        "photo": null
+      },
+      "team": {
+        "id": 74606,
+        "name": "South Korea",
+        "code": "KOR",
+        "logo": null
+      },
+      "goals": 2,
+      "assists": 1,
+      "minutes": 268,
+      "appearances": 2,
+      "penalties": 0
+    },
+    {
+      "player": {
+        "id": 900012,
+        "name": "Mohammed Kudus",
+        "photo": null
+      },
+      "team": {
+        "id": 70528,
+        "name": "Ghana",
+        "code": "GHA",
+        "logo": null
+      },
+      "goals": 2,
+      "assists": 0,
+      "minutes": 235,
+      "appearances": 2,
+      "penalties": 0
+    },
+    {
+      "player": {
+        "id": 900013,
+        "name": "Julián Álvarez",
+        "photo": null
+      },
+      "team": {
+        "id": 65078,
+        "name": "Argentina",
+        "code": "ARG",
+        "logo": null
+      },
+      "goals": 2,
+      "assists": 1,
+      "minutes": 267,
+      "appearances": 2,
+      "penalties": 0
+    },
+    {
+      "player": {
+        "id": 900014,
+        "name": "Dušan Vlahović",
+        "photo": null
+      },
+      "team": {
+        "id": 82471,
+        "name": "Switzerland",
+        "code": "SUI",
+        "logo": null
+      },
+      "goals": 1,
+      "assists": 0,
+      "minutes": 251,
+      "appearances": 2,
+      "penalties": 0
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "footstats",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "check": "astro check",
+    "fetch": "node scripts/fetch.mjs",
+    "aggregate": "node scripts/aggregate.mjs",
+    "update": "node scripts/fetch.mjs && node scripts/aggregate.mjs",
+    "mock": "node scripts/mock.mjs"
+  },
+  "dependencies": {
+    "astro": "^5.0.0",
+    "gsap": "^3.15.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.9",
+    "@types/node": "^25.9.3",
+    "typescript": "^5.9.3"
+  }
+}

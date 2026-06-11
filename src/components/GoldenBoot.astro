@@ -1,0 +1,270 @@
+---
+import { topscorers, topassists } from '../lib/data';
+import { teamTheme, readableAccent } from '../lib/teams';
+import type { ScorerEntry } from '../lib/types';
+
+interface Props {
+  scorers?: ScorerEntry[];
+  assists?: ScorerEntry[];
+  limit?: number;
+}
+const { scorers = topscorers, assists = topassists, limit = 10 } = Astro.props;
+
+// Golden Boot order: goals, then assists, then fewest minutes (efficiency tiebreak).
+const boot = [...scorers]
+  .sort(
+    (a, b) =>
+      b.goals - a.goals ||
+      b.assists - a.assists ||
+      (a.minutes ?? 1e9) - (b.minutes ?? 1e9)
+  )
+  .slice(0, limit);
+
+const play = [...assists]
+  .sort((a, b) => b.assists - a.assists || b.goals - a.goals)
+  .slice(0, 6);
+const hasPlay = play.length > 0;
+---
+
+<div class="boot-wrap">
+  <ol class="boot-list">
+    {
+      boot.map((s, i) => {
+        const th = teamTheme(s.team.name);
+        return (
+          <li class:list={['boot-row', { lead: i === 0 }]} style={`--c:${readableAccent(th)}`}>
+            <span class="boot-rank">{i + 1}</span>
+            <span class="boot-goals">
+              {s.goals}
+              <small>{i === 0 ? 'goals' : ''}</small>
+            </span>
+            <span class="boot-player">
+              <b>{s.player.name}</b>
+              <small>
+                <span class="boot-dot" aria-hidden="true" />
+                {s.team.name}
+              </small>
+            </span>
+            <span class="boot-extra">
+              <span>
+                <i>{s.assists}</i> A
+              </span>
+              <span>
+                <i>{s.minutes ?? '—'}</i>′
+              </span>
+            </span>
+          </li>
+        );
+      })
+    }
+  </ol>
+
+  {
+    hasPlay && (
+      <aside class="play">
+        <h3 class="play-title">Playmakers</h3>
+        <ol class="play-list">
+          {play.map((s) => {
+            const th = teamTheme(s.team.name);
+            return (
+              <li class="play-row" style={`--c:${readableAccent(th)}`}>
+                <span class="play-a">{s.assists}</span>
+                <span class="play-name">
+                  <b>{s.player.name}</b>
+                  <small>{s.team.code}</small>
+                </span>
+              </li>
+            );
+          })}
+        </ol>
+      </aside>
+    )
+  }
+</div>
+
+<style>
+  .boot-wrap {
+    display: grid;
+    grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr);
+    gap: 18px;
+    align-items: start;
+  }
+
+  .boot-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 6px;
+  }
+
+  .boot-row {
+    display: grid;
+    grid-template-columns: 28px 56px minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 14px;
+    background: linear-gradient(180deg, var(--surface), var(--bg-2));
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+  }
+
+  .boot-row.lead {
+    border-color: color-mix(in srgb, var(--gold) 50%, var(--line));
+    background: radial-gradient(120% 160% at 0% 0%, color-mix(in srgb, var(--gold) 14%, transparent), transparent 60%),
+      linear-gradient(180deg, var(--surface), var(--bg-2));
+  }
+
+  .boot-rank {
+    font-family: var(--font-head);
+    font-weight: 700;
+    color: var(--faint);
+    text-align: center;
+    font-size: 0.95rem;
+  }
+
+  .boot-row.lead .boot-rank {
+    color: var(--gold);
+  }
+
+  .boot-goals {
+    font-family: var(--font-display);
+    font-size: 1.9rem;
+    line-height: 0.9;
+    color: var(--text);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .boot-row.lead .boot-goals {
+    color: var(--gold);
+  }
+
+  .boot-goals small {
+    font-family: var(--font-head);
+    font-size: 0.6rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--faint);
+  }
+
+  .boot-player {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .boot-player b {
+    font-family: var(--font-head);
+    font-weight: 600;
+    font-size: 1.05rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .boot-player small {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--muted);
+    font-size: 0.82rem;
+  }
+
+  .boot-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--c);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.16) inset;
+  }
+
+  .boot-extra {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    text-align: right;
+    font-size: 0.78rem;
+    color: var(--faint);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .boot-extra i {
+    font-style: normal;
+    font-weight: 700;
+    color: var(--muted);
+  }
+
+  /* Playmakers aside */
+  .play {
+    background: linear-gradient(180deg, var(--surface), var(--bg-2));
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 12px 14px 14px;
+  }
+
+  .play-title {
+    font-family: var(--font-head);
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--muted);
+    margin: 0 0 8px;
+  }
+
+  .play-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 2px;
+  }
+
+  .play-row {
+    display: grid;
+    grid-template-columns: 26px 1fr;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 4px;
+    border-radius: 6px;
+  }
+
+  .play-a {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    color: var(--c);
+    text-align: center;
+  }
+
+  .play-name {
+    min-width: 0;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+  }
+
+  .play-name b {
+    font-family: var(--font-head);
+    font-weight: 600;
+    font-size: 0.92rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .play-name small {
+    color: var(--faint);
+    font-size: 0.74rem;
+    font-weight: 700;
+  }
+
+  @media (max-width: 720px) {
+    .boot-wrap {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

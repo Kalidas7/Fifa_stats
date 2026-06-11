@@ -1,0 +1,5 @@
+{
+  "_note": "COMPUTED by scripts/aggregate.mjs from data/matches/*.json. Powers /player/{id}.",
+  "updatedAt": null,
+  "players": []
+}
