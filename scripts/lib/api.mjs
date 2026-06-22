@@ -2,7 +2,9 @@
 // transient failures, respects the per-minute burst limit via a caller-side delay, and
 // tracks the x-ratelimit-requests-remaining header so each run logs remaining quota.
 const BASE = 'https://v3.football.api-sports.io';
-const KEY = process.env.APISPORTS_KEY || process.env.API_FOOTBALL_KEY || '';
+// .trim() guards against a stray space/newline in the pasted secret (a common cause of
+// "Missing application key" — the header value must be exactly the 32-char key).
+const KEY = (process.env.APISPORTS_KEY || process.env.API_FOOTBALL_KEY || '').trim();
 
 export const LEAGUE = Number(process.env.APISPORTS_LEAGUE || 1);
 // Free tier covers seasons 2022–2024 only, so we use the real 2022 World Cup.
