@@ -34,6 +34,7 @@ function teamRef(t, goals) {
     code: codeFor(name),
     logo: t?.logo ?? null,
     goals: goals ?? null,
+    winner: t?.winner ?? null,
   };
 }
 
@@ -47,6 +48,11 @@ export function normalizeFixture(item) {
   const short = status.short ?? 'NS';
   const group =
     round === 'Group Stage' ? (groupFor(teams.home?.name) ?? groupFor(teams.away?.name)) : null;
+  const pen = item?.score?.penalty;
+  const penalty =
+    pen && (pen.home != null || pen.away != null)
+      ? { home: pen.home ?? null, away: pen.away ?? null }
+      : null;
 
   return {
     id: fx.id,
@@ -56,6 +62,7 @@ export function normalizeFixture(item) {
     round,
     rawRound: lg.round ?? null,
     group,
+    penalty,
     status: { short, long: status.long ?? '', elapsed: status.elapsed ?? null },
     finished: FINISHED.has(short),
     home: teamRef(teams.home, goals.home),

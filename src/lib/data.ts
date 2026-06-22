@@ -15,6 +15,7 @@ import type {
   GroupStanding,
   ScorerEntry,
   PlayerAggregate,
+  TeamRef,
 } from './types';
 
 export const fixturesFile = fixturesJson as unknown as FixturesFile;
@@ -85,6 +86,29 @@ export function lastUpdated(): string | null {
 }
 
 export const season: number | null = fixturesFile.league?.season ?? null;
+
+// The tournament winner, once the Final is decided. Uses the API winner flag, then the
+// scoreline, then the penalty shootout — so a 3–3 (4–2 pen) Final resolves correctly.
+export function champion(): { team: TeamRef; runnerUp: TeamRef; fixture: Fixture } | null {
+  const final = fixtures.find((f) => f.round === 'Final' && isFinished(f));
+  if (!final) return null;
+  const { home, away } = final;
+  let win: TeamRef | null =
+    home.winner === true ? home : away.winner === true ? away : null;
+  if (!win) {
+    const hg = home.goals ?? 0;
+    const ag = away.goals ?? 0;
+    if (hg > ag) win = home;
+    else if (ag > hg) win = away;
+    else if (final.penalty) {
+      const hp = final.penalty.home ?? 0;
+      const ap = final.penalty.away ?? 0;
+      win = hp > ap ? home : ap > hp ? away : null;
+    }
+  }
+  if (!win) return null;
+  return { team: win, runnerUp: win === home ? away : home, fixture: final };
+}
 
 // Tournament facts derived from the actual data, so the UI isn't hardcoded to one edition.
 export function tournamentMeta() {

@@ -9,6 +9,7 @@ export interface TeamRef {
   code: string | null; // FIFA trigram (from teams.json / API), e.g. "BRA"
   logo: string | null;
   goals?: number | null;
+  winner?: boolean | null; // API winner flag (true/false/null) — decides ties on pens
 }
 
 export interface FixtureStatus {
@@ -25,6 +26,7 @@ export interface Fixture {
   round: string; // "Group Stage" | "Round of 32" | "Round of 16" | "Quarter-finals" | "Semi-finals" | "3rd Place Final" | "Final"
   rawRound?: string | null; // original API round, e.g. "Group Stage - 1" (matchday)
   group: string | null; // "A".."L" for group stage, else null
+  penalty?: { home: number | null; away: number | null } | null; // shootout score, if any
   status: FixtureStatus;
   finished: boolean; // derived: status.short in {FT, AET, PEN}
   home: TeamRef;

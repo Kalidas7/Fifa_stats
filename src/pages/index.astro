@@ -5,7 +5,15 @@ import GroupTables from '../components/GroupTables.astro';
 import FixturesList from '../components/FixturesList.astro';
 import GoldenBoot from '../components/GoldenBoot.astro';
 import { links } from '../lib/url';
-import { standings, topscorers, currentFixtureWindow, lastUpdated, tournamentMeta } from '../lib/data';
+import { teamTheme, readableAccent } from '../lib/teams';
+import {
+  standings,
+  topscorers,
+  currentFixtureWindow,
+  lastUpdated,
+  tournamentMeta,
+  champion,
+} from '../lib/data';
 
 const windowFx = currentFixtureWindow();
 const hasFixtures = windowFx.length > 0;
@@ -30,6 +38,16 @@ const chips = [
   { n: meta.matchCount, label: 'Matches' },
   { n: meta.venueCount, label: 'Stadiums' },
 ].filter((c) => c.n > 0);
+
+// Champion banner (once the Final is decided).
+const champ = champion();
+const champAccent = champ ? readableAccent(teamTheme(champ.team.name)) : '';
+const champPen = champ?.fixture.penalty;
+const champScore = champ
+  ? `${champ.fixture.home.goals ?? 0}–${champ.fixture.away.goals ?? 0}${
+      champPen ? ` (${champPen.home}–${champPen.away} pen)` : ''
+    }`
+  : '';
 ---
 
 <Base current="home" updatedAt={updatedAt}>
@@ -56,6 +74,21 @@ const chips = [
   </section>
 
   <div class="container">
+    {
+      champ && (
+        <a class="champ-banner" href={links.match(champ.fixture.id)} style={`--c:${champAccent}`}>
+          <span class="champ-trophy">🏆</span>
+          <span class="champ-main">
+            <b>{champ.team.name}</b>
+            <span>World Cup {year} Champions</span>
+          </span>
+          <span class="champ-beat">
+            beat {champ.runnerUp.name} {champScore}
+          </span>
+        </a>
+      )
+    }
+
     <!-- FIXTURES -->
     <section class="section" id="fixtures">
       <div class="section-head">
@@ -116,6 +149,61 @@ const chips = [
 </Base>
 
 <style>
+  .champ-banner {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: clamp(20px, 4vw, 32px);
+    padding: 16px 20px;
+    border-radius: var(--radius);
+    border: 1px solid color-mix(in srgb, var(--c) 45%, var(--line));
+    background:
+      radial-gradient(90% 160% at 0% 0%, color-mix(in srgb, var(--c) 22%, transparent), transparent 60%),
+      linear-gradient(180deg, var(--surface), var(--bg-2));
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .champ-banner:hover {
+    transform: translateY(-2px);
+    border-color: var(--c);
+  }
+  .champ-trophy {
+    font-size: 2.2rem;
+    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.5));
+  }
+  .champ-main {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+  }
+  .champ-main b {
+    font-family: var(--font-display);
+    font-size: clamp(1.4rem, 4vw, 2rem);
+    color: var(--c);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .champ-main span {
+    font-family: var(--font-head);
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--gold);
+  }
+  .champ-beat {
+    margin-left: auto;
+    text-align: right;
+    font-family: var(--font-head);
+    font-size: 0.84rem;
+    color: var(--muted);
+    white-space: nowrap;
+  }
+  @media (max-width: 520px) {
+    .champ-beat {
+      display: none;
+    }
+  }
+
   .more-link {
     margin-top: 14px;
     text-align: center;

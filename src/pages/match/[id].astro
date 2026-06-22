@@ -36,6 +36,30 @@ const awaySot = Number(awayStats.stats?.shotsOnTarget ?? 0);
 const hg = home?.goals ?? 0;
 const ag = away?.goals ?? 0;
 
+// Result method + decider (handles AET / penalty shootouts so the winner is unambiguous).
+const pen = fixture?.penalty ?? null;
+const statusShort = fixture?.status?.short ?? 'FT';
+const ftLabel =
+  statusShort === 'PEN' ? 'After penalties' : statusShort === 'AET' ? 'After extra time' : 'Full time';
+const winSide: 'home' | 'away' | null =
+  fixture?.home?.winner === true
+    ? 'home'
+    : fixture?.away?.winner === true
+      ? 'away'
+      : hg > ag
+        ? 'home'
+        : ag > hg
+          ? 'away'
+          : pen && (pen.home ?? 0) !== (pen.away ?? 0)
+            ? (pen.home ?? 0) > (pen.away ?? 0)
+              ? 'home'
+              : 'away'
+            : null;
+// Only crown a winner on knockout ties — a group result isn't a "win" worth a trophy.
+const knockout = (fixture?.round ?? 'Group Stage') !== 'Group Stage';
+const homeWon = knockout && winSide === 'home';
+const awayWon = knockout && winSide === 'away';
+
 const standout = [...(match.players ?? [])]
   .filter((p) => p.rating != null)
   .sort((a, b) => (b.rating ?? 0) - (a.rating ?? 0))[0];
@@ -91,16 +115,16 @@ const title = `${home?.name ?? 'TBD'} ${hg}–${ag} ${away?.name ?? 'TBD'} — F
         {venue && <span>· {venue}</span>}
       </div>
       <div class="sb-teams">
-        <div class="sb-team home">
-          <span class="sb-tname">{home?.name}</span>
+        <div class:list={['sb-team', 'home', { won: homeWon }]}>
+          <span class="sb-tname">{homeWon && <span class="sb-win">🏆</span>}{home?.name}</span>
           <span class="sb-tcode">{home?.code}</span>
         </div>
         <div class="sb-score">
           <b>{hg}</b><i>–</i><b>{ag}</b>
-          <span class="sb-ft">Full time</span>
+          <span class="sb-ft">{ftLabel}{pen ? ` · ${pen.home}–${pen.away} pen` : ''}</span>
         </div>
-        <div class="sb-team away">
-          <span class="sb-tname">{away?.name}</span>
+        <div class:list={['sb-team', 'away', { won: awayWon }]}>
+          <span class="sb-tname">{away?.name}{awayWon && <span class="sb-win">🏆</span>}</span>
           <span class="sb-tcode">{away?.code}</span>
         </div>
       </div>
@@ -247,6 +271,12 @@ const title = `${home?.name ?? 'TBD'} ${hg}–${ag} ${away?.name ?? 'TBD'} — F
     color: var(--faint);
     font-size: 0.8rem;
     letter-spacing: 1px;
+  }
+
+  .sb-win {
+    font-size: 0.7em;
+    margin: 0 6px;
+    vertical-align: 0.05em;
   }
 
   .sb-score {
