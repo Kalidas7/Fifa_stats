@@ -1,0 +1,219 @@
+---
+import { isFinished, isLive } from '../lib/data';
+import { matchIds } from '../lib/matches';
+import { teamTheme, readableAccent, teamCode } from '../lib/teams';
+import { links } from '../lib/url';
+import type { Fixture } from '../lib/types';
+
+interface Props {
+  f: Fixture;
+}
+const { f } = Astro.props;
+
+const fin = isFinished(f);
+const live = isLive(f);
+const played = fin || live;
+const clickable = fin && matchIds.has(f.id);
+const ht = teamTheme(f.home.name);
+const at = teamTheme(f.away.name);
+const Tag = clickable ? 'a' : 'div';
+
+// Epoch ms for client-side local-day bucketing (Matches tab).
+const tsMs = f.timestamp ? f.timestamp * 1000 : f.utcDate ? Date.parse(f.utcDate) : NaN;
+
+function shortRound(fx: Fixture): string {
+  if (fx.group) return `Group ${fx.group}`;
+  return fx.round
+    .replace('Round of ', 'R')
+    .replace('Quarter-finals', 'QF')
+    .replace('Semi-finals', 'SF')
+    .replace('3rd Place Final', '3rd')
+    .replace('Final', 'Final');
+}
+---
+
+<Tag
+  class:list={['fixture', { clickable, live }]}
+  href={clickable ? links.match(f.id) : undefined}
+  data-ts={Number.isNaN(tsMs) ? undefined : tsMs}
+>
+  <span class="fx-when">
+    {
+      live ? (
+        <span class="badge live">{f.status.elapsed ? `${f.status.elapsed}'` : 'LIVE'}</span>
+      ) : fin ? (
+        <span class="badge ft">{f.status.short}</span>
+      ) : (
+        <time class="js-localtime" datetime={f.utcDate}>
+          {f.utcDate?.slice(11, 16) ?? '—'}
+        </time>
+      )
+    }
+  </span>
+
+  <span class="fx-team home" style={`--c:${readableAccent(ht)}`}>
+    <span class="fx-name">{f.home.name}</span>
+    <span class="fx-code">{teamCode(f.home.name) || '—'}</span>
+    <span class="fx-dot" aria-hidden="true" />
+  </span>
+
+  <span class="fx-score">
+    {
+      played ? (
+        <Fragment>
+          <b>{f.home.goals ?? 0}</b>
+          <i>-</i>
+          <b>{f.away.goals ?? 0}</b>
+        </Fragment>
+      ) : (
+        <span class="fx-vs">v</span>
+      )
+    }
+  </span>
+
+  <span class="fx-team away" style={`--c:${readableAccent(at)}`}>
+    <span class="fx-dot" aria-hidden="true" />
+    <span class="fx-code">{teamCode(f.away.name) || '—'}</span>
+    <span class="fx-name">{f.away.name}</span>
+  </span>
+
+  <span class="fx-tag">{shortRound(f)}</span>
+</Tag>
+
+<script>
+  // The static build can't know each viewer's timezone, so kickoff times render as UTC
+  // HH:MM and get localized here on load. (Runs once per page that uses a fixture row.)
+  for (const el of document.querySelectorAll('time.js-localtime')) {
+    const dt = el.getAttribute('datetime');
+    if (!dt) continue;
+    const d = new Date(dt);
+    if (!Number.isNaN(d.getTime())) {
+      el.textContent = d.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    }
+  }
+</script>
+
+<style>
+  .fixture {
+    display: grid;
+    grid-template-columns: 52px 1fr auto 1fr 56px;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 12px;
+    background: linear-gradient(180deg, var(--surface), var(--bg-2));
+    border: 1px solid var(--line);
+    border-radius: var(--radius-sm);
+    color: inherit;
+  }
+
+  .fixture.clickable {
+    cursor: pointer;
+    transition: border-color 0.15s, transform 0.15s, background 0.15s;
+  }
+
+  .fixture.clickable:hover {
+    border-color: var(--line-2);
+    transform: translateY(-1px);
+  }
+
+  .fixture.live {
+    border-color: color-mix(in srgb, var(--live) 45%, var(--line));
+  }
+
+  .fx-when {
+    font-family: var(--font-head);
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--muted);
+    text-align: center;
+  }
+
+  .fx-team {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-width: 0;
+  }
+
+  .fx-team.home {
+    justify-content: flex-end;
+    text-align: right;
+  }
+
+  .fx-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--c);
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.16) inset;
+    flex: none;
+  }
+
+  .fx-name {
+    font-family: var(--font-head);
+    font-weight: 600;
+    font-size: 0.98rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .fx-code {
+    display: none;
+    font-family: var(--font-head);
+    font-weight: 700;
+    font-size: 0.86rem;
+    color: var(--c);
+    letter-spacing: 0.5px;
+  }
+
+  .fx-score {
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    letter-spacing: 1px;
+    white-space: nowrap;
+    padding: 1px 8px;
+    border-radius: 6px;
+    background: var(--surface-3);
+    min-width: 46px;
+    text-align: center;
+  }
+
+  .fx-score i {
+    color: var(--faint);
+    margin: 0 2px;
+    font-style: normal;
+  }
+
+  .fx-vs {
+    color: var(--faint);
+    font-size: 0.9rem;
+  }
+
+  .fx-tag {
+    font-family: var(--font-head);
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    font-size: 0.68rem;
+    color: var(--faint);
+    text-align: right;
+    white-space: nowrap;
+  }
+
+  @media (max-width: 560px) {
+    .fixture {
+      grid-template-columns: 42px 1fr auto 1fr;
+      gap: 6px;
+      padding: 9px 10px;
+    }
+    .fx-name {
+      display: none;
+    }
+    .fx-code {
+      display: inline;
+    }
+    .fx-tag {
+      display: none;
+    }
+  }
+</style>

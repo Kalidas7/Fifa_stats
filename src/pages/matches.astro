@@ -1,0 +1,225 @@
+---
+import Base from '../layouts/Base.astro';
+import FixtureRow from '../components/FixtureRow.astro';
+import { fixtures, lastUpdated } from '../lib/data';
+
+// All fixtures are rendered into a hidden pool; the client script buckets them into
+// Yesterday / Today / Tomorrow using the VIEWER's local date (a static build can't know it).
+const all = fixtures;
+const updatedAt = lastUpdated();
+const hasAny = all.length > 0;
+---
+
+<Base current="matches" title="Matches — FootStats" updatedAt={updatedAt}>
+  <div class="container matches" data-matches>
+    <section class="section" style="margin-top: clamp(20px, 4vw, 36px)">
+      <div class="section-head">
+        <h2 class="section-title">Matches</h2>
+        <span class="section-note">Yesterday · Today · Tomorrow · your local time</span>
+      </div>
+
+      {
+        hasAny ? (
+          <Fragment>
+            <div class="day-tabs" role="tablist">
+              <button class="day-tab" role="tab" data-tab="yesterday" type="button">
+                Yesterday <i data-count="yesterday">0</i>
+              </button>
+              <button class="day-tab is-active" role="tab" data-tab="today" type="button">
+                Today <i data-count="today">0</i>
+              </button>
+              <button class="day-tab" role="tab" data-tab="tomorrow" type="button">
+                Tomorrow <i data-count="tomorrow">0</i>
+              </button>
+            </div>
+
+            {['yesterday', 'today', 'tomorrow'].map((name) => (
+              <section class="bucket" data-bucket={name} hidden>
+                <h3 class="bucket-date" data-bucket-date={name} />
+                <div class="fx-list" data-bucket-list={name} />
+                <p class="bucket-empty" data-bucket-empty={name} hidden>
+                  No matches {name === 'today' ? 'today' : name === 'yesterday' ? 'yesterday' : 'tomorrow'}.
+                </p>
+              </section>
+            ))}
+
+            <p class="matches-note" data-loading>Loading your local schedule…</p>
+
+            <div data-pool hidden>
+              {all.map((f) => (
+                <FixtureRow f={f} />
+              ))}
+            </div>
+          </Fragment>
+        ) : (
+          <div class="empty-state">
+            <div class="es-emoji">🗓️</div>
+            <h3>Schedule loads after the first sync</h3>
+            <p>Once data is fetched, this tab shows yesterday's, today's and tomorrow's matches in your local time.</p>
+          </div>
+        )
+      }
+    </section>
+  </div>
+</Base>
+
+<style>
+  .day-tabs {
+    display: inline-flex;
+    gap: 4px;
+    padding: 4px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: var(--surface);
+    margin-bottom: 22px;
+  }
+
+  .day-tab {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    font-family: var(--font-head);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    font-size: 0.84rem;
+    color: var(--muted);
+    background: none;
+    border: 0;
+    border-radius: 999px;
+    padding: 7px 16px;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+  }
+
+  .day-tab i {
+    font-style: normal;
+    font-size: 0.72rem;
+    font-weight: 700;
+    min-width: 18px;
+    height: 18px;
+    padding: 0 5px;
+    display: grid;
+    place-items: center;
+    border-radius: 999px;
+    background: var(--surface-3);
+    color: var(--muted);
+  }
+
+  .day-tab:hover {
+    color: var(--text);
+  }
+
+  .day-tab.is-active {
+    background: var(--turf-bright);
+    color: #08120d;
+  }
+  .day-tab.is-active i {
+    background: rgba(8, 18, 13, 0.25);
+    color: #08120d;
+  }
+
+  .bucket-date {
+    font-family: var(--font-head);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--turf-bright);
+    margin: 0 0 10px;
+  }
+
+  .fx-list {
+    display: grid;
+    gap: 6px;
+  }
+
+  .bucket-empty {
+    color: var(--muted);
+    text-align: center;
+    padding: 40px 0;
+    border: 1px dashed var(--line-2);
+    border-radius: var(--radius);
+    background: var(--surface);
+  }
+
+  .matches-note {
+    color: var(--faint);
+    text-align: center;
+    font-size: 0.85rem;
+    padding: 24px 0;
+  }
+</style>
+
+<script>
+  const root = document.querySelector<HTMLElement>('[data-matches]');
+  if (root) {
+    const pool = root.querySelector<HTMLElement>('[data-pool]');
+    const loading = root.querySelector<HTMLElement>('[data-loading]');
+    const tabs = Array.from(root.querySelectorAll<HTMLButtonElement>('[data-tab]'));
+    const names = ['yesterday', 'today', 'tomorrow'] as const;
+    type Name = (typeof names)[number];
+
+    const localKey = (d: Date) =>
+      `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
+
+    const now = new Date();
+    const dateFor: Record<Name, Date> = {
+      yesterday: new Date(now.getFullYear(), now.getMonth(), now.getDate() - 1),
+      today: new Date(now.getFullYear(), now.getMonth(), now.getDate()),
+      tomorrow: new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1),
+    };
+    const keyToName: Record<string, Name> = {};
+    for (const n of names) keyToName[localKey(dateFor[n])] = n;
+
+    const listOf = (n: Name) => root.querySelector<HTMLElement>(`[data-bucket-list="${n}"]`)!;
+
+    // distribute rows by local match date
+    if (pool) {
+      for (const row of Array.from(pool.querySelectorAll<HTMLElement>('.fixture'))) {
+        const ts = Number(row.getAttribute('data-ts'));
+        if (!ts) continue;
+        const n = keyToName[localKey(new Date(ts))];
+        if (n) listOf(n).appendChild(row);
+      }
+      pool.remove();
+    }
+    loading?.remove();
+
+    // fill headings, counts, empty states
+    for (const n of names) {
+      const list = listOf(n);
+      const count = list.children.length;
+      const dateLabel = dateFor[n].toLocaleDateString([], {
+        weekday: 'long',
+        day: 'numeric',
+        month: 'short',
+      });
+      const head = root.querySelector<HTMLElement>(`[data-bucket-date="${n}"]`);
+      const label = n.charAt(0).toUpperCase() + n.slice(1);
+      if (head) head.textContent = `${label} · ${dateLabel}`;
+      const countEl = root.querySelector<HTMLElement>(`[data-count="${n}"]`);
+      if (countEl) countEl.textContent = String(count);
+      const emptyEl = root.querySelector<HTMLElement>(`[data-bucket-empty="${n}"]`);
+      if (emptyEl) emptyEl.hidden = count > 0;
+    }
+
+    function show(active: Name) {
+      for (const n of names) {
+        const bucket = root!.querySelector<HTMLElement>(`[data-bucket="${n}"]`);
+        if (bucket) bucket.hidden = n !== active;
+      }
+      for (const t of tabs) t.classList.toggle('is-active', t.dataset.tab === active);
+    }
+
+    tabs.forEach((t) => t.addEventListener('click', () => show(t.dataset.tab as Name)));
+
+    // default to Today; if Today is empty, jump to the nearest day that has matches
+    let initial: Name = 'today';
+    if (listOf('today').children.length === 0) {
+      if (listOf('tomorrow').children.length > 0) initial = 'tomorrow';
+      else if (listOf('yesterday').children.length > 0) initial = 'yesterday';
+    }
+    show(initial);
+  }
+</script>

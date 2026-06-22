@@ -11,6 +11,7 @@ export function withBase(path = '/'): string {
 
 export const links = {
   home: () => withBase('/'),
+  matches: () => withBase('/matches'),
   standings: () => withBase('/standings'),
   match: (id: number | string) => withBase(`/match/${id}`),
   player: (id: number | string) => withBase(`/player/${id}`),

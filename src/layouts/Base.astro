@@ -7,7 +7,7 @@ interface Props {
   title?: string;
   description?: string;
   /** Highlight the active nav item. */
-  current?: 'home' | 'standings' | null;
+  current?: 'home' | 'matches' | 'standings' | null;
   /** Per-team accent injected onto <body> as CSS vars (used by match pages). */
   accent?: string | null;
   accent2?: string | null;
@@ -72,6 +72,9 @@ const updatedLabel = updatedAt
         </a>
         <nav class="nav" aria-label="Primary">
           <a class="nav-link" href={links.home()} aria-current={current === 'home' ? 'page' : undefined}>Home</a>
+          <a class="nav-link" href={links.matches()} aria-current={current === 'matches' ? 'page' : undefined}
+            >Matches</a
+          >
           <a
             class="nav-link"
             href={links.standings()}
