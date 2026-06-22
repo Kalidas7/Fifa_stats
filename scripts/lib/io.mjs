@@ -1,6 +1,6 @@
 // Filesystem helpers + canonical paths. Scripts run from anywhere; paths resolve
 // relative to this file so `npm run fetch` works regardless of cwd.
-import { readFile, writeFile, mkdir, readdir } from 'node:fs/promises';
+import { readFile, writeFile, mkdir, readdir, unlink } from 'node:fs/promises';
 import { dirname, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -36,4 +36,22 @@ export async function listMatchIds() {
   } catch {
     return [];
   }
+}
+
+// Delete match files whose fixture id isn't in `keepIds` (e.g. after switching season/league,
+// so stale match pages don't linger). Returns the ids removed.
+export async function pruneMatches(keepIds) {
+  const keep = new Set(keepIds);
+  const removed = [];
+  for (const id of await listMatchIds()) {
+    if (!keep.has(id)) {
+      try {
+        await unlink(matchPath(id));
+        removed.push(id);
+      } catch {
+        /* ignore */
+      }
+    }
+  }
+  return removed;
 }

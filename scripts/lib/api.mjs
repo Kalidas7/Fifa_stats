@@ -5,7 +5,9 @@ const BASE = 'https://v3.football.api-sports.io';
 const KEY = process.env.APISPORTS_KEY || process.env.API_FOOTBALL_KEY || '';
 
 export const LEAGUE = Number(process.env.APISPORTS_LEAGUE || 1);
-export const SEASON = Number(process.env.APISPORTS_SEASON || 2026);
+// Free tier covers seasons 2022–2024 only, so we use the real 2022 World Cup.
+// Set APISPORTS_SEASON=2026 if you upgrade to a paid plan with current-season access.
+export const SEASON = Number(process.env.APISPORTS_SEASON || 2022);
 
 export function hasKey() {
   return Boolean(KEY);

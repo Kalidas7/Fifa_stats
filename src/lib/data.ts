@@ -84,6 +84,32 @@ export function lastUpdated(): string | null {
   return fixturesFile.updatedAt ?? standingsFile.updatedAt ?? null;
 }
 
+export const season: number | null = fixturesFile.league?.season ?? null;
+
+// Tournament facts derived from the actual data, so the UI isn't hardcoded to one edition.
+export function tournamentMeta() {
+  const teams = new Set<string>();
+  const venues = new Set<string>();
+  for (const f of fixtures) {
+    if (f.home?.name && f.home.name !== 'TBD') teams.add(f.home.name);
+    if (f.away?.name && f.away.name !== 'TBD') teams.add(f.away.name);
+    if (f.venue?.name) venues.add(f.venue.name);
+  }
+  const dated = fixtures
+    .map((f) => f.utcDate)
+    .filter((d): d is string => Boolean(d))
+    .sort();
+  return {
+    season,
+    teamCount: teams.size,
+    groupCount: standings.length,
+    matchCount: fixtures.length,
+    venueCount: venues.size,
+    firstDate: dated[0] ?? null,
+    lastDate: dated[dated.length - 1] ?? null,
+  };
+}
+
 // A focused "what's on now" slice for the Home page: the most recent day that already
 // has a finished/live match, plus the next few upcoming days — instead of all 104 rows.
 export function currentFixtureWindow(

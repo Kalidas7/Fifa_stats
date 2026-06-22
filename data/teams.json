@@ -57,5 +57,12 @@
   "England":                { "primary": "#FFFFFF", "secondary": "#001489", "code": "ENG", "group": "L" },
   "Croatia":                { "primary": "#FF0000", "secondary": "#FFFFFF", "code": "CRO", "group": "L" },
   "Ghana":                  { "primary": "#006B3F", "secondary": "#FCD116", "code": "GHA", "group": "L" },
-  "Panama":                 { "primary": "#D21034", "secondary": "#005293", "code": "PAN", "group": "L" }
+  "Panama":                 { "primary": "#D21034", "secondary": "#005293", "code": "PAN", "group": "L" },
+
+  "Wales":                  { "primary": "#C8102E", "secondary": "#FFFFFF", "code": "WAL", "group": "" },
+  "Poland":                 { "primary": "#DC143C", "secondary": "#FFFFFF", "code": "POL", "group": "" },
+  "Denmark":                { "primary": "#C60C30", "secondary": "#FFFFFF", "code": "DEN", "group": "" },
+  "Costa Rica":             { "primary": "#CE1126", "secondary": "#002B7F", "code": "CRC", "group": "" },
+  "Serbia":                 { "primary": "#C6363C", "secondary": "#0C4076", "code": "SRB", "group": "" },
+  "Cameroon":               { "primary": "#007A5E", "secondary": "#FCD116", "code": "CMR", "group": "" }
 }

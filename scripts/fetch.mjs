@@ -9,7 +9,7 @@
 //   APISPORTS_KEY=xxxx npm run fetch
 //
 import { apiGet, hasKey, LEAGUE, SEASON, sleep, rateRemaining } from './lib/api.mjs';
-import { writeJSON, readJSON, dataPath, matchPath } from './lib/io.mjs';
+import { writeJSON, readJSON, dataPath, matchPath, pruneMatches } from './lib/io.mjs';
 import {
   normalizeFixtures,
   normalizeStandings,
@@ -43,6 +43,11 @@ async function main() {
   });
   const finished = fixtures.filter((f) => f.finished).length;
   console.log(`  ✓ fixtures: ${fixtures.length} total, ${finished} finished  (quota left: ${remain()})`);
+
+  // Drop match files for fixtures no longer in this league/season (e.g. season switch).
+  const fixtureIds = new Set(fixtures.map((f) => f.id));
+  const pruned = await pruneMatches(fixtureIds);
+  if (pruned.length) console.log(`  ⌫ pruned ${pruned.length} stale match file(s)`);
   await sleep(DELAY);
 
   // 2) Group tables (per-group standings).
@@ -69,8 +74,13 @@ async function main() {
     lastRun: null,
     rateRemaining: null,
   };
-  const done = new Set(manifest.fetched ?? []);
-  const newlyFinished = fixtures.filter((f) => f.finished && f.id != null && !done.has(f.id));
+  manifest.fetched = (manifest.fetched ?? []).filter((id) => fixtureIds.has(id));
+  const done = new Set(manifest.fetched);
+  // Most-recent-finished first, so knockouts/Final get detail pages before older group games
+  // when backfilling a completed tournament within the daily quota.
+  const newlyFinished = fixtures
+    .filter((f) => f.finished && f.id != null && !done.has(f.id))
+    .sort((a, b) => (b.timestamp ?? 0) - (a.timestamp ?? 0));
   const cap = Number(process.env.MAX_MATCHES_PER_RUN || 20);
   const batch = newlyFinished.slice(0, cap);
 

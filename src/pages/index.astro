@@ -5,30 +5,53 @@ import GroupTables from '../components/GroupTables.astro';
 import FixturesList from '../components/FixturesList.astro';
 import GoldenBoot from '../components/GoldenBoot.astro';
 import { links } from '../lib/url';
-import { standings, topscorers, currentFixtureWindow, lastUpdated } from '../lib/data';
+import { standings, topscorers, currentFixtureWindow, lastUpdated, tournamentMeta } from '../lib/data';
 
 const windowFx = currentFixtureWindow();
 const hasFixtures = windowFx.length > 0;
 const hasStandings = standings.length > 0;
 const hasScorers = topscorers.length > 0;
 const updatedAt = lastUpdated();
+
+// Derive branding from the data (works for any edition the API returns).
+const meta = tournamentMeta();
+const year = meta.season ?? '';
+function fmtRange(a: string | null, b: string | null): string {
+  if (!a || !b) return '';
+  const o: Intl.DateTimeFormatOptions = { day: 'numeric', month: 'short', timeZone: 'UTC' };
+  const da = new Date(a).toLocaleDateString('en-GB', o);
+  const db = new Date(b).toLocaleDateString('en-GB', { ...o, year: 'numeric' });
+  return `${da} – ${db}`;
+}
+const dateRange = fmtRange(meta.firstDate, meta.lastDate);
+const chips = [
+  { n: meta.teamCount, label: 'Teams' },
+  { n: meta.groupCount, label: 'Groups' },
+  { n: meta.matchCount, label: 'Matches' },
+  { n: meta.venueCount, label: 'Stadiums' },
+].filter((c) => c.n > 0);
 ---
 
 <Base current="home" updatedAt={updatedAt}>
   <section class="hero">
     <div class="container">
-      <p class="hero-kicker">⚽ 11 Jun – 19 Jul 2026 · USA · Canada · Mexico</p>
-      <h1 class="hero-title">World Cup <span class="accentword">2026</span><br />Stats, live-ish.</h1>
+      <p class="hero-kicker">⚽ FIFA World Cup{dateRange ? ` · ${dateRange}` : ''}</p>
+      <h1 class="hero-title">World Cup <span class="accentword">{year}</span><br />Stats, decoded.</h1>
       <p class="hero-sub">
         Fixtures, group tables, the Golden Boot race and per-match shots-on-target — pulled once after
         each final whistle and served static. No live polling, no backend, zero running cost.
       </p>
-      <div class="hero-meta">
-        <span class="meta-chip"><b>48</b> Teams</span>
-        <span class="meta-chip"><b>12</b> Groups</span>
-        <span class="meta-chip"><b>104</b> Matches</span>
-        <span class="meta-chip"><b>16</b> Host Cities</span>
-      </div>
+      {
+        chips.length > 0 && (
+          <div class="hero-meta">
+            {chips.map((c) => (
+              <span class="meta-chip">
+                <b>{c.n}</b> {c.label}
+              </span>
+            ))}
+          </div>
+        )
+      }
     </div>
   </section>
 
